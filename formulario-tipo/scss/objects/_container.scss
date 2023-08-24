@@ -1,0 +1,51 @@
+/** @define Container */
+
+// TODO: Revisar como funciona el Container
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $Grid-gutter-size;
+  padding-right: $Grid-gutter-size;
+  max-width: $Container-lg-width;
+
+  @include clearfix;
+
+  @include md(down) {
+    /*padding-left: .75rem;
+    padding-right: .75rem;
+    */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    
+
+    > .Grid{
+
+      margin-left: 0;
+      margin-right: 0;
+
+      
+      > .Grid-item{
+
+        padding-left: 0;
+        padding-right: 0;
+
+      }
+
+    }
+
+
+
+  }
+}
+
+/**
+ * Modifiers
+ */
+
+.Container--small {
+  max-width: 48rem;
+}

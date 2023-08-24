@@ -1,0 +1,79 @@
+.Group {
+  background-color: $light-blue;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.Group + .Group {
+  margin-top: -2.5rem;
+}
+
+// Color celeste claro por defecto, .u-bgLightBlue
+.Group--color1 {
+  background-color: $light-blue;
+}
+
+// Repite color secundario seleccionado, .u-bgColor8
+.Group--color2 {
+  background-color: $color-8;
+	color: #FFFFFF;
+}
+
+// Color personalizado seleccionado
+.Group--color3 {
+	background-color: #CCE5E8;
+}
+
+.Group--color2 .Group-title {
+  color: #fff;
+}
+
+.Group-title {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.Group-footer {
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.Group--color2 .Group-footer {
+	border-top: 1px solid rgba(255,255,255,.15);
+}
+.Group--color2 .Group-footer a {
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .Group-footer {
+    font-size: 1.125em;
+  }
+}
+
+/**
+ * Header similar a UN en gub.uy
+ * Usar .u-nt6 para sobreponer el contenido con el cabezal
+ */
+
+.Group--header {
+  padding: 3.25rem 0 6.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Group-inner .Dropdown {
+      margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Group--header .Group-title {
+      width: calc(100% - 240px);
+  }
+}

@@ -1,0 +1,43 @@
+/* Contenedor de Atencion a la Ciudadania
+   ========================================================================== */
+
+.Box--atencionCiudadana {
+  h4 {
+    font-size: .875em;
+    color: $gray-text;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+
+  h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: .625em;
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+
+  .Flag {
+    margin-bottom: 2rem;
+  }
+
+  .Flag-image {
+    img {
+      max-width: 3rem;
+    }
+  }
+
+  @include md {
+    .Box-items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .Box-items > * {
+      flex: 1 1 auto;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.Filtros {
+  padding: 1.5rem;
+  overflow: hidden;
+
+  @include md(down) {
+    border-right: 0;
+	  padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+}
+
+.Filtros-title {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+
+  @include md(down) {
+    color: $color-1;
+  }
+}
+
+.Filtros-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: .75rem;
+}
+
+.Filtros-title.collapsed .Filtros-status {
+  transform: rotate(0);
+}
+
+.Filtros-status {
+  transform: rotate(45deg);
+  float: right;
+  transition: transform .25s ease-in-out;
+}
+
+@include md {
+  .Filtros #filtros-target {
+    height: auto !important;
+  }
+}
+
+/* Filtros nuevos 
+  (Una vez actualizados, se puede borrar lo de arriba) */
+
+.Filters {
+  padding: 0 !important;
+  overflow: hidden;
+
+  @include md(down) {
+    border-right: 0;
+	padding-top: 1rem;
+	padding-bottom: 0;
+  }
+}
+
+.Filters-title {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin: 1rem 1.5rem;
+
+  @include md(down) {
+    color: $color-1;
+  }
+}
+
+.Filters-title.collapsed .Filters-status {
+  transform: rotate(0);
+}
+
+.Filters-status {
+  transform: rotate(45deg);
+  float: right;
+  transition: transform .25s ease-in-out;
+}
+
+@include md {
+  .Filters #filters-target {
+    height: auto !important;
+  }
+}

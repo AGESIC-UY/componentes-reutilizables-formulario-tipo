@@ -1,0 +1,116 @@
+/* Timeline
+   ========================================================================== */
+
+.Box--timeline {
+  .Box-header {
+    margin-bottom: 3rem;
+  }
+
+  .Box-body {
+    margin-left: 10px;
+    margin-top: -1.25rem;
+    padding-top: 3em;
+    padding-bottom: 1.25rem;
+    padding-left: 40px;
+    border-left: solid 4px #3155a5;
+
+    @include md {
+      margin-left: 9.5em;
+      padding-left: 1.825em;
+    }
+  }
+
+  .Box-title {
+    @include md {
+      position: relative;
+      margin-top: -5px;
+      margin-left: 40px;
+      left: -40px;
+    }
+  }
+
+  .Box-subtitle {
+    padding-left: 40px;
+    position: relative;
+    left: -40px;
+
+    @include md {
+      width: 115px;
+      padding-left: 0;
+      float: left;
+      position: absolute;
+      left: 10px;
+      text-align: right;
+    }
+  }
+
+  .List {
+    padding-left: 10px;
+		
+		@include md(down) {
+			padding-left: 0;
+		}
+  }
+}
+
+.timeline-mark {
+  display: block;
+  position: relative;
+  left: -52px;
+  float: left;
+  width: 2.5em;
+  height: .75em;
+  border-bottom: solid 4px #3155a5;
+
+  @include md {
+    left: -3.85em;
+  }
+
+  span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: solid 4px #3155a5;
+    border-radius: 100%;
+
+    @include md {
+      float: right;
+    }
+  }
+}
+
+.Box-timelineNav {
+  width: 100%;
+  clear: both;
+  padding-top: 2rem;
+
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    li + li {
+      border-left: 1px solid #ccc;
+      padding-left: 1em;
+      margin-left: 1em;
+    }
+  }
+}
+
+@include md {
+  .Box--timeline .Box-info {
+    position: relative;
+    margin-left: 40px;
+    left: -40px;
+  }
+}

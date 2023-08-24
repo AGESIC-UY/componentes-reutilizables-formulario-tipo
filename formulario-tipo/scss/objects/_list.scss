@@ -1,0 +1,145 @@
+/** @define List; weak */
+
+.List {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.List > li,
+.List .List-item {
+  padding: .75rem;
+  border-top: 1px solid $gray-3;
+  display: block;
+
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.List-subtitle {
+  text-transform: uppercase;
+  color: #555;
+  font-size: .85rem;
+  font-weight: 600;
+  display: block;
+  border-bottom: 1px solid $gray-3;
+  padding-bottom: .75rem;
+}
+
+.List--media {
+  .Media {
+    padding: 0;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .Media:first-child {
+    margin-top: 0;
+  }
+
+  .Media-title,
+  h3 {
+    margin: .5rem 0;
+    font-size: 1.5rem;
+  }
+
+  p,
+  .Media-text {
+    margin: .5rem 0;
+  }
+	
+	.Media-image img, 
+	.Media-image video {
+		width: 250px;
+    border-radius: 2px;
+	}
+}
+
+.List--medium {
+  > .Media {
+    padding: 0;
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  > .Media:first-child {
+    margin-top: 0;
+  }
+}
+
+.List--simple {
+  > .Media {
+    padding: 0;
+    padding-top: .5rem;
+    margin-top: .5rem;
+	  border-top: none;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  > .Media:first-child {
+    margin-top: 0;
+  }
+}
+
+@include sm(down) {
+  .List--media {
+    .Media-image {
+      margin-bottom: .5rem;
+			max-width: 100% !important;
+			margin-right: 0rem;
+			float: none;
+		
+			&.Media-image--list {
+				text-align: center;
+				background-color: #dddddd;
+				margin-bottom: 1.5rem;
+				border-radius: 2px;
+
+				img {
+					max-height: 340px;
+					width: auto !important;
+				}
+			}
+		}
+  }
+}
+
+@include xs(down) {
+  .List--media {
+    .Media-image {
+      width: 100%;
+      /*float: none;
+      max-width: 100%;
+      margin-right: 0;*/
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+  }
+}
+
+.List--media .Download {
+	font-size: 1rem;
+	margin-top: 1.25em;
+}
+
+.List--media .Download--media {
+	margin-top: .25rem;
+}
+
+.List--media .Download--media .Download-title {
+	font-size:1.5rem;
+	line-height:1.1;
+	margin-bottom:.5rem;
+}

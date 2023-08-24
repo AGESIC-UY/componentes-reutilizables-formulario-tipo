@@ -1,0 +1,125 @@
+/* Listado horizontal
+   ========================================================================== */
+
+/**
+ * @dependencies Grid
+ * @utilities sizes
+ *
+ * 1. El texto e info son opcionales.
+ */
+
+/*
+  <div class="Box Box--listadoHorizontal">
+    <div class="Box-header">
+      <h3 class="Box-name">Novedades</h3>
+    </div>
+
+    <div class="Box-body">
+      <ul class="Box-gridList Grid Grid--rowSize4">
+        <li class="Grid-item u-sm-size1of2 u-md-size1of3">
+          <a href="#">
+            <img class="Box-image" src="./img/200x120.png" alt="">
+
+            <span class="Box-info">Suscipit eligendi corrupti</span>
+            <h3 class="Box-title">Lorem ipsum</h3>
+          </a>
+        </li>
+        <li class="Grid-item u-sm-size1of2 u-md-size1of3">
+          <a href="#">
+            <img class="Box-image" src="./img/200x120.png" alt="">
+
+            <span class="Box-info">Suscipit eligendi corrupti</span>
+            <h3 class="Box-title">Lorem ipsum</h3>
+          </a>
+        </li>
+        <li class="Grid-item u-sm-size1of2 u-md-size1of3">
+          <a href="#">
+            <img class="Box-image" src="./img/200x120.png" alt="">
+
+            <span class="Box-info">Suscipit eligendi corrupti</span>
+            <h3 class="Box-title">Lorem ipsum</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="Box-footer">
+      <a href="#" class="Box-more">Ver mas novedades</a>
+    </div>
+  </div>
+ */
+
+.Box--listadoHorizontal {
+  .Box-image {
+    margin-bottom: .5em;
+    border-radius: 2px;
+  }
+
+  .Box-info {
+    margin-bottom: .5em;
+  }
+
+  .Box-title {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 24px;
+  }
+	.Image-cover {
+		margin: 0;
+		margin-bottom: .5rem;
+		position: relative;
+		overflow: hidden;
+		padding-top: 66.66%;
+		border-radius: 3px;
+		background: #f1f1f1;
+		
+		img,
+		.Box-image {
+			margin-bottom: 0;
+			border-radius: 3px;
+			-o-object-fit: cover;
+			object-fit: cover;
+			height: 100%;
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+
+/**
+ * Convertir listados horizontales en carousel (con scroll horizontal)
+ * en dispositivos moviles [EXPERIMENTAL]
+ */
+
+@include md(down) {
+  @include touch {
+    .Box--scrollableItems {
+      .Box-body {
+        overflow: scroll;
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+      }
+
+      .Grid {
+        white-space: nowrap;
+      }
+
+      .Grid-item {
+        width: 80%;
+        float: none;
+        display: inline-block;
+        white-space: normal;
+        vertical-align: top;
+      }
+
+      .Grid .Grid-item:first-child {
+        margin-left: 1.5rem;
+      }
+
+      .Grid .Grid-item:last-child {
+        padding-right: 0;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}

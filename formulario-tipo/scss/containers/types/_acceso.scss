@@ -1,0 +1,187 @@
+/* Acceso
+   ========================================================================== */
+
+/**
+ * @dependencies Box, Flag
+ *
+ * 1. Son enteramente enlace.
+ * 2. Puede no tener imagen, en ese caso el contenido se centra (Box--center).
+ * 3. El orden entre Box-title y Box-info puede ser invertido.
+ * 4. Se mantiene el objeto Flag en ambos casos, manteniendo estructura en ambos.
+ */
+
+/**
+ * Con imagen
+ */
+
+/**
+  <a href="#" class="Box Box--acceso">
+    <div class="Flag">
+      <div class="Flag-image">
+        <img class="u-circle" src="./img/60x60.png" alt="">
+      </div>
+      <div class="Flag-body">
+        <h3 class="Box-title">Lorem ipsum dolor</h3>
+        <span class="Box-info">Dolor incorrupte</span>
+      </div>
+    </div>
+  </a>
+ */
+
+/**
+ * Sin imagen
+ */
+
+/*
+  <a href="#" class="Box Box--acceso Box--center">
+    <div class="Flag">
+      <div class="Flag-body">
+        <span class="Box-info">Dolor incorrupte</span>
+        <h3 class="Box-title">Lorem ipsum dolor</h3>
+      </div>
+    </div>
+  </a>
+ */
+
+.Box--acceso {
+  .Box-title {
+    font-size: 1.25em;
+    margin-bottom: .125em;
+		line-height: 1.25;
+  }
+  
+  .Box-info {
+    margin-bottom: 0;
+    line-height: 1.25;
+  }
+
+  /* 1 */
+  &:hover {
+    text-decoration: none;
+
+    .Box-title {
+      text-decoration: underline;
+    }
+  }
+}
+
+.Module {
+  .Box--acceso.Box--center {
+    .Flag-body {
+      display: block;
+    }
+	
+	.Box-info {
+	  margin-bottom: .35em;
+	}
+  }
+}
+
+/* Márgenes automáticos para los elementos juntos */
+
+.Box--acceso {
+	
+	.Box-info + .Box-title {
+		margin-top: .375rem;
+		margin-bottom: 0.125em;
+	}
+	
+	.Box-title + .Box-info {
+		margin-top: 0.3125rem;
+		margin-bottom: 0.125em;
+	}
+}
+
+/* Modificador para accesos en Modulo 3x3 de publicos - MOBILE FIRST */
+
+@include md(down) {
+	
+	.Module.Module--publicos {
+		// Estilos del Box pasan al módulo
+		margin-bottom: 1.5rem;
+		box-shadow: $Box-shadow;
+		border-radius: $Box-border-radius;
+		background: #fff;
+		overflow: auto;
+		
+		.Grid {
+			display: flex;
+			margin-right: 0;
+			margin-left: 0;
+			
+			.Grid-item {
+				padding-right: 0;
+				padding-left: 0;
+				margin: 0.1875rem;
+				
+				&:first-child {
+					.Box--acceso {
+						padding: 1.25rem 0.4375rem !important;
+					}
+				}
+				
+				+ .Grid-item {
+					border-left: solid 1px #eee;
+					margin-left: 0;
+					margin-right: -1px;
+					
+					&:last-child {
+						margin-right: 0.1875rem;
+						
+						.Box--acceso {
+							padding: 1.25rem 0.4375rem 1.25rem 0.625rem !important;
+						}
+					}
+				}
+				
+				.Module-item {
+					height: 100%;
+				}
+			}
+		}
+		
+		.Box--acceso {
+			// Estilos del Box pasan al módulo
+			border-left: none;
+			padding: 1.25rem 0.625rem;
+			margin-bottom: 0;
+			box-shadow: none;
+			border-radius: 0;
+			background: none;
+			height: 100%;
+			
+			.Flag {
+				// Modifica comportamiento del elemento Flag
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				
+				.Flag-image {
+					padding-right: 0;
+					
+					> img {
+						max-width: 60px;
+					}	
+				}
+				
+				.Flag-body {
+					margin-top: .75rem;
+					margin-bottom: 0.125rem;
+					text-align: center;
+					
+					.Box-title {
+						font-weight: 700;
+						font-size: .6875em;
+						text-transform: uppercase;
+						margin-bottom: 0;
+					}
+					
+					.Box-info {
+						display: none;
+					}
+				}
+			}
+		}
+		
+	}
+}

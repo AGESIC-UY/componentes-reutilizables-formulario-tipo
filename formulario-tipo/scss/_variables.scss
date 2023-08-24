@@ -1,0 +1,150 @@
+// ============================================================================
+// Variables
+// ============================================================================
+
+// stylelint-disable max-empty-lines, scss/dollar-variable-colon-space-after, indentation
+
+// Breakpoints
+
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1367px;
+
+// Variables formulario tipo
+
+// Radius
+$button-radius: 2px;
+$field-radius: 2px;
+
+// Shadows
+
+// $button-box-shadow: 1px 1px 2px rgba(0, 0, 0, .15);
+$button-box-shadow: none;
+
+// Colors
+
+$primary: #003DA5;
+$secondary: #E6A800;
+$error: #B52C47;
+$black: #000000;
+$white: #ffffff;
+
+
+//shades
+$gray-darken: #212121;
+$gray-dark: #333;
+$gray-text: #444;
+$gray-0: #999;
+$gray-1: #bbb;
+$gray-2: #ddd;
+$gray-3: #eee;
+$gray-4: #f9f9f9;
+$gray-555: #555;
+$gray-border: #888; // mínimo aprobado WCAG 2.1 - 14.1.1 
+
+
+// Color Buttons
+$button-color-default: #eee;
+$Button-color-primary: $primary;
+$Button-color-secondary: $secondary;
+$Button-color-disabled: #e4e4e4;
+$Button-color-text-disabled: #A7A7A7;
+
+// Focus
+$focus-color: #003DA5;
+$focus-ring: 3px solid #003DA5;
+$focus-offset: .05rem;
+
+
+/*-------------------------------*/
+
+
+$dark-blue: #042F62;
+$light-blue: #e2e9f1;
+$blue: #003DA5;
+$green: #00632e;
+//OLD $gold: #fcd649;
+$gold: #DAAA00;
+$purple: #470A68;
+
+$color-1: $blue;
+$color-2: #0099ff;
+$color-3: $purple;
+$color-4: #93117e;
+$color-5: #FF6900;
+$color-6: #FF0000;
+$color-7: #28a745;
+
+$color-8: #007D8A; // Para destacados y hero
+
+// Nuevos colores
+
+$color-9: #2B5CA8;
+$color-10: #F3A303;
+$color-11: #82368C;
+$color-12: #778A15;
+
+// Base
+
+$base-background-color: #f2f2f2;
+$base-text-color: #000;
+$base-font-size: 1em;
+$base-font-stack: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+$base-font-weight: normal;
+$base-line-height: 1.5;
+
+$base-link-color: $color-1;
+$base-link-decoration: none;
+$base-link-hover-color: $color-1;
+$base-link-hover-decoration: underline;
+
+$brand-font-stack: "Open Sans", sans-serif;
+
+// Modal
+
+$modal-content-bg: #fff;
+$modal-backdrop-bg: #000;
+$modal-backdrop-opacity: .6;
+$modal-title-line-height: 2.1;
+$modal-inner-padding: 16px 24px; // footer
+$modal-title-padding: 16px 24px; // title
+$modal-body-margin: 0 24px;
+$modal-body-padding: 8px 0;
+
+$modal-lg: 900px;
+$modal-md: 720px; // default width
+$modal-sm: 300px;
+
+$modal-center: true;
+
+
+// z-index
+
+// eg. z-index: index($elements, $name);
+$elements:
+  // back
+  search,
+  main,
+  nav,
+  modal-background,
+  skip-nav,
+  modal;
+  // front
+
+
+// Objects
+
+$Container-lg-width: 1304px;
+$Grid-gutter-size: 12px;
+
+
+// Box
+
+$Box-border-radius: 3px;
+$Box-shadow: 0 2px 2px rgba(0, 0, 0, .18);
+
+
+// Global
+
+$Global-text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);

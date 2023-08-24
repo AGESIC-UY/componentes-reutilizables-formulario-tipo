@@ -1,0 +1,1024 @@
+/** @define Form; weak */
+
+$Form-widget-max-width: 28em;
+
+/**
+ * Clases disponibles:
+ *
+ * .Form (aplicar sobre <form>)
+ * .Form-widget
+ *    .Form-widget--small
+ *    .Form-widget--medium
+ *    .Form-widget--read (para campos solo lectura, no usar <input>, solo <div>)
+ * .Form-radio
+ * .Form-select (REVISAR NOMBRE) (se debe agregar junto con .Form-widget)
+ * .Form-textarea (no es obligatorio)
+ * .Form-label (usar siempre para <label> o el elemento que se quiera simular)
+ * .Form-subLabel (NO USAR)
+ * .Form-group
+ *    .Form-group--disabled
+ *    .Form-group--aligned
+ *    .Form-group--error
+ * .Form-checkboxes
+ * .Form-options (REVISAR)
+ * .Form-option (REVISAR)
+ * .Form-option-color (REVISAR)
+ * .Form-error (texto con el detalle del error para el campo)
+ * .Form-actions (agrupar botones al final del formulario)
+ * .Form-hint (texto de ayuda para el campo)
+ * .Form-grid (usar en conjuncion con .Grid)
+ * .Form-fieldset (no es obligatorio)
+ * .Form-legend (no es obligatorio)
+ * .Form-title (NO USAR)
+ * .Form-subtitle (NO USAR)
+ * .Form-note (para la nota de "Todos los campos indicados con * son obligatorios")
+ *
+ * Los Widgets Nativos de Formularios:
+ * https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets
+ */
+
+.Form{
+
+.Form-widget {
+  display: table-cell;
+  vertical-align: top;
+  border-radius: $field-radius;
+  border: 1px solid $gray-border;
+  font-family: inherit;
+  padding: .75em .5em;
+  font-size: 1em;
+  //line-height: 1;
+  width: 100%;
+  height: 3em;
+  max-width: $Form-widget-max-width;
+
+      
+
+
+
+  &:disabled {
+    opacity: .35;
+    background-color: #eee;
+  }
+
+  &:focus {
+    border-color: $focus-color !important;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 61, 165, 0.075), 0 0 0 0.2em rgba(0, 61, 165, 0.1);
+    
+  }
+
+  &[type="file"] {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--w-icon{
+
+    width: calc(100% - 3em);
+    float: left;
+    margin-right: .5em;
+
+  }
+
+
+  @include md(down) {
+    width: 100%;
+    display: block;
+
+    &--w-icon{
+
+      width: calc(100% - 3em);
+     
+  
+    }
+  
+
+
+
+  }
+
+  
+}
+
+.Form-widget--read {
+  font-weight: 600 !important;
+  //padding-top: .5em;
+  //padding-bottom: .5em;
+  //border-color: transparent;
+  border: none;
+  height: auto;
+
+  > *:first-child {
+    margin-bottom: 0;
+  }
+
+  > p:first-child{margin-bottom: .5em;}
+
+ 
+  > * + * {
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+
+  @include md(down) {
+    padding-top: 0;
+    padding-left: 0;
+    
+    > * + * {
+      margin-top: 0;
+    }
+
+    > p:first-child{margin-bottom: 0;}
+  
+  }
+
+}
+
+}
+
+
+
+
+.Form-widget--medium {
+  max-width: 16rem !important;
+}
+
+.Form-widget--small {
+  max-width: 8rem !important;
+}
+
+.Form-radio {
+  display: block;
+
+  & + .Form-radio {
+    margin-top: .5em;
+  }
+}
+
+.Form-select,
+.Form select {
+  
+  /*height: 2.625em;*/
+
+  height: 3em;
+  background-color: #fff;
+  width: 100%;
+
+  @include md(down) {
+
+    height: 3em;
+    
+
+  }
+
+  }
+
+
+
+  // Si no tiene .Form-widget--select (las siguientes lineas sacar)
+  // border-radius: 2px;
+  // border: 1px solid #bbb;
+  // font-family: inherit;
+  // padding: .5em;
+  // width: 100%;
+  // max-width: $Form-widget-max-width;
+
+
+.Form-textarea,
+.Form textarea {
+  min-height: 7.5em;
+}
+
+.Form-label {
+
+  padding: .75em 0;
+  margin: 0;
+  display: table-cell;
+  vertical-align: top;
+  width: 35%;
+  text-align: right;
+  padding-right: .75em;
+  color: $gray-dark;
+  font-size: 1em;
+
+  @include md(down) {
+
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding-bottom: .3em;
+    padding-top: 0;
+    font-size: 1.125rem;
+
+  }
+
+}
+
+.Form-subLabel {
+  padding-top: .75em;
+  padding-bottom: .3em;
+}
+
+.Form-group {
+  border: 1px solid transparent; // evitar salto cuando tiene error
+  margin-bottom: .125em;
+  padding-bottom: .75em;
+  padding-top: .75em;
+  display: table;
+  vertical-align: top;
+  width: 100%;
+
+  @include md(down) {
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+  }
+
+
+  &:focus-within > label {
+  
+    color: $focus-color;
+  
+  }
+
+  
+  a{text-decoration: underline;}
+
+
+  .Form-icon{
+
+    padding: 0.5rem 0;
+    display: inline-block;
+    margin-left: .5rem;
+
+    img{
+
+    width: 2rem;
+    height: 2rem;
+
+    }
+
+  }
+
+  &--alert{
+  
+    border-radius: 3px;
+    border: 1px solid;
+    margin-top: .75em;
+    margin-bottom: .75em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @include md(down) {
+      margin-left: -.625em;
+      margin-right: -.625em;
+      padding-left: .625em;
+      padding-right: .625em;
+      width: calc(100% + 1.25em);
+
+      
+    }
+
+    &.Form-group--error {
+      background-color: $Alert-background-danger;
+      border-color: lighten($Alert-border-danger, 40%);
+    
+      .Form-widget {
+        border-color: $Alert-border-danger !important;
+      }
+
+    }
+
+    &.Form-group--warning {
+      background-color: $Alert-background-warning;
+      border-color: lighten($Alert-border-warning, 60%);
+      
+    
+      .Form-widget {
+        border-color: $Alert-border-warning !important;
+      }
+      
+   
+    }
+  
+  }
+
+}
+
+// Cuando no tiene label agregar esta clase a .Form-group
+.Form-group--aligned {
+
+  .Button{margin-right: 1em;}
+
+  @include md {
+    padding-left: 35%;
+  }
+
+}
+
+.Form-group--disabled {
+  .Form-label {
+    opacity: .35;
+  }
+}
+
+
+
+
+
+
+
+
+.Form-checkboxes {
+  padding-left: .25em;
+
+  > * {
+    margin-bottom: .45em;
+    position: relative;
+  }
+
+  > * > label {
+    line-height: .75em;
+  }
+
+  > * > label > span {
+    padding-left: .8em;
+    display: inline-block;
+    // line-height: 22px;
+  }
+
+  > * > label > input {
+    position: absolute;
+    top: .3en;
+  }
+}
+
+.Form-options {
+  margin-top: .75em;
+
+  @include md(down) {
+    margin-left: 0;
+  }
+}
+
+.Form-option {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  // line-height: 1.25;
+  text-align: left; // override de FT1
+  width: 100%; // Override de FT1
+
+  &--wrap{
+
+    flex-wrap: wrap;
+    
+    
+    .Form-hint{
+
+      display: block;
+      width: 100%;
+      padding-left: 1rem;
+
+    }
+
+  }
+
+  .medios-pago{
+
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: .9em;
+    margin-top: .25em;
+
+    img + a{margin-top: .25em; display: block;}
+
+  }
+
+  > * + * {
+    margin-left: .5em;
+  }
+
+  [type="radio"],
+  [type="checkbox"] {
+    margin: .4em 0;
+
+  }
+
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+   border: none;
+   outline: 1px solid lighten($primary, 80%);
+
+  }
+
+  > span{
+
+      width: calc(100% - 3em);
+
+
+      @include md(down) {
+
+        margin-top: .1em;
+
+      }
+      
+
+  }
+
+
+
+
+}
+
+.Form-option-color {
+	border-radius: 2px;  
+	padding-right: 1.25em; 
+	margin-right:.4rem;
+ }
+
+.Form-error {
+  color: darken(#c33, 12%);
+  font-size: .825em;
+  margin-top: .4em;
+  line-height: 1.6;
+
+
+}
+
+.Form-warning{
+
+  color: $Alert-color-warning;
+  font-size: .825em;
+  margin-top: .4em;
+  line-height: 1.6;
+
+}
+
+.Form-actions {
+  display: flex;
+
+  > :last-child {
+    justify-self: flex-end;
+  }
+
+  @include md {
+    justify-content: space-between;
+    align-items: center;
+
+    .Button + .Button {
+      margin-left: 1rem;
+    }
+  }
+
+  @include md(down) {
+    flex-direction: column;
+    text-align: center;
+
+    > *:first-child {
+      order: 2;
+      margin-top: 1.5rem;
+    }
+
+    > *:last-child {
+      order: 1;
+    }
+
+    .Button + .Button {
+      margin-top: 1rem;
+    }
+
+    .Button {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.Form-hint {
+  color: #555;
+  font-size: .875em;
+  margin-top: .25em;
+}
+
+.Form-grid {
+  max-width: calc(28em + 1em);
+  margin-left: -.5em;
+  margin-right: -.5em;
+
+  > .Grid-item {
+    padding-right: .5em;
+    padding-left: .5em;
+  }
+}
+
+.Form-fieldset,
+.Form fieldset {
+  border-color: $gray-border;
+  padding: 1.25em;
+  margin: 0;
+  margin-bottom: 1.5em;
+
+  p {
+
+    padding: 0 1em;
+
+  }
+
+  @include md(down) {
+    border: 0;
+    padding: 0;
+    margin-bottom: 2em;
+
+    p {
+
+      padding: 0;
+  
+    }
+
+    > fieldset p{
+
+      padding: 0 1em;
+
+    }
+  
+    > legend + p{
+  
+      margin-top: .5em;
+  
+    }
+  
+
+  }
+
+  & + a {
+    position: relative;
+    top: -.5rem
+  }
+
+
+
+
+
+
+  .Form-group, .Alert{
+
+    p {
+
+      padding: 0;
+  
+    }
+
+
+  }
+
+  &.fieldset-form-multifield{
+
+    border: none;
+    padding: 0;
+    margin: 0;
+
+
+
+     .Form-group {
+      
+        label{
+
+          //padding: 0.5em 0 0.2em;
+          display: block;
+          padding-bottom: .3em;
+
+
+        }
+
+        
+      
+      
+      }
+
+
+      > .Form-label{
+
+
+        width: 35%;
+
+
+      }
+
+      legend, .Form-legend{
+
+
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+
+      }
+
+
+  }
+
+
+}
+
+.Form-legend,
+.Form legend {
+
+  padding-left: .75em;
+  padding-right: .75em;
+
+
+  @include md(down) {
+    
+    position: relative;
+    overflow: hidden;
+    padding-left: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .4em;
+    padding-right: 0;
+
+    > * {
+      display: inline-block;
+      background-color: transparent;
+      position: relative;
+      z-index: 2;
+      padding-right: 0;
+    }
+
+    &:after {
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: transparent;
+      content: '';
+      bottom: 0;
+      position: relative;
+      z-index: 1;
+      border-bottom: 1px solid $gray-2;
+      height: .5em;
+
+
+    }
+  }
+}
+
+// Fieldset anidado (hasta segundo nivel)
+.Form fieldset fieldset .Form-label {
+  
+  width: 35%;
+
+  @include md(down) {
+
+    width: 100%;
+
+  }
+
+}
+
+.Form fieldset fieldset .Form-group--aligned {
+
+  @include md {
+
+    padding-left: 35%;
+
+  }
+
+}
+
+// .Form-title {
+//   font-size: 1.25em;
+// }
+
+// .Form-subtitle {
+//   margin-top: 3rem;
+//   margin-bottom: 2rem;
+//   font-weight: 500;
+//   font-size: 1.375em;
+//   border-bottom: 1px solid #ddd;
+//   padding-bottom: .75rem;
+//   color: #555;
+// }
+
+.Table{
+
+  td{
+
+    &.Form-group{
+
+      padding: .875em 1.15em;
+
+      @include md(down) {
+  
+        padding: .75em 1em;
+        width: 100%;
+
+        &--alert{
+
+          margin: .75em 0;
+
+        }
+  
+      }
+      display: table-cell;
+      width: auto;
+
+      .Form-option{
+
+        display: block;
+        margin: 0;
+
+        span{
+
+          &.u-hideVisually{width: 1px;}
+
+
+
+        }
+  
+      }
+
+      
+  
+
+    }
+
+  }
+
+}
+
+.Table--form {
+  .Form-widget {
+    border-radius: $field-radius;
+    border: 1px solid $gray-0;
+    font-family: inherit;
+    padding: .875em 1.15em;
+
+    @include md(down) {
+
+      padding: .75em 1em;
+
+    }
+
+    width: 100%;
+    max-width: $Form-widget-max-width;
+
+    
+
+
+  }
+
+  tbody td {
+    vertical-align: middle;
+
+
+
+
+  }
+
+  select {
+    height: 2rem;
+    background-color: #fff;
+  }
+}
+
+.Table--responsive tr td .Form-widget {
+  font-weight: normal;
+}
+
+// .Form .Form-group:last-child {
+//   margin-bottom: 0;
+// }
+
+// .Form .Form-group:first-child {
+//   margin-top: 0;
+// }
+
+.Form--stacked .Form-label {
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.Form--stacked .Form-widget {
+  display: block;
+  margin-top: .25em;
+
+  max-width: 100%;
+}
+
+// .Form-control {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between
+// }
+
+.Form > fieldset > legend,
+.Form-title {
+  font-size: 1.35em;
+  line-height: 1.125;
+/*
+  @include md(down) {
+    margin-bottom: .4em;
+  }
+  */
+}
+
+.Form > fieldset > fieldset:not(.fieldset-form-multifield) > legend,
+.Form-subtitle {
+  font-size: 1.125em;
+  line-height: 1.25;
+
+  @include md(down) {
+
+  background: $gray-4;
+  padding-top: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+
+}
+
+}
+
+.Form > fieldset > fieldset:not(.fieldset-form-multifield) {
+
+
+  @include md(down) { 
+
+    background:  $gray-4;
+    padding: 0 0 1em 0;
+
+    .Form-group{
+
+      padding-left: 1em;
+      padding-right: 1em;
+
+      &--alert{
+  
+
+          margin-left: 0;
+          margin-right: 0;
+          width: 100%
+    
+          
+        }
+
+
+    }
+
+    
+
+  }
+
+
+}
+
+.Form-note {
+  text-align: right;
+  font-size: .85em;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: block;
+
+  @include md(down) {
+
+    display: none;
+
+  }
+
+}
+
+.Form-content {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include md(down) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Formulario usado para los filtros */
+
+.Form--filters {
+  padding: 0 1.5rem;
+
+  .Form-label {
+  	font-weight: 600 !important;
+  }
+  
+  .Form-group {
+  	padding-top: .15rem;
+  }
+   
+  > .Form-group:last-child {
+ 	 padding-top: 1.15rem;
+  }
+}
+
+
+
+
+
+/**
+ * REVISAR
+ */
+
+.Alert svg {
+  display: block;
+}
+
+.Form-valid {
+  height: 1.625em;
+  width: 1.625em;
+  border-radius: 50%;
+  font-weight: bold;
+ // display: flex;
+ // align-items: center;
+ // justify-content: center;
+  margin-top: .45rem;
+  font-size: 1.2em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center center;
+  //background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+  @include md(down) {
+
+    /*
+    height: 2em;
+    width: 2em;
+    */
+
+  }
+
+}
+
+.Form-help {
+  height: 1.625em;
+  width: 1.625em;
+  border-radius: 50%;
+  background-color: $color-1;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: bold;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  margin-top: .45rem;
+
+  @include md(down) {
+
+    /*
+    height: 2em;
+    width: 2em;
+*/
+
+  }
+
+}
+
+
+
+// Tooltip
+// .Tooltip {
+//   position: relative;
+// }
+
+// .Tooltip-target {
+//   display: none;
+//   position: absolute;
+//   border: 1px solid #eee;
+//   border-radius: 4px;
+//   top: -64px;
+//   left: calc(-50% + 1.5rem);
+//   transform: translateX(-50%);
+
+//   width: 200px;
+//   background-color: #fff;
+//   color: #000;
+//   font-weight: normal;
+//   font-size: 1rem;
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+//   text-align: left;
+//   padding: 1rem;
+// }
+
+// .Tooltip:hover {
+//   .Tooltip-target {
+//     display: block;
+//   }
+// }

@@ -1,0 +1,584 @@
+/** @define Steps; weak */
+
+$Steps-height: 68px;
+$Steps-background-color: #003DA5;
+$Steps-border-color: #ccc;
+
+.Steps {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: transparent;
+  background-clip: border-box;
+  overflow: hidden;
+  border-radius: $Box-border-radius;
+
+
+
+  @include md(down) {
+    border-radius: $Box-border-radius 0 0 $Box-border-radius;
+
+
+    &.Steps--many {
+
+      .Steps-item{
+
+        div:last-child{display: block;}
+
+      } 
+    } 
+
+    .Steps-inner{
+
+      transform: translateY(-20px);
+      transition: all 0.3s 0.12s;
+      
+      .Steps-item{
+
+        display: flex;
+        align-items: flex-start;
+
+            
+        &.is-finished {
+
+          div:first-child{
+
+            &::before{
+
+              margin-bottom: .5rem;
+
+            }
+
+          }
+
+
+
+        }
+
+        .Steps-number {
+
+          margin-bottom: .5rem;
+
+        }
+
+
+        &.is-finished {
+
+          div:first-child{
+
+            &::after{
+
+              background: $color-1;
+
+            }
+
+          }
+
+        }
+
+        &:last-child {
+
+          
+
+          &::before{
+
+            display: none;
+
+          }
+
+          div:first-child{
+
+            &::after{
+              
+              display: none;
+
+            }
+            
+
+          }
+
+        }
+
+
+
+        div:first-child{
+
+
+          margin-right: 1rem;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &::after{
+
+            content:"";
+            width: 2px;
+            height: 100%;
+            min-height: 1rem;
+            background: $gray-3;
+
+
+          }
+
+          
+        }
+
+   
+
+        div:last-child{
+
+          margin-top: .4rem;
+          padding-right: 0;
+
+        }
+
+      }
+
+      .Steps-item:after{
+
+        display: none;
+
+      }
+    
+
+    }
+
+  
+  }
+
+
+
+  &.is-visible{
+
+
+    @include md(down) {
+
+      .overlay-mobile{
+
+        content: "";
+        position: fixed;
+        z-index: 10000; /* 1 */
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0, .8);
+        padding: 1rem;
+        overflow: unset;
+        z-index: 1000;
+        opacity: 0;
+        transition: visibility 0s linear 0.3s, opacity 0.3s;
+    
+      }
+
+      .Steps-inner{
+        display: block;
+        position: fixed;
+        left: 1rem;
+        top: 1rem;
+        right: 1rem;
+        padding: 1rem;
+        background: $white;
+        z-index: 2000;
+        border-radius: 8px;
+        box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+        transform: translateY(0);
+        transition: all 0.3s 0.12s;
+
+        h4{
+
+          display: block;
+          margin-bottom: 2rem;
+
+        }
+       
+      }
+
+    }
+
+    .overlay-mobile{
+        
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s;
+
+    }
+
+  }
+
+  .overlay-mobile{
+     
+    visibility: hidden;
+
+  }
+
+  .progress-mobile{
+
+    display: none;
+
+    @include md(down) {
+
+      display: block;
+
+    }
+
+    
+    .progress-head{
+      
+      
+      display: flex;
+      justify-content: space-between;
+
+      p, a{
+
+        font-size: .875rem;
+        display: block;
+        margin: 0 0 1rem 0;
+
+      }
+
+    }
+
+    .progress-bar{
+
+      counter-reset: step;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 1rem;
+
+      li, .progress-dot{
+
+
+        list-style-type: none;
+        width: 30px;
+        float: left;
+        position: relative;
+        text-align: left;
+        color: $gray-3;
+        padding-left: 0px;
+
+        &:before{
+
+          width: 10px;
+          height: 10px;
+          content: "";
+          counter-increment: step;
+          line-height: 10px;
+          border: 1px solid $gray-555;
+          display: block;
+          text-align: center;
+          margin: 0 auto 5px auto;
+          border-radius: 50%;
+          background-color: transparent;
+          z-index: 30;
+          margin-left: 0px;
+
+
+        }
+
+
+        &--active:before{
+
+          border-color: #fff;
+          background-color: $color-1;
+
+        }
+
+        &:after{
+
+      
+          width: 20px;
+          height: 1px;
+          content: '';
+          position: absolute;
+          background-color: $gray-555;
+          top: 5px;
+          left: -20px;
+          
+       
+
+        }
+
+        &--active:after{
+
+          background-color: $color-1;
+
+        }
+
+
+      }
+
+
+    }
+
+    .step-info{font-weight: bold; font-size: 1rem;}
+
+
+
+  }
+
+
+  &--many{
+
+
+
+    .Steps-item{
+
+      div:last-child{
+
+        display: none;
+
+      }
+
+      &.is-active {
+
+
+        min-width: 25%;
+
+
+        div:last-child{
+
+          display: block;
+  
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.Steps-inner {
+  border: none;
+  display: block;
+
+  h4{display: none};
+ 
+
+  @include md {
+    overflow: hidden;
+    display: flex;
+  }
+
+  @include md(down) {
+    padding-left: 4px; // corrige alineacion de los margin-left de inline-block items
+
+   // Remover scrollbar
+    -ms-overflow-style: none; // IE 10+
+    // scrollbar-width: none; // Firefox
+
+    &::-webkit-scrollbar {
+      display: none; // Safari and Chrome
+    }
+  }
+
+  
+}
+
+.Steps-item {
+  padding: 2px;
+  position: relative;
+  line-height: 1.2;
+  color: #000;
+  border: 1px solid transparent;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus, &:focus-visible{
+
+    
+    border:1px solid #003DA5 !important;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgb(0 61 165 / 8%), 0 0 0 0.2em rgb(0 61 165 / 10%);
+
+  }  
+
+  @include md {
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    white-space: unset;
+    flex: 1;
+  }
+
+  > * {
+    z-index: 10;
+    position: relative;
+  }
+
+  @include md(down) {
+    display: inline-block;
+    margin-left: -4px; // corrige alineacion d inline-block items
+    padding-right: 1em;
+  }
+
+  div {
+    display: flex;
+    padding-right: 2rem;
+    
+  }
+
+  &:first-child {
+    border-radius: $Box-border-radius 0 0 $Box-border-radius;
+
+    @include md(down) {
+      padding-left: .825em;
+    }
+  }
+
+  &:last-child {
+    border-radius: 0 $Box-border-radius $Box-border-radius 0;
+
+    @include md(down) {
+      padding-right: .825em;
+    }
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 44px);
+    height: 2px;
+    background-color: $gray-3;
+    top: 15px;
+    left: 40px;
+    transform: none;
+    border-right: none;
+    border-top: none;
+    z-index: 1;
+  }
+
+  &.is-active {
+    color: $black;
+    background-color: transparent;
+    font-weight: bold;
+
+    &:after {
+      background-color: $gray-3;
+    }
+
+    .Steps-number{
+
+      background-color: $color-1;
+      color: $white;
+
+    }
+  }
+
+  &.is-finished {
+    
+    color: $color-1;
+    background-color: transparent;
+    font-weight: 500;
+
+    &:after {
+      background-color: $color-1;
+    }
+
+    div {
+      align-items: center;
+      
+
+
+      svg {
+        margin-left: .25em;
+      }
+    }
+
+    div:first-child{
+
+
+      .Steps-number{
+
+
+        display: none;
+
+      }
+
+      &:before{
+
+        content: "";
+        width: 32px;
+        height: 32px;
+        background-image: url('#{$Icons-path}/icon-step-finished.svg');
+        position: relative;
+        margin-bottom: 1rem;
+
+      }
+
+    }
+  }
+}
+
+
+.Steps-inner > .Steps-item:first-child {
+  padding-left: 0;
+}
+
+.Steps-number {
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: $gray-3;
+  border-radius: 99px;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+@include md(down) {
+  .Steps {
+    overflow: hidden;
+    position: relative;
+  
+
+    &:before {
+
+      display: none;
+
+    }
+
+    .Steps-item:last-child {
+      padding-right: 3rem;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 3rem;
+        height: 71.5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 30;
+        background-color: $Steps-background-color;
+        background-clip: border-box;
+        border-radius: $Box-border-radius;
+      }
+    }
+  }
+
+  .Steps-inner {
+    white-space: unset;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: none;
+  }
+}

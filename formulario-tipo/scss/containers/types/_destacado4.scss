@@ -1,0 +1,75 @@
+/* Destacado 4
+   ========================================================================== */
+
+/**
+ * @dependencies none
+ * @utilities u-circle
+ *
+ * 1. Puede ser de color.
+ */
+
+/*
+  <div class="Box Box--center Box--destacado4">
+    <a href="#">
+      <span class="Box-image">
+        <img class="u-circle" src="./img/150x150.png" alt="">
+      </span>
+
+      <h3 class="Box-title">Lorem ipsum</h3>
+    </a>
+
+    <span class="Box-subtitle">Consectetur adipscing elit aliqua</span>
+  </div>
+ */
+
+.Box--destacado4 {
+  a {
+    display: block;
+    text-decoration: none !important;
+  }
+
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+	
+  .Box-info,
+  .Box-subtitle {
+    margin-bottom: 0;
+		line-height: 1.35;
+		
+		@include md(down) {
+			font-size: 1em;
+		}
+  }
+
+  .Box-title {
+		margin-bottom: 0;
+    line-height: 1.25;
+  }
+
+  .Box-image {
+    margin-bottom: 1.5em;
+    display: block;
+
+    img {
+			height: 150px;
+      object-fit: cover;
+    }
+  }
+	
+	.Box-body > a+.Box-subtitle {
+		margin-top: .5em;
+	}
+}
+
+// Ajuste automático de la imagen para diferentes alturas de módulo 3x3
+.Module--sm,
+.Module--md .Module-item--2of3 {
+	.Box--destacado4 .Box-image img {
+		height: 120px;
+		
+		@include md(down) {
+			height: 150px;
+		}
+	}
+}

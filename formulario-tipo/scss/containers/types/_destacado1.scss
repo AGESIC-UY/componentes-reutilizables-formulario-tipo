@@ -1,0 +1,136 @@
+/* Destacado 1
+   ========================================================================== */
+
+/**
+ * @dependencies none
+ *
+ * 1. Siempre que sea posible definir dimensiones de la imagen en el HTML.
+ */
+
+/*
+  <div class="Box Box--destacado1">
+    <div class="Box-cover">
+      <img class="Box-image" src="./img/avicii.jpg" alt="">
+    </div>
+
+    <div class="Box-overlay">
+      <span class="Box-info">Texto de soporte</span>
+
+      <h3 class="Box-title">
+        <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+      </h3>
+    </div>
+  </div>
+ */
+
+.Box--destacado1 {
+  a {
+    color: #fff;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .Box-image {
+    margin-bottom: 0;
+    border-radius: $Box-border-radius;
+    object-fit: cover;
+  }
+
+  .Box-overlay {
+    background: rgba(20, 58, 151, .8);
+    color: #fff;
+    height: auto;
+    left: 0;
+    padding: 2rem;
+    position: absolute;
+    bottom: 8%;
+    width: auto;
+    max-width: 85%;
+  }
+
+  .Box-title {
+    margin-bottom: 0;
+    font-size: 1.875rem;
+  }
+
+  .Box-info {
+    color: #fff;
+  }
+
+  @include md(down) {
+    padding: 0;
+
+    .Box-title {
+      font-size: 1.25em;
+      margin-bottom: .25em;
+    }
+
+    .Box-cover {
+      margin: 0;
+    }
+
+    .Box-overlay {
+      position: static;
+      max-width: 100%;
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      background: rgba(20, 58, 151, 1);
+      padding: 1.25rem;
+    }
+
+    .Box-cover img,
+    .Box-coverImage {
+      @include border-bottom-radius(0);
+    }
+  }
+}
+
+.Box--destacado1.Box--solid {
+  padding: 0;
+
+  .Box-overlay {
+    position: static;
+    max-width: 100%;
+    background-color: rgba(20, 58, 151, 1);
+
+    @include border-bottom-radius(3px);
+  }
+
+  .Box-cover {
+    margin: 0;
+    height: auto;
+  }
+
+  .Box-image {
+    height: auto;
+
+    @include border-bottom-radius(0);
+  }
+}
+
+.Module-item {
+  .Box--destacado1.Box--solid {
+    .Box-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      min-height: 25%;
+
+      @include md(down) {
+        position: static;
+      }
+    }
+
+    .Box-image {
+      height: 100% !important;
+    }
+
+    .Box-cover {
+      height: 75% !important;
+    }
+  }
+}

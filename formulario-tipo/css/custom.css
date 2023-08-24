@@ -1,0 +1,48 @@
+
+/*
+fieldset.fieldset-form-multifield{border: none; padding: 0; margin: 0;}
+fieldset.fieldset-form-multifield .Form-group label{padding: 0.5em 0 0.2em; display: block;}
+
+
+
+fieldset.fieldset-form-multifield legend{
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
+}
+*/
+
+
+@media (max-width: 992px) {
+
+    body{background: #fff;}
+
+    .Container > .Grid > .Grid-item{
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+}
+
+.Nav{
+    
+    display: block;
+    padding-top: 0px;
+
+}
+
+.Nav ul{
+
+    margin-bottom: 0;
+
+}
+
+.Nav ul li.Nav-item .Nav-subnav{margin-bottom: 0;}
+

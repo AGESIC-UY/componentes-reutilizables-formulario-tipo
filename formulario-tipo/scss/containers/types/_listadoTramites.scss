@@ -1,0 +1,43 @@
+/* Listado de Tramites
+   ========================================================================== */
+
+/**
+ * @dependencies Button
+ */
+
+/*
+  <div class="Box Box--listadoTramites">
+    <div class="Box-header">
+      <h3 class="Box-name">Tramites destacados</h3>
+    </div>
+
+    <div class="Box-body">
+      <div class="Box-item">
+        <h4 class="Box-title"><a href="#">Solicitud de partida de nacimiento</a></h4>
+        <span class="Box-info">Lorem ipsum dolor sit amet consectetur</span>
+        <a href="#" class="Button Button--primary Button--inverse Button--small">Iniciar Tramite en Linea</a>
+      </div>
+
+      <div class="Box-item">
+        <h4 class="Box-title"><a href="#">Duplicado de Factura de UTE</a></h4>
+        <span class="Box-info">Lorem ipsum dolor sit amet consectetur</span>
+        <a href="#" class="Button Button--primary Button--inverse Button--small">Iniciar Tramite en Linea</a>
+      </div>
+    </div>
+
+    <div class="Box-footer">
+      <a href="#" class="Box-more">Ver mas Tramites</a>
+    </div>
+  </div>
+ */
+
+.Box--listadoTramites {
+  .Box-item {
+    margin-bottom: 2.5em;
+  }
+
+  .Box-title {
+    font-size: 1.125em;
+    margin-bottom: .125em;
+  }
+}

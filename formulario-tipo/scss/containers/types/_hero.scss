@@ -1,0 +1,59 @@
+.Hero {
+  border-radius: $Box-border-radius;
+  box-shadow: $Box-shadow;
+  position: relative;
+  margin-bottom: 1.5rem;
+  background-clip: border-box;
+}
+
+.Hero-body .Box-info {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.Hero-body .Box-title {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  line-height: 1.15;
+
+  @include md(down) {
+    font-size: 1.25em;
+  }
+}
+
+.Hero-body p,
+.Hero-body .Box-text {
+	color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.Hero-body .Box-title a {
+  color: #fff;
+  font-size: 1.25em;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.Hero-body {
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.Hero > .Grid {
+  border-radius: $Box-border-radius;
+  background-color: $color-1;
+}
+
+.Hero-image {
+	width: 100%;
+  border-radius: $Box-border-radius $Box-border-radius 0 0;
+
+  @include md {
+    border-radius: $Box-border-radius 0 0 $Box-border-radius;
+  }
+}

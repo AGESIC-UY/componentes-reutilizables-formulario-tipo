@@ -1,6 +1,6 @@
 /** @define Page; weak */
 
-$Page-md-padding: 1rem;
+$Page-md-padding: 1rem 1.25rem;
 
 .Page {
   box-shadow: $Box-shadow;
@@ -15,16 +15,9 @@ $Page-md-padding: 1rem;
   @include md(down) {
     margin-bottom: 1rem;
     padding: $Page-md-padding;
-    border: none;
-    box-shadow: none;
-
-    &--formulario{
-
-      padding-left: 0;
-      padding-right: 0;
-
-    }
-
+		border-radius: 0;
+		margin-left: -12px;
+		margin-right: -12px;
   }
 
   @include ie8 {
@@ -38,6 +31,7 @@ $Page-md-padding: 1rem;
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   margin-top: 1rem;
+	line-height: 1.25;
 
   @include md(down) {
     font-size: 1.75rem;
@@ -55,7 +49,7 @@ $Page-md-padding: 1rem;
 }
 
 .Page-description {
-  font-size: calc(calc(21 / 16) * 1rem);
+  font-size: 21 / 16 * 1rem;
   color: #333;
   margin-top: 2rem;
   margin-bottom: 3.5rem;
@@ -256,10 +250,6 @@ $Page-md-padding: 1rem;
 }
 
 @include md(down) {
-  .Page-navList {
-    display: none;
-  }
-
   .Page-navTitle {
     padding: 1rem;
     border-bottom: 1px solid #eee;
@@ -338,7 +328,11 @@ $Page-md-padding: 1rem;
 
   .Page-downloads {
     li {
-      padding: 1rem 0;
+      padding: 1.5rem 0;
+			
+			&:first-child {
+				padding-top: .5rem;
+			}
     }
 
     .Download {
@@ -392,14 +386,19 @@ $Page-md-padding: 1rem;
    // Esto es necesario cuando Page-body tiene un alto amas chico que Page-nav
   > .Grid > .Grid-item:first-child {
     box-shadow: 1px 0 0 0 #eee !important;
+		
+		@include md(down) {
+			box-shadow: none !important;
+		}
   }
 }
 
-.Page-nav + .Filtros {
-  margin-top: 1.25rem;
-}
 .Page-nav + .Filters {
   margin-top: 1rem;
+}
+
+.Page-nav--mf + .Filters { 
+	margin-top: 0;
 }
 
 .Page-navStatus {
@@ -432,4 +431,91 @@ $Page-md-padding: 1rem;
 
 .Page-nav.is-open .Page-navStatus {
   transform: rotate(45deg);
+}
+
+/* Ajustes MF */
+
+.Page-nav--mf {
+	
+	.Page-navStatus {
+		transform: rotate(180deg);	
+	}
+	
+	.Page-navTitle .Page-navStatus:after {
+		content: "";
+		width: 0.45em;
+		height: 0.45em;
+		border: 0.125em solid #003da5;
+		border-left-color: inherit;
+		position: relative;
+		top: -6px;
+		display: inline-block;
+		margin-top: 0;
+		border-width: 0 0.125em 0.125em 0;
+		transform: rotate(45deg);
+	}
+	.Page-navTitle.collapsed .Page-navStatus:after {
+		top: -3px;
+	}
+
+	@include md(down) {
+		.Page-navTitle {
+			border: solid 1px transparent;
+			font-weight: 600;
+			width: 100%;
+			padding-right: 1.25rem;
+			padding-left: 1.25rem;
+		
+			&:not(.collapsed) {
+				background-color: #f1f1f1;
+			}
+			
+			.Page-navStatus:after {
+				top: -4px;
+			}
+		}
+		
+		a.Page-navTitle:focus, 
+		a.Page-navTitle:hover {
+			text-decoration: none;
+		}
+
+		.Page-navList.collapse.in li:last-child {
+			border-bottom: none;
+		}
+		
+		.Page-navWrap {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: solid 1px #eee;
+			
+				> .Button--filters:first-child {
+				width: 100%;
+			}
+		}
+	}
+	
+	&.Page-nav--only {
+		
+		@include md {
+			.Page-navTitle {
+				color: #000;
+				pointer-events: none;
+				cursor: auto;
+				padding-right: 1.5rem;
+				
+				&.collapsed {
+					border-bottom: none;
+				}
+				
+				.Page-navStatus {
+					display: none;
+				}
+			}
+			
+			.Page-navList.collapse {
+				display: block;
+			}
+		}
+	}
 }

@@ -4,6 +4,16 @@
 
 <?php include "inc/head.php"; ?>
 
+<?php include "inc/header.php"; ?>
+
+<div class="Breadcrumb">
+		<div class="Container">
+				<ul>
+						<li><a href="index.php">Formulario Tipo</a></li>
+						<li>Ejemplo completo</li>
+				</ul>
+		</div>
+</div>
 
 <main id="contenido">
 
@@ -13,7 +23,6 @@
 
             <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
 
-            <a href="index.php">Inicio</a>
 
                     <div class="Page Page--formulario">
 

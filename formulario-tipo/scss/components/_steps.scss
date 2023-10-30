@@ -2,7 +2,7 @@
 
 $Steps-height: 68px;
 $Steps-background-color: #003DA5;
-$Steps-border-color: #ccc;
+$Steps-border-color: $gray-border;
 
 .Steps {
   margin-top: 3rem;
@@ -115,7 +115,7 @@ $Steps-border-color: #ccc;
             width: 2px;
             height: 100%;
             min-height: 1rem;
-            background: $gray-3;
+            background: $gray-border;
 
 
           }
@@ -297,7 +297,7 @@ $Steps-border-color: #ccc;
           height: 1px;
           content: '';
           position: absolute;
-          background-color: $gray-555;
+          background-color: $gray-border;
           top: 5px;
           left: -20px;
           
@@ -307,7 +307,7 @@ $Steps-border-color: #ccc;
 
         &--active:after{
 
-          background-color: $color-1;
+          background-color: $gray-border;
 
         }
 
@@ -454,7 +454,7 @@ $Steps-border-color: #ccc;
     position: absolute;
     width: calc(100% - 44px);
     height: 2px;
-    background-color: $gray-3;
+    background-color: $gray-border;
     top: 15px;
     left: 40px;
     transform: none;
@@ -469,13 +469,14 @@ $Steps-border-color: #ccc;
     font-weight: bold;
 
     &:after {
-      background-color: $gray-3;
+      background-color: $gray-border;
     }
 
     .Steps-number{
 
       background-color: $color-1;
       color: $white;
+      border: 2px solid $color-1;
 
     }
   }
@@ -542,6 +543,7 @@ $Steps-border-color: #ccc;
   border-radius: 99px;
   margin-bottom: 1rem;
   line-height: 1;
+  border: 2px solid $gray-border;
 }
 
 @include md(down) {

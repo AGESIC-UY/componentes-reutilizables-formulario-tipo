@@ -4,6 +4,16 @@
 
 <?php include "inc/head.php"; ?>
 
+<?php include "inc/header.php"; ?>
+
+<div class="Breadcrumb">
+		<div class="Container">
+				<ul>
+						<li><a href="index.php">Formulario Tipo</a></li>
+						<li>Paso 2</li>
+				</ul>
+		</div>
+</div>
 
 <main id="contenido">
 
@@ -13,7 +23,6 @@
 
             <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
 
-                    <a href="index.php">Inicio</a>
 
                     <div class="Page Page--formulario">
 
@@ -29,18 +38,17 @@
 
                                     <p class="progress-text">
 
-                                        Paso <strong>2</strong> de 5
+                                        Paso <strong>2</strong> de 6
                                     </p>
 
                                     <a href="#" class="step-modal-link">Mostrar detalle</a>
-
-
 
                                 </div>
                                 
                                 <ul class="progress-bar">
                                     <li class="progress-dot progress-dot--active"></li>
                                     <li class="progress-dot progress-dot--active"></li>
+                                    <li></li>
                                     <li></li>
                                     <li></li>
                                     <li></li>
@@ -66,41 +74,50 @@
 
                                 </a>
 
-                                <a href="#"  class="Steps-item is-active">
+                                <span class="Steps-item is-active">
 
                                     <div>
                                         <span class="Steps-number">2</span>
                                     </div>
                                     <div>Datos del trámite</div>
 
-                                </a>
+                                </span>
 
-                                <a href="#" class="Steps-item">
+                                <span class="Steps-item">
 
                                     <div>
                                         <span class="Steps-number">3</span>
                                     </div>
                                     <div>Firma</div>
 
-                                </a>
+                                </span>
 
-                                <a href="#" class="Steps-item">
+                                <span class="Steps-item">
                                 
                                     <div>
                                         <span class="Steps-number">4</span>
                                     </div>
                                     <div>Agenda</div>
 
-                                </a>
+                                </span>
 
-                                <a href="#" class="Steps-item">
+                                <span class="Steps-item">
                                 
                                     <div>
                                         <span class="Steps-number">5</span>
                                     </div>
                                     <div>Medios de pago</div>
 
-                                </a>
+                                </span>
+                            
+                                <span class="Steps-item">
+                                
+                                    <div>
+                                        <span class="Steps-number">6</span>
+                                    </div>
+                                    <div>Confirmación</div>
+
+                                </span>
 
                             </div>
 
@@ -243,7 +260,7 @@
                                 <div class="Form-group">
                           
                                     <label for="combo-requerido" class="Form-label">Etiqueta de combo requerido*:</label>
-                                    <select name="combo-requerido" id="combo-requerido" class="Form-widget" required="">
+                                    <select name="combo-requerido" id="combo-requerido" class="Form-widget" >
                                         <option value="0">Opción seleccionada de un combo</option>
                                         <option value="1">Opción 1</option>
                                         <option value="2">Opción 2</option>
@@ -315,128 +332,128 @@
 
                                 <table class="Table Table--middle Table--responsive">
 
-<caption>Nombre de la tabla</caption>
+                                    <caption>Nombre de la tabla</caption>
 
-<thead>
-    
-    <tr>
+                                    <thead>
+                                        
+                                        <tr>
 
-        <th>Título Columna 1</th>
-        <th>Título Columna 2</th>
-        <th>Título Columna 3</th>
-        <th>Título Columna 4</th>
-        <th>Título Columna 5</th>
-        
-    </tr>
+                                            <th>Título Columna 1</th>
+                                            <th>Título Columna 2</th>
+                                            <th>Título Columna 3</th>
+                                            <th>Título Columna 4</th>
+                                            <th>Título Columna 5</th>
+                                            
+                                        </tr>
 
-</thead>
+                                    </thead>
 
-<tbody>
+                                    <tbody>
 
-    <tr>
-        <td class="Form-group" data-title="Título Columna 1">
+                                        <tr>
+                                            <td class="Form-group" data-title="Título Columna 1">
 
-            <div class="Form-options">
-            
-                <label for="radio-table" class="Form-option u-textCenter u-sm-textLeft">
-                   
-                    <input type="radio" id="radio-table" name="radio-table">
-                    <span class="u-hideVisually">Radio</span>
-                   
-                </label>
-            
-            </div>
-          
-        </td>
-        <td data-title="Título Columna 2">Fila 1 Columna 1</td>
-        <td data-title="Título Columna 3">Fila 1 Columna 2</td>
-        <td data-title="Título Columna 4">Fila 1 Columna 3</td>
-        <td class="u-textRight" data-title="Título Columna 5">$1.004</td>
-    </tr>
+                                                <div class="Form-options">
+                                                
+                                                    <label for="radio-table" class="Form-option u-textCenter u-sm-textLeft">
+                                                    
+                                                        <input type="radio" id="radio-table" name="radio-table">
+                                                        <span class="u-hideVisually">Radio</span>
+                                                    
+                                                    </label>
+                                                
+                                                </div>
+                                            
+                                            </td>
+                                            <td data-title="Título Columna 2">Fila 1 Columna 1</td>
+                                            <td data-title="Título Columna 3">Fila 1 Columna 2</td>
+                                            <td data-title="Título Columna 4">Fila 1 Columna 3</td>
+                                            <td class="u-textRight" data-title="Título Columna 5">$1.004</td>
+                                        </tr>
 
-    <tr>
-        <td class="Form-group" data-title="Título Columna 1">
+                                        <tr>
+                                            <td class="Form-group" data-title="Título Columna 1">
 
-            <div class="Form-options">
+                                                <div class="Form-options">
 
-                <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
+                                                    <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
 
-                    <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
-                    <span class="u-hideVisually">Checkbox</span>
-                                                                          
-                </label>
+                                                        <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
+                                                        <span class="u-hideVisually">Checkbox</span>
+                                                                                                            
+                                                    </label>
 
-            </div>
+                                                </div>
 
-        </td>
-        <td data-title="Título Columna 2">Fila 2 Columna 2</td>
-        <td class="Form-group Form-group--error Form-group--alert" data-title="Título Columna 3">
-            
-                                                               
-                <label class="Form-label u-hideVisually" for="example-campo-error-tabla">Etiqueta de campo con error tabla:</label>
-                <input class="Form-widget" name="example-campo-error-tabla" type="text" id="example-campo-error-tabla" placeholder="input">
-                <div class="Form-error"><strong>ERROR</strong> - Este campo es obligatorio</div>
-            
+                                            </td>
+                                            <td data-title="Título Columna 2">Fila 2 Columna 2</td>
+                                            <td class="Form-group Form-group--error Form-group--alert" data-title="Título Columna 3">
+                                                
+                                                                                                
+                                                    <label class="Form-label u-hideVisually" for="example-campo-error-tabla">Etiqueta de campo con error tabla:</label>
+                                                    <input class="Form-widget" name="example-campo-error-tabla" type="text" id="example-campo-error-tabla" placeholder="input">
+                                                    <div class="Form-error"><strong>ERROR</strong> - Este campo es obligatorio</div>
+                                                
 
-        </td>
-        <td data-title="Título Columna 4">Fila 2 Columna 3</td>
-        <td class="u-textRight Form-group" data-title="Título Columna 5">                                       
-        
-                <label class="Form-label u-hideVisually" for="input-text-tabla">Importe:</label>
-                <input class="Form-widget u-textRight" name="input-text-tabla" type="text" id="input-text-tabla" value="$ 1.001">
+                                            </td>
+                                            <td data-title="Título Columna 4">Fila 2 Columna 3</td>
+                                            <td class="u-textRight Form-group" data-title="Título Columna 5">                                       
+                                            
+                                                    <label class="Form-label u-hideVisually" for="input-text-tabla">Importe:</label>
+                                                    <input class="Form-widget u-textRight" name="input-text-tabla" type="text" id="input-text-tabla" value="$ 1.001">
 
-                
-        </td>
-    </tr>
+                                                    
+                                            </td>
+                                        </tr>
 
-    <tr>
-        <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><span class="Icon Icon--delete"></span></td>
-        <td class="Form-group" data-title="Título Columna 2">
+                                        <tr>
+                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><span class="Icon Icon--delete"></span></td>
+                                            <td class="Form-group" data-title="Título Columna 2">
 
-            <label for="select-table" class="Form-label u-hideVisually">Etiqueta de combo en tabla:</label>
-            <select name="select-table" id="select-table" class="Form-widget">
-            <option value="0">Opción seleccionada de un combo</option>
-            <option value="1">Opción 1</option>
-            <option value="2">Opción 2</option>
-            <option value="3">Opción 3</option>
-            </select>
+                                                <label for="select-table" class="Form-label u-hideVisually">Etiqueta de combo en tabla:</label>
+                                                <select name="select-table" id="select-table" class="Form-widget">
+                                                <option value="0">Opción seleccionada de un combo</option>
+                                                <option value="1">Opción 1</option>
+                                                <option value="2">Opción 2</option>
+                                                <option value="3">Opción 3</option>
+                                                </select>
 
-        </td>
-        <td data-title="Título Columna 3">Fila 3 Columna 3</td>
-        <td data-title="Título Columna 4">Fila 3 Columna 4</td>
-        <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
-    </tr>
+                                            </td>
+                                            <td data-title="Título Columna 3">Fila 3 Columna 3</td>
+                                            <td data-title="Título Columna 4">Fila 3 Columna 4</td>
+                                            <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
+                                        </tr>
 
-    <tr>
-        <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><span class="Icon Icon--edit"></span></td>
-        <td data-title="Título Columna 2">Fila 4 Columna 2</td>
-        <td data-title="Título Columna 3">Fila 4 Columna 3</td>
-        <td data-title="Título Columna 4">Fila 4 Columna 4</td>
-        <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
-    </tr>
+                                        <tr>
+                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><span class="Icon Icon--edit"></span></td>
+                                            <td data-title="Título Columna 2">Fila 4 Columna 2</td>
+                                            <td data-title="Título Columna 3">Fila 4 Columna 3</td>
+                                            <td data-title="Título Columna 4">Fila 4 Columna 4</td>
+                                            <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
+                                        </tr>
 
-    
+                                        
 
-</tbody>
+                                    </tbody>
 
-<tfoot>
-    <tr>
-        <td class="u-textRight" colspan="4"  > 
-            Total
-        </td>
-        <td class="u-textRight">
-            $86.683
-        </td>
-    </tr>
-</tfoot>
+                                    <tfoot>
+                                        <tr>
+                                            <td class="u-textRight" colspan="4"  > 
+                                                Total
+                                            </td>
+                                            <td class="u-textRight">
+                                                $86.683
+                                            </td>
+                                        </tr>
+                                    </tfoot>
 
-</table>
+                            </table>
                             
                             </fieldset>
 
                             <div class="Form-actions">
                                     <div>
-                                        <a href="" class="Button Button--link" >Volver al paso anteror</a>
+                                        <a href="tramite-ripo-01.php" class="Button Button--link" >Volver al paso anteror</a>
                                     </div>
 
                                     <div>

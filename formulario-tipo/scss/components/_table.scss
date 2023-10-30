@@ -26,7 +26,7 @@ $Table-row-color: #fff;
   th {
     padding: $Table-cell-padding;
     vertical-align: top;
-    border: 1px solid #ddd;
+    border: 1px solid $gray-border;
 
     p{
       
@@ -58,6 +58,8 @@ $Table-row-color: #fff;
     td{font-weight: bold;}
 
   }
+
+
 
 
 }
@@ -148,9 +150,11 @@ $Table-row-color: #fff;
     }
 
     tr {
+
       border-left: 1px solid #ccc;
       border-right: 1px solid #ccc;
-      padding: 10px 0;
+      padding: 8px 0 16px 0;
+      position: relative;
 
       &:last-child{
 
@@ -166,7 +170,8 @@ $Table-row-color: #fff;
       position: relative;
       white-space: normal;
       text-align: left;
-      font-weight: bold !important;
+      padding-bottom: 0;
+      //font-weight: bold !important;
     }
 
     tfoot{
@@ -178,6 +183,54 @@ $Table-row-color: #fff;
 
       tr{border-bottom: 1px solid #ccc;}
       
+
+
+    }
+
+
+    .table-actions{
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        padding-left: 0;
+        padding-top: 1rem;
+
+    }
+
+    &.Table--selectable{
+
+      td{
+
+        padding-left: 3rem;
+        padding-right: 4rem;
+      
+      }
+
+    
+
+      td:first-child{
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: auto;
+        padding-top: 1.25rem;
+
+      }
+
+     
+
+      .table-actions{
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+      }
+
 
 
     }

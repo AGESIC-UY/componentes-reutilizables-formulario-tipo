@@ -1,21 +1,4 @@
 
-/*
-fieldset.fieldset-form-multifield{border: none; padding: 0; margin: 0;}
-fieldset.fieldset-form-multifield .Form-group label{padding: 0.5em 0 0.2em; display: block;}
-
-
-
-fieldset.fieldset-form-multifield legend{
-position: absolute;
-width: 1px;
-height: 1px;
-padding: 0;
-margin: -1px;
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-border: 0;
-}
-*/
 
 
 @media (max-width: 992px) {
@@ -45,4 +28,56 @@ border: 0;
 }
 
 .Nav ul li.Nav-item .Nav-subnav{margin-bottom: 0;}
+
+/* Agrego para cabezal */
+.Header-parent {
+    display: inline-block;
+    margin-left: 1.5em;
+    font-weight: 400;
+    top: -1px;
+    position: relative;
+    border-left: 1px solid #ccc;
+    padding-left: 1.5em;
+}
+
+.Breadcrumb {
+    background-color: #fff;
+    font-size: .875em;
+    padding: 0.675em 0;
+}
+
+.Breadcrumb a {
+    text-decoration: none;
+}
+
+.Breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.Breadcrumb ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.Breadcrumb ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.Breadcrumb ul li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.Breadcrumb ul li:first-child:before {
+		display: none;
+}
+
+.Breadcrumb ul li:before {
+    padding-right: 12px;
+    color: #555;
+    content: "\00bb";
+}
 

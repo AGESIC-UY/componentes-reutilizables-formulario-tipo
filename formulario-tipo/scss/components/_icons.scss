@@ -26,6 +26,11 @@ $Icons-path: '../assets/icons';
   font-size: 2rem;
 }
 
+.Icon--filtros {
+  background-image: url('#{$Icons-path}/icon-filtros.svg');
+}
+
+
 /**
  * Misc (black)
  */
@@ -73,6 +78,13 @@ $Icons-path: '../assets/icons';
 }
 
 
+.Icon--dropmenu{
+
+  background-image: url('#{$Icons-path}/icon-dropmenu.svg');
+
+}
+
+
 .Icon--contextual-menu{
 
   background-image: url('#{$Icons-path}/icon-contextual-menu.svg');
@@ -84,10 +96,10 @@ $Icons-path: '../assets/icons';
 }
 
 .Icon--delete {
-  background-image: url('#{$Icons-path}/icon-delete.svg');
+  background-image: url('#{$Icons-path}/icon-trash.svg');
 
   @include no-svg {
-    background-image: url('#{$Icons-path}/icon-delete.png');
+    background-image: url('#{$Icons-path}/icon-trash.png');
   }
 }
 

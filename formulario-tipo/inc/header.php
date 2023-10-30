@@ -1,21 +1,11 @@
-<header class="Header">
-
-  <div class="Container">
-
-    <div class="Grid">
-
-      <div class="Grid-item Grid-item--center u-mt5 u-md-size3of4 u-lg-size8of10">
-
-        <a href="index.php">Inicio</a>
-        
-
-      </div>
-
-    </div>
-
-  </div>
-
+<header class="u-borderBottom u-bgWhite u-py2">
+	<div class="Container">
+		<h1 class="u-h5 u-mb0 u-inlineBlock  u-pl2 u-md-pl0">
+			<a href="./" class="u-textBlack">Componentes reutilizables</a>
+		</h1>
+		
+		<div class="Header-parent u-inlineBlock">
+			<a class="u-textMute" href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/">AGESIC</a>
+		</div>
+	</div>
 </header>
-
-
-

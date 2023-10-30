@@ -1728,6 +1728,10 @@ dd + dt {
   font-size: 2rem;
 }
 
+.Icon--filtros {
+  background-image: url("../assets/icons/icon-filtros.svg");
+}
+
 /**
  * Misc (black)
  */
@@ -1759,6 +1763,10 @@ dd + dt {
   background-image: url("../assets/icons/icon-print-disabled.png");
 }
 
+.Icon--dropmenu {
+  background-image: url("../assets/icons/icon-dropmenu.svg");
+}
+
 .Icon--contextual-menu {
   background-image: url("../assets/icons/icon-contextual-menu.svg");
 }
@@ -1767,10 +1775,10 @@ dd + dt {
 }
 
 .Icon--delete {
-  background-image: url("../assets/icons/icon-delete.svg");
+  background-image: url("../assets/icons/icon-trash.svg");
 }
 .no-svg .Icon--delete {
-  background-image: url("../assets/icons/icon-delete.png");
+  background-image: url("../assets/icons/icon-trash.png");
 }
 
 .Icon--edit {
@@ -2143,7 +2151,8 @@ dd + dt {
   .Table--responsive tr {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
-    padding: 10px 0;
+    padding: 8px 0 16px 0;
+    position: relative;
   }
   .Table--responsive tr:last-child {
     border-bottom: 1px solid #ccc;
@@ -2154,7 +2163,7 @@ dd + dt {
     position: relative;
     white-space: normal;
     text-align: left;
-    font-weight: bold !important;
+    padding-bottom: 0;
   }
   .Table--responsive tfoot {
     display: block;
@@ -2163,6 +2172,31 @@ dd + dt {
   }
   .Table--responsive tfoot tr {
     border-bottom: 1px solid #ccc;
+  }
+  .Table--responsive .table-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  .Table--responsive.Table--selectable td {
+    padding-left: 3rem;
+    padding-right: 4rem;
+  }
+  .Table--responsive.Table--selectable td:first-child {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    padding-top: 1.25rem;
+  }
+  .Table--responsive.Table--selectable .table-actions {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -2301,13 +2335,10 @@ dd + dt {
 @media screen and (max-width: 992px) {
   .Page {
     margin-bottom: 1rem;
-    padding: 1rem;
-    border: none;
-    box-shadow: none;
-  }
-  .Page--formulario {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 1rem 1.25rem;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .ie8 .Page {
@@ -2320,6 +2351,7 @@ dd + dt {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   margin-top: 1rem;
+  line-height: 1.25;
 }
 @media screen and (max-width: 992px) {
   .Page-title,
@@ -2533,10 +2565,6 @@ dd + dt {
 }
 
 @media screen and (max-width: 992px) {
-  .Page-navList {
-    display: none;
-  }
-
   .Page-navTitle {
     padding: 1rem;
     border-bottom: 1px solid #eee;
@@ -2611,7 +2639,10 @@ dd + dt {
   margin-bottom: 1.5rem;
 }
 .Page-document .Page-downloads li {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+}
+.Page-document .Page-downloads li:first-child {
+  padding-top: 0.5rem;
 }
 .Page-document .Page-downloads .Download {
   margin-bottom: 0;
@@ -2647,20 +2678,25 @@ dd + dt {
 }
 @media screen and (max-width: 992px) {
   .Page--hasNav .Page-body {
-    padding: 1rem;
+    padding: 1rem 1.25rem;
     border-left: 0;
   }
 }
 .Page--hasNav > .Grid > .Grid-item:first-child {
   box-shadow: 1px 0 0 0 #eee !important;
 }
-
-.Page-nav + .Filtros {
-  margin-top: 1.25rem;
+@media screen and (max-width: 992px) {
+  .Page--hasNav > .Grid > .Grid-item:first-child {
+    box-shadow: none !important;
+  }
 }
 
 .Page-nav + .Filters {
   margin-top: 1rem;
+}
+
+.Page-nav--mf + .Filters {
+  margin-top: 0;
 }
 
 .Page-navStatus {
@@ -2694,6 +2730,74 @@ dd + dt {
   transform: rotate(45deg);
 }
 
+/* Ajustes MF */
+.Page-nav--mf .Page-navStatus {
+  transform: rotate(180deg);
+}
+.Page-nav--mf .Page-navTitle .Page-navStatus:after {
+  content: "";
+  width: 0.45em;
+  height: 0.45em;
+  border: 0.125em solid #003da5;
+  border-left-color: inherit;
+  position: relative;
+  top: -6px;
+  display: inline-block;
+  margin-top: 0;
+  border-width: 0 0.125em 0.125em 0;
+  transform: rotate(45deg);
+}
+.Page-nav--mf .Page-navTitle.collapsed .Page-navStatus:after {
+  top: -3px;
+}
+@media screen and (max-width: 992px) {
+  .Page-nav--mf .Page-navTitle {
+    border: solid 1px transparent;
+    font-weight: 600;
+    width: 100%;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+  .Page-nav--mf .Page-navTitle:not(.collapsed) {
+    background-color: #f1f1f1;
+  }
+  .Page-nav--mf .Page-navTitle .Page-navStatus:after {
+    top: -4px;
+  }
+  .Page-nav--mf a.Page-navTitle:focus,
+.Page-nav--mf a.Page-navTitle:hover {
+    text-decoration: none;
+  }
+  .Page-nav--mf .Page-navList.collapse.in li:last-child {
+    border-bottom: none;
+  }
+  .Page-nav--mf .Page-navWrap {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eee;
+  }
+  .Page-nav--mf .Page-navWrap > .Button--filters:first-child {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Page-nav--mf.Page-nav--only .Page-navTitle {
+    color: #000;
+    pointer-events: none;
+    cursor: auto;
+    padding-right: 1.5rem;
+  }
+  .Page-nav--mf.Page-nav--only .Page-navTitle.collapsed {
+    border-bottom: none;
+  }
+  .Page-nav--mf.Page-nav--only .Page-navTitle .Page-navStatus {
+    display: none;
+  }
+  .Page-nav--mf.Page-nav--only .Page-navList.collapse {
+    display: block;
+  }
+}
+
 /**
  * Ventanas Modales (requiere modal.js)
  */
@@ -2712,7 +2816,7 @@ dd + dt {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2000;
+  z-index: 6;
   display: none;
   overflow: hidden;
   outline: 0;
@@ -2751,7 +2855,7 @@ dd + dt {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 4;
   background-color: #000;
 }
 
@@ -2857,7 +2961,6 @@ dd + dt {
   padding: 0 !important;
   text-align: center;
 }
-
 .modal:before {
   display: inline-block;
   height: 100%;
@@ -2876,9 +2979,240 @@ dd + dt {
   opacity: 0;
   transition: opacity 0.15s linear;
 }
-
 .fade.in {
   opacity: 1;
+}
+
+.modal-content .close {
+  position: absolute;
+  padding: 0.25rem 0.75rem;
+  right: 0.35rem;
+  top: 0.5rem;
+  background: url(../assets/icons/icon-close.svg) no-repeat center;
+  background-size: 40%;
+  height: 40px;
+  width: 40px;
+}
+.modal-content .modal-body {
+  border-top: none;
+}
+.modal-content .modal-body:last-child {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 992px) {
+  .modal--filters.modal .modal-dialog {
+    transform: translateY(-25%);
+  }
+  .modal--filters.modal.fade.in .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal--filters .modal-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .modal--filters {
+    display: block;
+    opacity: 1 !important;
+    margin-top: 1rem;
+    position: static;
+  }
+  .modal--filters.modal.fade .modal-dialog {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    width: 100%;
+  }
+  .modal--filters:before {
+    display: none;
+  }
+  .modal--filters .modal-content {
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+  .modal--filters .modal-title {
+    font-size: 1.25rem;
+  }
+}
+.modal--filters .modal-title {
+  line-height: 1.15;
+  margin-bottom: 0.25rem;
+}
+
+.Filtros {
+  padding: 1.5rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .Filtros {
+    border-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+}
+
+.Filtros-title {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 992px) {
+  .Filtros-title {
+    color: #003DA5;
+  }
+}
+
+.Filtros-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.Filtros-title.collapsed .Filtros-status {
+  transform: rotate(0);
+}
+
+.Filtros-status {
+  transform: rotate(45deg);
+  float: right;
+  transition: transform 0.25s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .Filtros #filtros-target {
+    height: auto !important;
+  }
+}
+/* Filtros nuevos 
+  (Una vez actualizados, se puede borrar lo de arriba) */
+.Filters {
+  padding: 0 !important;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .Filters {
+    border-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+}
+
+.Filters-title {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin: 1rem 1.5rem;
+}
+@media screen and (max-width: 992px) {
+  .Filters-title {
+    color: #003DA5;
+  }
+}
+
+.Filters-title.collapsed .Filters-status {
+  transform: rotate(0);
+}
+
+.Filters-status {
+  transform: rotate(45deg);
+  float: right;
+  transition: transform 0.25s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .Filters #filters-target {
+    height: auto !important;
+  }
+}
+.Filters {
+  /* Estilos de form móvil a escritorio - Agregar en form. y ajustar */
+  /* --- */
+}
+.Filters .Form-legend:before,
+.Filters .Form legend:before {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #eee;
+  content: "";
+  top: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.Filters .Form legend {
+  position: relative;
+  overflow: hidden;
+  padding-left: 0;
+  width: 100%;
+}
+.Filters .Form fieldset {
+  border: 0;
+  padding: 0;
+}
+.Filters .Form-legend > *,
+.Filters .Form legend > * {
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  padding-right: 1em;
+}
+.Filters.Filters--mf .Form--filters {
+  /*padding: 2rem 1.5rem;*/
+  padding: 1rem 1.5rem;
+}
+.Filters.Filters--mf .Form--filters fieldset,
+.Filters.Filters--mf .Form--filters .Form-fieldset {
+  margin-bottom: 0rem;
+  border: 0;
+  padding: 0;
+}
+.Filters.Filters--mf .Form--filters legend {
+  margin-bottom: 0.75rem;
+}
+@media screen and (max-width: 992px) {
+  .Filters.Filters--mf .Form--filters {
+    padding: 3rem 2rem 2.5rem 2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Filters.Filters--mf .Filters-title {
+    font-size: 0.95rem;
+    border-bottom: none;
+    padding: 1rem;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .Filters.Filters--mf .modal-dialog {
+    max-width: 360px;
+  }
+}
+
+.Button--filters {
+  border-left: solid 1px #eee;
+  padding: 1rem 1.35rem 1rem 1.25rem;
+  font-size: 0.95rem;
+  box-shadow: none;
+  min-width: 116px;
+  color: #003DA5;
+  background: none;
+}
+.Button--filters .Icon--filtros {
+  width: 1.125rem;
+  height: 1.125rem;
+  top: -2px;
+  margin-right: 2px;
+}
+@media screen and (max-width: 992px) {
+  .Button--filters {
+    border-radius: 0;
+  }
+  .Button--filters:hover {
+    background-color: #f1f1f1;
+  }
 }
 
 /** @define Form; weak */
@@ -2916,7 +3250,7 @@ dd + dt {
  * Los Widgets Nativos de Formularios:
  * https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets
  */
-.Form .Form-widget {
+.Form-widget {
   display: table-cell;
   vertical-align: top;
   border-radius: 2px;
@@ -2928,58 +3262,59 @@ dd + dt {
   height: 3em;
   max-width: 28em;
 }
-.Form .Form-widget:disabled {
+.Form-widget:disabled {
   opacity: 0.35;
   background-color: #eee;
 }
-.Form .Form-widget:focus {
+.Form-widget:focus {
   border-color: #003DA5 !important;
   outline: none;
   box-shadow: inset 0 1px 2px rgba(0, 61, 165, 0.075), 0 0 0 0.2em rgba(0, 61, 165, 0.1);
 }
-.Form .Form-widget[type=file] {
+.Form-widget[type=file] {
   border: 0;
   padding-left: 0;
   padding-right: 0;
 }
-.Form .Form-widget--w-icon {
+.Form-widget--w-icon {
   width: calc(100% - 3em);
   float: left;
   margin-right: 0.5em;
 }
 @media screen and (max-width: 992px) {
-  .Form .Form-widget {
+  .Form-widget {
     width: 100%;
     display: block;
   }
-  .Form .Form-widget--w-icon {
+  .Form-widget--w-icon {
     width: calc(100% - 3em);
   }
 }
-.Form .Form-widget--read {
+
+.Form-widget--read {
   font-weight: 600 !important;
   border: none;
   height: auto;
 }
-.Form .Form-widget--read > *:first-child {
+.Form-widget--read > *:first-child {
   margin-bottom: 0;
 }
-.Form .Form-widget--read > p:first-child {
+.Form-widget--read > p:first-child {
   margin-bottom: 0.5em;
 }
-.Form .Form-widget--read > * + * {
+.Form-widget--read > * + * {
   margin-bottom: 0;
   margin-top: 1em;
 }
 @media screen and (max-width: 992px) {
-  .Form .Form-widget--read {
+  .Form-widget--read {
     padding-top: 0;
     padding-left: 0;
   }
-  .Form .Form-widget--read > * + * {
+  .Form-widget--read > * + * {
     margin-top: 0;
   }
-  .Form .Form-widget--read > p:first-child {
+  .Form-widget--read > p:first-child {
     margin-bottom: 0;
   }
 }
@@ -3026,7 +3361,7 @@ dd + dt {
   width: 35%;
   text-align: right;
   padding-right: 0.75em;
-  color: #333;
+  color: #000000;
   font-size: 1em;
 }
 @media screen and (max-width: 992px) {
@@ -3036,7 +3371,7 @@ dd + dt {
     text-align: left;
     padding-bottom: 0.3em;
     padding-top: 0;
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 
@@ -3378,6 +3713,20 @@ dd + dt {
     font-weight: 600;
     margin-bottom: 0.4em;
     padding-right: 0;
+    /*
+    &:after {
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: transparent;
+      content: '';
+      bottom: 0;
+      position: relative;
+      z-index: 1;
+      border-bottom: 1px solid $gray-2;
+      height: .5em;
+    }
+    */
   }
   .Form-legend > *,
 .Form legend > * {
@@ -3386,19 +3735,6 @@ dd + dt {
     position: relative;
     z-index: 2;
     padding-right: 0;
-  }
-  .Form-legend:after,
-.Form legend:after {
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: transparent;
-    content: "";
-    bottom: 0;
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #ddd;
-    height: 0.5em;
   }
 }
 
@@ -3498,7 +3834,7 @@ dd + dt {
   .Form > fieldset > fieldset:not(.fieldset-form-multifield) > legend,
 .Form-subtitle {
     background: #f9f9f9;
-    padding-top: 0.8em;
+    padding-top: 1.25em;
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -4251,6 +4587,126 @@ dd + dt {
     display: none;
   }
 }
+.tool-contextual-menu {
+  position: absolute;
+  border: 1px solid #888;
+  box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  width: auto;
+  max-width: 8rem;
+  min-width: 6rem;
+  display: none;
+  z-index: 1000;
+  background: #ffffff;
+}
+.tool-contextual-menu .tool-contextual-menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0.5rem;
+}
+.tool-contextual-menu .tool-contextual-menu-wrap a {
+  padding: 0.25rem 0.75rem;
+}
+.link-tool-contextual-menu {
+  position: relative;
+}
+
+/* Rating */
+.Rating {
+  display: flex;
+  font-size: 20px;
+  color: transparent;
+  position: relative;
+  padding: 0.75rem 0;
+  margin-top: 0.1rem;
+}
+.Rating a {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+@media screen and (max-width: 992px) {
+  .Rating {
+    font-size: 28px;
+  }
+  .Rating a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+.Rating-control {
+  position: absolute;
+  left: -9999px;
+}
+
+.Rating-control:nth-of-type(1):focus ~ .Rating-item:nth-of-type(1):before,
+.Rating-control:nth-of-type(2):focus ~ .Rating-item:nth-of-type(2):before,
+.Rating-control:nth-of-type(3):focus ~ .Rating-item:nth-of-type(3):before,
+.Rating-control:nth-of-type(4):focus ~ .Rating-item:nth-of-type(4):before,
+.Rating-control:nth-of-type(5):focus ~ .Rating-item:nth-of-type(5):before {
+  content: "";
+  outline: 3px solid #916800;
+  outline-offset: 0.08rem;
+  position: absolute;
+  top: -0.15em;
+  right: 0;
+  bottom: -0.15em;
+  left: 0;
+}
+
+.Rating-item {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.Rating-star {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  stroke: #916800;
+  stroke-width: 2px;
+}
+
+.Rating-label {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.Rating:hover,
+.Rating-control:nth-of-type(1):checked ~ .Rating-item:nth-of-type(1),
+.Rating-control:nth-of-type(2):checked ~ .Rating-item:nth-of-type(-n+2),
+.Rating-control:nth-of-type(3):checked ~ .Rating-item:nth-of-type(-n+3),
+.Rating-control:nth-of-type(4):checked ~ .Rating-item:nth-of-type(-n+4),
+.Rating-control:nth-of-type(5):checked ~ .Rating-item:nth-of-type(-n+5) {
+  color: #c28b00;
+}
+
+.Rating-item:hover ~ .Rating-item {
+  color: transparent;
+}
+
+.Rating label {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  width: 24px !important;
+  text-align: right;
+  margin-right: 0px;
+  line-height: 1.2em;
+}
+@media screen and (max-width: 992px) {
+  .Rating label {
+    margin-right: 0.5rem;
+    width: auto !important;
+  }
+}
+
 /**
  * Se incluyen los distintos estilos para los distintos tipos de contenedor
  * dentro de _box.scss, que ademas contiene los estilos basicos y modficadores
@@ -4785,7 +5241,7 @@ dd + dt {
  */
 .u-hideVisually {
   position: absolute;
-  width: 1px;
+  width: 1px !important;
   height: 1px;
   padding: 0;
   margin: -1px;

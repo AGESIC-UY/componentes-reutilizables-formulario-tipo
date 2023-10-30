@@ -37,7 +37,7 @@ $Form-widget-max-width: 28em;
  * https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets
  */
 
-.Form{
+
 
 .Form-widget {
   display: table-cell;
@@ -51,8 +51,7 @@ $Form-widget-max-width: 28em;
   width: 100%;
   height: 3em;
   max-width: $Form-widget-max-width;
-
-      
+    
 
 
 
@@ -136,7 +135,7 @@ $Form-widget-max-width: 28em;
 
 }
 
-}
+
 
 
 
@@ -200,7 +199,7 @@ $Form-widget-max-width: 28em;
   width: 35%;
   text-align: right;
   padding-right: .75em;
-  color: $gray-dark;
+  color: $black;
   font-size: 1em;
 
   @include md(down) {
@@ -210,7 +209,7 @@ $Form-widget-max-width: 28em;
     text-align: left;
     padding-bottom: .3em;
     padding-top: 0;
-    font-size: 1.125rem;
+    font-size: 1rem;
 
   }
 
@@ -271,6 +270,7 @@ $Form-widget-max-width: 28em;
     margin-bottom: .75em;
     padding-left: 1em;
     padding-right: 1em;
+    position: relative;
 
     @include md(down) {
       margin-left: -.625em;
@@ -352,12 +352,18 @@ $Form-widget-max-width: 28em;
 
   > * > label > input {
     position: absolute;
-    top: .3en;
-  }
+    top: .3em;
+}
 }
 
+
+
+
+
+
+
 .Form-options {
-  margin-top: .75em;
+  margin-top: .125rem;
 
   @include md(down) {
     margin-left: 0;
@@ -368,8 +374,13 @@ $Form-widget-max-width: 28em;
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  min-height: 44px;
+
+  padding-bottom: .5rem;
+  padding-top: .625rem;
   // line-height: 1.25;
+
   text-align: left; // override de FT1
   width: 100%; // Override de FT1
 
@@ -405,7 +416,27 @@ $Form-widget-max-width: 28em;
 
   [type="radio"],
   [type="checkbox"] {
-    margin: .4em 0;
+    margin: .3125em 0 0 0;
+
+    @include md(down) {
+      margin-left: .5em;
+    }
+
+  }
+
+  [type="radio"]{
+
+    @include md(down) {
+      margin-top: .4375em;
+    }
+
+  }
+
+  [type="checkbox"]{
+
+    @include md(down) {
+      margin-top: .48em;
+    }
 
   }
 
@@ -442,10 +473,16 @@ $Form-widget-max-width: 28em;
  }
 
 .Form-error {
-  color: darken(#c33, 12%);
+  //color: darken(#c33, 12%);
+  color:#CC3333;
   font-size: .825em;
   margin-top: .4em;
   line-height: 1.6;
+  padding-left: 1.8em;
+  background-image: url(../assets/icons/alert-danger.svg);
+  background-repeat: no-repeat;
+  background-position: left .09em;
+  background-size: 1.4em;
 
 
 }
@@ -591,6 +628,7 @@ $Form-widget-max-width: 28em;
           //padding: 0.5em 0 0.2em;
           display: block;
           padding-bottom: .3em;
+          text-align: left;
 
 
         }
@@ -843,7 +881,7 @@ $Form-widget-max-width: 28em;
   @include md(down) {
 
   background: $gray-4;
-  padding-top: 0.8em;
+  padding-top: 1.25em;
   padding-left: 1em;
   padding-right: 1em;
 

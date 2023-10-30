@@ -4,7 +4,16 @@
 
 <?php include "inc/head.php"; ?>
 
+<?php include "inc/header.php"; ?>
 
+<div class="Breadcrumb">
+		<div class="Container">
+				<ul>
+						<li><a href="index.php">Formulario Tipo</a></li>
+						<li>Bloques</li>
+				</ul>
+		</div>
+</div>
 
 
   
@@ -14,23 +23,20 @@
       
         <div class="Grid">
         
-            <div class="Grid-item Grid-item--center u-mt5 u-mb5 u-md-size3of4 u-lg-size8of10">
+					<div class="Grid-item Grid-item--center u-mt5 u-mb5 u-md-size3of4 u-lg-size8of10">
 
-			<a href="index.php">Inicio</a>
+						<div class="Page Page--formulario">
 
-						<div class="Page Page--formulario" >
+							<h2 class="Page-title">Bloques</h2>
 
+							<p class="Page-description">Soluciones específicas para problemas complejos, transversales a todos los organismos.</p>
 
-                        <h2 class="Page-title">Bloques</h2>
+							<ul class="List List--media">
 
-                        <p class="Page-description">Soluciones específicas para problemas complejos, transversales a todos los organismos.</p>
-
-                        <ul class="List List--media">
-
-                                <li class="Media">
-									<div class="Media-image">
+								<li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-acerca-del-tramite.php">Acerca del trámite</a>
@@ -39,11 +45,10 @@
 									</div>
 								</li>
 
-
-                                <li class="Media">
-									<div class="Media-image">
+								<li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-confirmacion.php">Mensaje de confirmación</a>
@@ -52,11 +57,10 @@
 									</div>
 								</li>
 
-
-                                <li class="Media">
-									<div class="Media-image">
+								<li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-consentimiento-informado.php">Consentimiento informado</a>
@@ -65,10 +69,10 @@
 									</div>
 								</li>
 
-                                <li class="Media">
-									<div class="Media-image">
+								<li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-datos-de-contacto.php">Datos de contacto</a>
@@ -77,10 +81,10 @@
 									</div>
 								</li>
 
-                                <li class="Media">
-									<div class="Media-image">
+								<li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-datos-de-domicilio.php">Datos de domicilio (Básico)</a>
@@ -89,10 +93,10 @@
 									</div>
 								</li>
 
-                                <li class="Media">
-									<div class="Media-image">
+                <li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-datos-de-domicilio-completo.php">Datos de domicilio (Completo)</a>
@@ -101,10 +105,10 @@
 									</div>
 								</li>
 
-                                <li class="Media">
-									<div class="Media-image">
+                <li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-firma.php">Método de firma</a>
@@ -113,12 +117,10 @@
 									</div>
 								</li>
 
-
-
-                                <li class="Media">
-									<div class="Media-image">
+                <li class="Media">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-identificacion-documento-uruguayo.php">Identificación uruguayos</a>
@@ -127,11 +129,10 @@
 									</div>
 								</li>
 
-
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-identificacion-documento-extrangero.php">Identificación Extrangeros</a>
@@ -141,9 +142,9 @@
 								</li>
 
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-ingreso-usuarios.php">Ingreso de usuario</a>
@@ -153,9 +154,9 @@
 								</li>
 
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-medios-de-pago.php">Medios de pago</a>
@@ -165,9 +166,9 @@
 								</li>
 
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-medios-de-pago-detalle.php">Medios de pago (detalle)</a>
@@ -177,9 +178,9 @@
 								</li>
 
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-pasos-pendientes.php">Pasos pendientes</a>
@@ -190,9 +191,9 @@
 
 
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-personas-juridicas.php">Representación de personas jurídicas</a>
@@ -203,9 +204,9 @@
 
 
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-registro-notificaciones.php">Registro ante notificaciones.gub.uy</a>
@@ -215,9 +216,9 @@
 								</li>
 
 								<li class="Media">
-									<div class="Media-image">
+									<!--<div class="Media-image">
 										<img src="img/200x120.png" alt="">
-									</div>
+									</div>-->
 									<div class="Media-body">
 										<h3>
 											<a href="bloques-valoracion.php">Valoración formulario</a>
@@ -226,22 +227,23 @@
 									</div>
 								</li>
 
-								
-
-								
+								<li class="Media">
+									<!--<div class="Media-image">
+										<img src="img/200x120.png" alt="">
+									</div>-->
+									<div class="Media-body">
+										<h3>
+											<a href="bandeja-de-entrada.php">Bandeja de entrada</a>
+										</h3>
+										<p>Bloque que permite listar, filtrar y ordenar mensajes.</p>
+									</div>
+								</li>
+						
 						</ul>
-
-
-                    </div>
-
-</div>
-
-
-
-        </div>
-
-    </div>
-
+				 </div>
+			</div>
+		</div>
+	</div>
 </main>
 
 

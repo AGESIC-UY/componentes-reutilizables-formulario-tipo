@@ -4,7 +4,17 @@
 
 <?php include "inc/head.php"; ?>
 
+<?php include "inc/header.php"; ?>
 
+<div class="Breadcrumb">
+		<div class="Container">
+				<ul>
+						<li><a href="index.php">Formulario Tipo</a></li>
+						<li><a href="bloques.php">Bloques</a></li>
+						<li>Datos de contacto</li>
+				</ul>
+		</div>
+</div>
 
   
 <main id="contenido">
@@ -15,8 +25,7 @@
 
             <div class="Grid-item Grid-item--center u-mt5 u-md5 u-md-size3of4 u-lg-size8of10">
 
-                <a href="index.php">Inicio</a>
-
+            
                 <div class="Page Page--formulario" >
 
 

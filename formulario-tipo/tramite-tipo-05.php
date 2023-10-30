@@ -4,6 +4,16 @@
 
 <?php include "inc/head.php"; ?>
 
+<?php include "inc/header.php"; ?>
+
+<div class="Breadcrumb">
+		<div class="Container">
+				<ul>
+						<li><a href="index.php">Formulario Tipo</a></li>
+						<li>Paso 5</li>
+				</ul>
+		</div>
+</div>
 
 <main id="contenido">
 
@@ -13,7 +23,6 @@
 
             <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
 
-                    <a href="index.php">Inicio</a>
 
                     <div class="Page Page--formulario">
 
@@ -29,7 +38,7 @@
 
                                     <p class="progress-text">
 
-                                        Paso <strong>5</strong> de 5
+                                        Paso <strong>5</strong> de 6
                                     </p>
 
                                     <a href="#" class="step-modal-link">Mostrar detalle</a>
@@ -44,6 +53,7 @@
                                     <li class="progress-dot progress-dot--active"></li>
                                     <li class="progress-dot progress-dot--active"></li>
                                     <li class="progress-dot progress-dot--active"></li>
+                                    <li></li>
                                 </ul>
                                 <p class="step-info">Medios de pago</p>
 
@@ -93,14 +103,23 @@
 
                                 </a>
 
-                                <a href="#" class="Steps-item is-active">
+                                <span class="Steps-item is-active">
                                 
                                     <div>
                                         <span class="Steps-number">5</span>
                                     </div>
                                     <div>Medios de pago</div>
 
-                                </a>
+                                </span>
+
+                                <span class="Steps-item">
+                                
+                                <div>
+                                    <span class="Steps-number">6</span>
+                                </div>
+                                <div>Confirmación</div>
+
+                                </span>
 
                             </div>
 
@@ -180,7 +199,7 @@
 
                         </table>
 
-                        <form action="./" class="Form">
+                        <form action="tramite-tipo-06.php" class="Form">
 
                             <fieldset>
 

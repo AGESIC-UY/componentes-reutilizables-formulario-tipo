@@ -1,11 +1,42 @@
 
 /* Rating */
 
+$star-color-border: #916800;
+$star-color-fill: #c28b00;
+
 .Rating {
   display: flex;
   font-size: 20px;
-  color: #eee;
+  color: transparent;
   position: relative;
+  padding: .75rem 0;
+  margin-top: .1rem;
+
+
+
+  a{
+
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+
+  }
+
+  @include md(down) {
+
+    font-size: 28px;
+
+
+    a{
+
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+  
+  
+    }
+
+  }
+
 }
 
 .Rating-control {
@@ -19,7 +50,7 @@
 .Rating-control:nth-of-type(4):focus ~ .Rating-item:nth-of-type(4):before,
 .Rating-control:nth-of-type(5):focus ~ .Rating-item:nth-of-type(5):before {
   content: "";
-  outline: 3px solid #ffc107;
+  outline: 3px solid $star-color-border;
   outline-offset: 0.08rem;
   position: absolute;
   top: -.15em;
@@ -41,8 +72,8 @@
   width: 1em;
   height: 1em;
   fill: currentColor;
-  stroke: #222;
-  stroke-width: 1px;
+  stroke: $star-color-border;
+  stroke-width: 2px;
 }
 
 .Rating-label {
@@ -57,16 +88,14 @@
 .Rating-control:nth-of-type(3):checked ~ .Rating-item:nth-of-type(-n+3),
 .Rating-control:nth-of-type(4):checked ~ .Rating-item:nth-of-type(-n+4),
 .Rating-control:nth-of-type(5):checked ~ .Rating-item:nth-of-type(-n+5) {
-  color: #ffc107;
+  color: $star-color-fill;
 }
 
 .Rating-item:hover ~ .Rating-item {
-  color: #eee;
+  color: transparent;
 }
 
-.Rating {
-  margin-top: 10px;
-}
+
 
 .Rating label {
   position: relative;
@@ -76,4 +105,14 @@
   text-align: right;
   margin-right: 0px;
   line-height: 1.2em;
+
+  @include md(down) {
+
+    margin-right: .5rem;
+    width: auto !important;
+
+
+
+  }
+
 }

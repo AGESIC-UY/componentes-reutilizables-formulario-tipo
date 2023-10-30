@@ -4,6 +4,8 @@
 
 <?php include "inc/head.php"; ?>
 
+<?php include "inc/header.php"; ?>
+
 <main id="contenido">
 
     <div class="Container">
@@ -12,7 +14,7 @@
 
             <div class="Grid-item Grid-item--center u-mt5 u-md-size3of4 u-lg-size8of10">
       
-                    <div class="Page Page--formulario" >
+                    <div class="Page Page-document Page--formulario">
 
                         <h1>Formulario tipo</h1>
 
@@ -61,6 +63,7 @@
                                     <li><a href="bloques-personas-juridicas.php">Representación de Personas jurídicas</a></li>
                                     <li><a href="bloques-registro-notificaciones.php">Registro ante notificaciones.gub.uy</a></li>
                                     <li><a href="bloques-valoracion.php">Valoración</a></li>
+                                    <li><a href="bloques-bandeja-de-entrada.php">Bandeja de entrada</a></li>
 
                                 </ul>
                             
@@ -85,6 +88,7 @@
                             <li><a href="tramite-tipo-03.php">Paso 3 - Firma</a></li>
                             <li><a href="tramite-tipo-04.php">Paso 4 - Agenda</a></li>
                             <li><a href="tramite-tipo-05.php">Paso 5 - Medios de pago</a></li>
+                            <li><a href="tramite-tipo-06.php">Paso 6 - Confirmación</a></li>
 
                         </ul>
 

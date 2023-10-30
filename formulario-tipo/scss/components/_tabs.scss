@@ -5,12 +5,12 @@ $nav-link-padding-x: 1.25em;
 $nav-link-disabled-color: #555;
 
 $nav-tabs-border-width: 1px;
-$nav-tabs-border-color: #dee2e6;
+$nav-tabs-border-color: $gray-border;
 $nav-tabs-border-radius: 3px;
 $nav-link-disabled-color: #eee;
 $nav-tabs-link-active-color: #000;
 $nav-tabs-link-active-bg: #fff;
-$nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
+$nav-tabs-link-active-border-color: $gray-border $gray-border #fff;
 
 .Tabs-nav {
   display: flex;

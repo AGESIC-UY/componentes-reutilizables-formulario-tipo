@@ -8,7 +8,6 @@
 
   <title><?php echo $title; ?> | Formulario tipo</title>
 
-	<!--<link rel="stylesheet" href="https://concreta.com.uy/borradores/proyecto-gub-uy/portal-base/css/portal-unificado.css">-->
   <link rel="stylesheet" href="css/formulario-tipo.css">
   <link rel="stylesheet" href="css/custom.css">
 

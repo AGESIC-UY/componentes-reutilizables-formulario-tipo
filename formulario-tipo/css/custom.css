@@ -1,35 +1,29 @@
 
-
-
 @media (max-width: 992px) {
+	body {
+		background: #fff;
+	}
 
-    body{background: #fff;}
-
-    .Container > .Grid > .Grid-item{
-
-        padding-left: 1rem;
-        padding-right: 1rem;
-
-    }
-
+	.Container > .Grid > .Grid-item{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
-.Nav{
-    
-    display: block;
-    padding-top: 0px;
-
+.Nav {
+	display: block;
+	padding-top: 0px;
 }
 
-.Nav ul{
-
-    margin-bottom: 0;
-
+.Nav ul {
+	margin-bottom: 0;
 }
 
-.Nav ul li.Nav-item .Nav-subnav{margin-bottom: 0;}
+.Nav ul li.Nav-item .Nav-subnav {
+	margin-bottom: 0;
+}
 
-/* Agrego para cabezal */
+/* Cabezal y Breadcrumb */
 .Header-parent {
     display: inline-block;
     margin-left: 1.5em;
@@ -78,6 +72,50 @@
 .Breadcrumb ul li:before {
     padding-right: 12px;
     color: #555;
-    content: "\00bb";
+		content: "\00bb";
 }
 
+
+/* Accesos en Inicio */
+@media screen and (min-width: 992px) {
+	.Box--listadoAccesos .Box-gridList.Grid--rowSize3>.Grid-item {
+    width: 33.33333%!important;
+	}
+}
+
+.Box--listadoAccesos .Box-gridList li {
+	margin-bottom: 1.5rem;
+}
+
+.Box-gridList a:focus {
+	text-decoration: underline;
+}
+
+.Box--listadoAccesos .Flag {
+	display: flex;
+	width: 100%;
+}
+
+.Box--listadoAccesos .Flag .Flag-image {
+	padding-right: .75rem;
+}
+
+.Box--listadoAccesos .Flag .Flag-image > img {
+    width: 60px;
+    border-radius: 4px;
+}
+
+.Box--listadoAccesos .Flag .Flag-body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.Box--listadoAccesos .Box-title {
+	display: block;
+	line-height: 1.25;
+	font-weight: 600;
+	word-wrap: break-word;  
+	font-size: 1.25em;
+	margin-bottom: 0.125em;
+}

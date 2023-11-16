@@ -1,5 +1,3 @@
-<!--  Versión 1.1 -->
-
 <?php
   $title = 'Formulario Tipo';
 ?>

@@ -233,7 +233,7 @@
 									</div>-->
 									<div class="Media-body">
 										<h3>
-											<a href="bandeja-de-entrada.php">Bandeja de entrada</a>
+											<a href="bloques-bandeja-de-entrada.php">Bandeja de entrada</a>
 										</h3>
 										<p>Bloque que permite listar, filtrar y ordenar mensajes.</p>
 									</div>

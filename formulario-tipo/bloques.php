@@ -135,7 +135,7 @@
 									</div>-->
 									<div class="Media-body">
 										<h3>
-											<a href="bloques-identificacion-documento-extrangero.php">Identificación Extrangeros</a>
+											<a href="bloques-identificacion-documento-extranjero.php">Identificación Extranjeros</a>
 										</h3>
 										<p>Bloque de identificación exclusivo para personas con documento extrangero.</p>
 									</div>

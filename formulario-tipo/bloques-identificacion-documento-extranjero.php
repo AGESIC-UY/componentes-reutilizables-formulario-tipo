@@ -11,7 +11,7 @@
 				<ul>
 						<li><a href="index.php">Formulario Tipo</a></li>
 						<li><a href="bloques.php">Bloques</a></li>
-						<li>Identificación documento extrangero</li>
+						<li>Identificación documento extranjero</li>
 				</ul>
 		</div>
 </div>
@@ -28,7 +28,7 @@
               <div class="Page Page--formulario" >
 
 
-                <h2 class="Page-title">Identificación con documento de identidad extrangero</h2>
+                <h2 class="Page-title">Identificación con documento de identidad extranjero</h2>
 
                 <form action="./" class="Form">
 

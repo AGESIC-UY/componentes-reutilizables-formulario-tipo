@@ -1,13 +1,10 @@
 
 @media (max-width: 992px) {
-	body {
-		background: #fff;
-	}
 
-	.Container > .Grid > .Grid-item{
+	/* .Container > .Grid > .Grid-item{
 		padding-left: 1rem;
 		padding-right: 1rem;
-	}
+	} */
 }
 
 .Nav {
@@ -119,3 +116,22 @@
 	font-size: 1.25em;
 	margin-bottom: 0.125em;
 }
+
+
+
+
+/*** --tags radio buttons ---***/
+/*
+
+.Form-options--tags .Form-option:first-child{margin-top: -.25rem;}
+.Form-options--tags .Form-option{width: auto; padding-left: 0; margin-left: 0;}
+.Form-options--tags .Form-option span{width: auto; padding: .5rem 1rem; border-radius: .125rem; margin-left: 0; background-color: transparent; color: #003DA5; border: 1px solid #003DA5; }
+.Form-options--tags .Form-option span:hover{cursor: pointer;}
+.Form-options--tags .Form-option input[type="radio"]{
+position: absolute;
+opacity: 0;
+pointer-events: none;}
+
+.Form-options--tags .Form-option input:checked + span{color: #003DA5;  border: 1px solid #EEF2FC; background-color: #EEF2FC; }
+*/
+/* .inline-options label{display: inline-block;} */

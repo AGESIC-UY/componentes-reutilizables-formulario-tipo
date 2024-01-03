@@ -17,21 +17,21 @@
 </div>
 
   
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-md-size3of4 u-mt5 u-md5 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-md-size3of4  u-lg-size8of10">
 
 
-            <div class="Page Page--formulario" >
+            <div class="Page" >
 
 
                     <h2 class="Page-title">Valoración</h2>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
 
                        
               
@@ -97,7 +97,7 @@
                     </form>
 
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
 
                        
               

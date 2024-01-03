@@ -38,6 +38,8 @@
 
                             <h1 class="Page-title u-h2 ">Bandeja de entrada</h1>
 
+                            <form class="Form--tipo">
+
                             <div class="Page-info">
                                 <div class="Bar">
 
@@ -55,9 +57,11 @@
                                 </div>
                             </div>
 
+                            </form>
+
                             <div class="Table-wrapper">
 
-                                <table class="Table Table--striped Table--responsive">
+                                <table class="Table--tipo Table--striped Table--responsive">
 
                                     <caption>Ejemplo de bandeja de entrada</caption>
 

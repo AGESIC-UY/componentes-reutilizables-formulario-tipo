@@ -15,22 +15,22 @@
 		</div>
 </div>
 
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-lg-size8of10">
 
 
-                    <div class="Page Page--formulario">
+                    <div class="Page">
 
                         <h1 class="Page-title">Trámite tipo</h1>
 
                         <!-- Pasos -->
 
-                        <div class="Steps">
+                        <div class="Steps--tipo">
 
                             <div class="progress-mobile">
                                 
@@ -129,7 +129,7 @@
 
                         <h2>Medios de pago</h2>
 
-                        <div class="Alert" role="alert" aria-live="assertive">
+                        <div class="Alert--tipo" role="alert" aria-live="assertive">
                     
                                                 
                                 <ul class="resumen-datos">
@@ -153,7 +153,7 @@
                         
                         </div>
 
-                        <table class="Table">
+                        <table class="Table--tipo">
 
                         <caption>Detalle</caption>
 
@@ -199,7 +199,7 @@
 
                         </table>
 
-                        <form action="tramite-tipo-06.php" class="Form">
+                        <form action="tramite-tipo-06.php" class="Form--tipo">
 
                             <fieldset>
 

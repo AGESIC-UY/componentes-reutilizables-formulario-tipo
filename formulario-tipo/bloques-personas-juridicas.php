@@ -17,21 +17,21 @@
 </div>
 
   
-<main  id="contenido">
+<main  id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
 
-                <div class="Page Page--formulario" >
+                <div class="Page" >
 
 
                     <h2 class="Page-title">Representación de Personas jurídicas</h2>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
 
                         <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
               
@@ -71,10 +71,10 @@
                                </select>
 
                                                     
-                               <a href="#" class="Form-icon">
+                               <span href="#" class="Form-icon">
                                     <img src="assets/icons/icon-ok-circle.svg" alt="Icono rol validado">
                                     <span class="u-hideVisually">Rol validado</span>
-                               </a>
+                               </span>
                           
                             </div>
 

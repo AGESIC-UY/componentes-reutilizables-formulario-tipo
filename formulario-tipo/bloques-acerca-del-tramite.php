@@ -17,23 +17,23 @@
 </div>
 
 
-<main  id="contenido">
+<main  id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center  u-md-size3of4 u-lg-size8of10">
 
 
-            <div class="Page Page--formulario" >
+            <div class="Page" >
                           
 
                     <h1 class="Page-title u-h2">Acerca del trámite</h1>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
               
-                        <fieldset class="u-mt5">
+                        <fieldset >
                     
                             <legend><span>Para realizar este trámite es necesario:</span></legend>
 
@@ -58,7 +58,7 @@
                         </fieldset>
 
 
-                        <fieldset class="u-mt5">
+                        <fieldset >
                     
                             <legend><span>Luego de realizar el trámite es necesario:</span></legend>
 

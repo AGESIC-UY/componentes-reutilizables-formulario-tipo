@@ -1,4 +1,4 @@
-<form action="./" class="Form Form--stacked Form--filters" id="filters-target">						
+<form action="./" class="Form--tipo Form--stacked Form--filters" id="filters-target">						
 		<fieldset>
 			<legend>
 				<h2 id="modalTitle" class="modal-title">Filtros</h2>

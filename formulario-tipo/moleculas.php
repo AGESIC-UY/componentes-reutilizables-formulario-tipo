@@ -17,13 +17,13 @@
 
 
   
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-mb5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
 
 
@@ -40,7 +40,7 @@
                 
      
 
-                    <div class="Steps">
+                    <div class="Steps--tipo">
 
                         <div class="progress-mobile">
                             
@@ -119,7 +119,7 @@
 
                     </div>
 
-                    <div class="Steps Steps--many">
+                    <div class="Steps--tipo Steps--many">
 
                         <div class="progress-mobile">
                             
@@ -235,7 +235,7 @@
 
                     </div>
 
-                    <div class="Steps Steps--many">
+                    <div class="Steps--tipo Steps--many">
 
                     <div class="progress-mobile">
                             
@@ -269,83 +269,83 @@
 
                         <div class="overlay-mobile"> </div>
 
-                        <div class="Steps-inner">
+                            <div class="Steps-inner">
 
-                            <a href="#" class="Steps-item is-finished">
+                                <a href="#" class="Steps-item is-finished">
 
-                                <div>
-                                    <span class="Steps-number">1</span>
-                                </div>
+                                    <div>
+                                        <span class="Steps-number">1</span>
+                                    </div>
 
-                                <div>Nombre del paso completado</div>
+                                    <div>Nombre del paso completado</div>
 
-                            </a>
+                                </a>
 
-                            <a href="#" class="Steps-item  is-finished">
+                                <a href="#" class="Steps-item  is-finished">
 
-                                <div>
-                                    <span class="Steps-number " >2</span>
-                                </div>
-                                <div>Nombre del paso actual</div>
+                                    <div>
+                                        <span class="Steps-number " >2</span>
+                                    </div>
+                                    <div>Nombre del paso actual</div>
 
-                            </a>
+                                </a>
 
-                            <a href="#" class="Steps-item  is-finished">
+                                <a href="#" class="Steps-item  is-finished">
 
-                                <div>
-                                    <span class="Steps-number">3</span>
-                                </div>
-                                <div>Nombre del tercer paso</div>
+                                    <div>
+                                        <span class="Steps-number">3</span>
+                                    </div>
+                                    <div>Nombre del tercer paso</div>
 
-                            </a>
+                                </a>
 
-                            <a href="#" class="Steps-item  is-finished">
-                            
-                                <div>
-                                    <span class="Steps-number">4</span>
-                                </div>
-                                <div>Nombre del cuarto paso</div>
+                                <a href="#" class="Steps-item  is-finished">
+                                
+                                    <div>
+                                        <span class="Steps-number">4</span>
+                                    </div>
+                                    <div>Nombre del cuarto paso</div>
 
-                            </a>
+                                </a>
 
-                            <a href="#" class="Steps-item  is-finished">
-                            
-                                <div>
-                                    <span class="Steps-number">5</span>
-                                </div>
-                                <div>Nombre del quinto paso</div>
+                                <a href="#" class="Steps-item  is-finished">
+                                
+                                    <div>
+                                        <span class="Steps-number">5</span>
+                                    </div>
+                                    <div>Nombre del quinto paso</div>
 
-                            </a>
+                                </a>
 
-                            <a href="#" class="Steps-item  is-finished">
-                            
-                                <div>
-                                    <span class="Steps-number">6</span>
-                                </div>
-                                <div>Nombre del sexto paso</div>
+                                <a href="#" class="Steps-item  is-finished">
+                                
+                                    <div>
+                                        <span class="Steps-number">6</span>
+                                    </div>
+                                    <div>Nombre del sexto paso</div>
 
-                            </a>
+                                </a>
 
 
-                            <a href="#" class="Steps-item  is-finished">
-                            
-                                <div>
-                                    <span class="Steps-number">7</span>
-                                </div>
-                                <div>Nombre del séptimo paso</div>
+                                <a href="#" class="Steps-item  is-finished">
+                                
+                                    <div>
+                                        <span class="Steps-number">7</span>
+                                    </div>
+                                    <div>Nombre del séptimo paso</div>
 
-                            </a>
+                                </a>
 
-                            <a href="#" class="Steps-item  is-active">
-                            
-                                <div>
-                                    <span class="Steps-number">8</span>
-                                </div>
-                                <div>Nombre del octavo paso</div>
+                                <a href="#" class="Steps-item  is-active">
+                                
+                                    <div>
+                                        <span class="Steps-number">8</span>
+                                    </div>
+                                    <div>Nombre del octavo paso</div>
 
-                            </a>
+                                </a>
 
-                        </div>
+                            </div>
 
                     </div>
 
@@ -353,31 +353,31 @@
 
                     <h3>Cuadros de diálogo</h3>
 
-                    <div class="Alert Alert--dialog Alert--success" role="alert" aria-live="assertive">
+                    <div class="Alert--tipo Alert--dialog Alert--success" role="alert" aria-live="assertive">
                         <h4 class="Alert-title">Título de mensaje de validación exitosa</h4>
                         <p>Mensaje de confirmación de que se ha realizado una acción en forma correcta.</p>
                         <a href="#">Enlace de acción</a>
                     </div>
 
-                    <div class="Alert Alert--dialog Alert--warning" role="alert" aria-live="assertive">
+                    <div class="Alert--tipo Alert--dialog Alert--warning" role="alert" aria-live="assertive">
                         <h4 class="Alert-title">Título de mensaje de advertencia</h4>
                         <p>Mensaje deMensaje de aviso ante una situación determinada.</p>
                         <a href="#">Enlace de acción</a>
                     </div>
 
-                    <div class="Alert Alert--dialog Alert--danger" role="alert" aria-live="assertive">
+                    <div class="Alert--tipo Alert--dialog Alert--danger" role="alert" aria-live="assertive">
                         <h4 class="Alert-title">Título de mensaje de error</h4>
                         <p>Mensaje que indica que se ha producido un error.</p>
                         <a href="#">Enlace de acción</a>
                     </div>
 
-                    <div class="Alert Alert--dialog Alert--info" role="alert" aria-live="assertive">
+                    <div class="Alert--tipo Alert--dialog Alert--info" role="alert" aria-live="assertive">
                         <h4 class="Alert-title">Título de mensaje de notificación</h4>
                         <p>Mensaje que notifica de alguna acción.</p>
                         <a href="#">Enlace de acción</a>
                     </div>
 
-                    <div class="Alert Alert--dialog" role="alert" aria-live="assertive">
+                    <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
                         <h4 class="Alert-title">Título de mensaje de información</h4>
                         <p>Mensaje que brinda información complementaria.</p>
                         <a href="#">Enlace de acción</a>
@@ -385,31 +385,68 @@
 
                     <hr>
 
+                    <h2 class="u-mb3">Cuadro de diálogo con listado</h2>
+
+                    <div class="Alert--tipo Alert--dialog Alert--danger" role="alert" aria-live="assertive">
+                                
+                        <h4 class="Alert-title">Hay <strong>3 errores</strong> en el formulario</h4>
+                        <ol>
+                            <li><a href="#">Debe ingresar una fecha</a></li>
+                            <li><a href="#">Lorem ipsum ad his scripta</a></li>
+                            <li><a href="#">Blandit incorrupte quaerendum in quo</a></li>
+                        </ol>
+                                
+                            
+                    </div>
+
+                    <div class="Alert--tipo Alert--dialog Alert--warning" role="alert" aria-live="assertive">
+                        
+                        <h4 class="Alert-title">Para continuar el trámite es necesario:</h4>
+
+                        <ol>
+
+                            <li>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in</li>
+                            <li>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in</li>
+                        
+                        </ol>
+
+                        <p>Se ha enviado una confirmación a correo@correo.uy</p>
+
+                        <a href="#">Imprimir formulario</a>
+
+                    </div>
+
+                    <hr>
+
                     <h2 class="u-mb3">Notificaciones</h2>
 
-                    <div class="Alert" role="alert">
+                    <div class="Alert--tipo" role="alert">
                         <strong>simple:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
                     </div>
 
-                    <div class="Alert Alert--warning" role="alert">
+                    <div class="Alert--tipo Alert--warning" role="alert">
                         <strong>warning:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
                     </div>
 
-                    <div class="Alert Alert--info" role="alert">
+                    <div class="Alert--tipo Alert--info" role="alert">
                         <strong>info:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
                     </div>
 
-                    <div class="Alert Alert--success" role="alert">
+                    <div class="Alert--tipo Alert--success" role="alert">
                         <strong>success:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
                     </div>
 
-                    <div class="Alert Alert--danger" role="alert">
+                    <div class="Alert--tipo Alert--danger" role="alert">
                         <strong>danger:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
                     </div>
 
                     <hr>
 
+
+
                     <h3>Pestañas</h3>
+
+                    <div class="Tabs-wrapper--tipo">
 
                     <!-- Nav tabs -->
                     <div class="Tabs">
@@ -441,6 +478,8 @@
 
                     </div>
 
+                    </div>
+
                     <hr>
 
 
@@ -450,7 +489,7 @@
 
                     <div class="Table-wrapper">
 
-                        <table class="Table Table--striped Table--responsive">
+                        <table class="Table--tipo Table--striped Table--responsive">
                             <caption>Tabla 1. Título de tabla agregado con la etiqueta <code>caption</code></caption>
                             <thead>
                             <tr>
@@ -533,15 +572,149 @@
                             </tbody>
                         </table>
 
-                    <p id="descripcionTabla1">Descripción de la tabla 1 - Tabla con clase <code>Table--striped</code> y descripción abajo. <a href="tablas.php">Ver más sobre uso de tablas</a>.</p>
                     
+                    
+                    </div>
+
+
+                        <div class="Table-wrapper">
+
+                                <form class="Form--tipo">
+
+                                <table class="Table--tipo Table--middle Table--responsive">
+
+                                <caption>Tabla 2. Tabla con elementos de formulario</caption>
+
+                                       
+
+                                        <thead>
+                                            
+                                            <tr>
+
+                                                <th>Título Columna 1</th>
+                                                <th>Título Columna 2</th>
+                                                <th>Título Columna 3</th>
+                                                <th>Título Columna 4</th>
+                                                <th>Título Columna 5</th>
+                                                
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody>
+
+                                            <tr>
+                                                <td class="Form-group" data-title="Título Columna 1">
+
+                                                    <div class="Form-options">
+                                                    
+                                                        <label for="radio-table" class="Form-option u-textCenter u-sm-textLeft">
+                                                           
+                                                            <input type="radio" id="radio-table" name="radio-table">
+                                                            <span class="u-hideVisually">Radio</span>
+                                                           
+                                                        </label>
+                                                    
+                                                    </div>
+                                                  
+                                                </td>
+                                                <td data-title="Título Columna 2">Fila 1 Columna 1</td>
+                                                <td data-title="Título Columna 3">Fila 1 Columna 2</td>
+                                                <td data-title="Título Columna 4">Fila 1 Columna 3</td>
+                                                <td class="u-textRight" data-title="Título Columna 5">$1.004</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="Form-group" data-title="Título Columna 1">
+
+                                                    <div class="Form-options">
+
+                                                        <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
+
+                                                            <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
+                                                            <span class="u-hideVisually">Checkbox</span>
+                                                                                                                  
+                                                        </label>
+
+                                                    </div>
+
+                                                </td>
+                                                <td data-title="Título Columna 2">Fila 2 Columna 2</td>
+                                                <td class="Form-group Form-group--error Form-group--alert" data-title="Título Columna 3">
+                                                    
+                                                                                                       
+                                                        <label class="Form-label u-hideVisually" for="example-campo-error-tabla">Etiqueta de campo con error en tabla:</label>
+                                                        <input class="Form-widget" name="example-campo-error-tabla" type="text" id="example-campo-error-tabla" placeholder="input">
+                                                        <div class="Form-error"><strong>ERROR</strong> - Este campo es obligatorio</div>
+                                                    
+
+                                                </td>
+                                                <td data-title="Título Columna 4">Fila 2 Columna 3</td>
+                                                <td class="u-textRight Form-group" data-title="Título Columna 5">                                       
+                                                
+                                                        <label class="Form-label u-hideVisually" for="input-text-tabla">Importe:</label>
+                                                        <input class="Form-widget u-textRight" name="input-text-tabla" type="text" id="input-text-tabla" value="$ 1.001">
+
+                                                        
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><a href="#"><span class="Icon Icon--delete"></span><span class="u-hideVisually ">Eliminar</span></a></td>
+                                                <td class="Form-group" data-title="Título Columna 2">
+
+                                                    <label for="select-table" class="Form-label u-hideVisually">Etiqueta de combo en tabla:</label>
+                                                    <select name="select-table" id="select-table" class="Form-widget">
+                                                    <option value="0">Opción seleccionada de un combo</option>
+                                                    <option value="1">Opción 1</option>
+                                                    <option value="2">Opción 2</option>
+                                                    <option value="3">Opción 3</option>
+                                                    </select>
+                     
+                                                </td>
+                                                <td data-title="Título Columna 3">Fila 3 Columna 3</td>
+                                                <td data-title="Título Columna 4">Fila 3 Columna 4</td>
+                                                <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><a href="#"><span class="Icon Icon--edit"></span><span class="u-hideVisually ">Editar</span></a></td>
+                                                <td data-title="Título Columna 2">Fila 4 Columna 2</td>
+                                                <td data-title="Título Columna 3">Fila 4 Columna 3</td>
+                                                <td data-title="Título Columna 4">Fila 4 Columna 4</td>
+                                                <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
+                                            </tr>
+
+                                            
+
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <td class="u-textRight" colspan="4"  > 
+                                                    Total
+                                                </td>
+                                                <td class="u-textRight">
+                                                    $86.683
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+
+                                </table>
+
+
+
+
+
+                            </form>
+
                     </div>
 
                     <hr>
 
                     <h2 class="u-mb3">Paginación</h2>
 
-                    <div class="Pagination">
+                    <div class="Pagination--tipo">
                         <div class="Pagination-text">Mostrando 5 de 9 resultados</div>
                             <ul class="Pagination-links">
                                 <li class="Pagination-prev"><a href="#">Anterior</a></li>

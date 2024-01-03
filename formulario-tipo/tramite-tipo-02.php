@@ -15,13 +15,13 @@
 		</div>
 </div>
 
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-lg-size8of10">
 
 
                     <div class="Page Page--formulario">
@@ -30,7 +30,7 @@
 
                        <!-- Pasos -->
 
-                        <div class="Steps">
+                        <div class="Steps--tipo">
 
                             <div class="progress-mobile">
                                 
@@ -129,7 +129,7 @@
 
                         <h2>Datos del trámite</h2>
 
-                        <div class="Alert Alert--dialog Alert--danger" role="alert" aria-live="assertive">
+                        <div class="Alert--tipo Alert--dialog Alert--danger" role="alert" aria-live="assertive">
                                 
                                 <h4 class="Alert-title">Hay <strong>2 errores</strong> en el formulario</h4>
 
@@ -143,7 +143,7 @@
                             
                         </div>
 
-                        <form action="tramite-tipo-03.php" class="Form">
+                        <form action="tramite-tipo-03.php" class="Form--tipo">
 
                             <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
 
@@ -285,10 +285,10 @@
                                     <label class="Form-label" for="con_tooltip-1">Con ícono:</label>
                                     <input type="url" class="Form-widget Form-widget--w-icon" id="con_tooltip-1" name="con_tooltip-1">
                                     
-                                    <a href="#" class="Form-icon">
+                                    <span href="#" class="Form-icon">
                                         <img src="assets/icons/icon-ok-circle.svg" alt="Icono rol validado">
                                         <span class="u-hideVisually">Rol validado</span>
-                                    </a>
+                                    </span>
                           
                                 </div>
 
@@ -300,7 +300,7 @@
                         
                                 </div>
 
-                                <fieldset class="u-mt5">
+                                <fieldset>
 
                                     <legend>
                                         <span>Título de subgrupo de campos</span>
@@ -330,7 +330,7 @@
 
                                 <a href="#">+ Agregar otro fieldset igual</a>
 
-                                <table class="Table Table--middle Table--responsive">
+                                <table class="Table--tipo Table--middle Table--responsive">
 
                                     <caption>Nombre de la tabla</caption>
 
@@ -407,7 +407,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><span class="Icon Icon--delete"></span></td>
+                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><a href=""><span class="Icon Icon--delete"></span><span class="u-hideVisually">Eliminar</span></a></td>
                                             <td class="Form-group" data-title="Título Columna 2">
 
                                                 <label for="select-table" class="Form-label u-hideVisually">Etiqueta de combo en tabla:</label>
@@ -425,7 +425,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><span class="Icon Icon--edit"></span></td>
+                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><a href=""><span class="Icon Icon--edit"></span><span class="u-hideVisually">Editar</span></a></td>
                                             <td data-title="Título Columna 2">Fila 4 Columna 2</td>
                                             <td data-title="Título Columna 3">Fila 4 Columna 3</td>
                                             <td data-title="Título Columna 4">Fila 4 Columna 4</td>

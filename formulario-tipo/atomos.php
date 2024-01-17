@@ -966,9 +966,31 @@
                         <input type="text" class="Form-widget" id="ejemplo_stacked_2">
                       </div>
 
+                      <div class="Form-group Form-group--alert Form-group--error" >
+                          <label class="Form-label" for="example-campo-error">Etiqueta de campo con error:</label>
+                          <input class="Form-widget" name="example-campo-error" type="text" id="example-campo-error" aria-describedby="error-campo">
+                          <div class="Form-error" id="error-campo"><strong>ERROR</strong> - Este campo es obligatorio</div>
+                      </div>
+
+                      <div class="Form-group Form-group--alert Form-group--warning">
+                        <label class="Form-label" for="example-campo-warning">Etiqueta de campo con advertencia:</label>
+                        <input class="Form-widget" name="example-campo-warning" type="text" id="example-campo-warning" aria-describedby="advertencia-campo">
+                        <div class="Form-warning" id="advertencia-campo"><strong>Advertencia</strong> - No se pudo validar el dato</div>
+                      </div>
+
+                      <div class="Form-group">
+                          <label class="Form-label" for="example-campo-con-ayuda">Etiqueta de campo con ayuda:</label>
+                          <input class="Form-widget" name="example-campo-con-ayuda" type="text" id="example-campo-con-ayuda" aria-describedby="ayuda-campo">
+                          <div class="Form-hint" id="ayuda-campo">Este es un texto de ayuda</div>
+                        </div>
+
+
+
                       <div class="Form-group" >
                         <button type="submit" class="Button Button--primary">Filtrar</button>
                       </div>
+
+
                   
                     
 

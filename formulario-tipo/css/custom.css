@@ -135,3 +135,42 @@ pointer-events: none;}
 .Form-options--tags .Form-option input:checked + span{color: #003DA5;  border: 1px solid #EEF2FC; background-color: #EEF2FC; }
 */
 /* .inline-options label{display: inline-block;} */
+
+
+/*--- AJUSTE PASAJE DE DISPLAY TABLE A FLEX EN LOS ÁTOMOS DEL FORMULARIO ---*/
+
+/*
+
+.Form--tipo .Form-group{display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;}
+.Form--tipo .Form-group .Form-label{display: block;}
+.Form--tipo .Form-group.Form-group--alert .Form-error{margin-left: 35%;}
+.Form--tipo .Form-group.Form-group--alert .Form-warning{margin-left: 35%;}
+.Form--tipo .Form-group .Form-hint{margin-left: 35%;}
+
+.Form--tipo .Form-group .Grid .Form-error{margin-left: 0;}
+.Form--tipo .Form-group .Grid .Form-warning{margin-left: 0;}
+.Form--tipo .Form-group .Grid .Form-hint {margin-left: 0;}
+
+
+
+.Form--tipo .Table--tipo td.Form-group .Form-error{margin-left: 0;}
+.Form--tipo .Table--tipo td.Form-group .Form-warning{margin-left: 0;}
+.Form--tipo .Table--tipo td.Form-group .Form-hint {margin-left: 0;}
+
+
+.Form--tipo.Form--stacked .Form-group--alert.Form-group--error{padding-inline: .625em; margin-inline: -.625em; width: calc(100% + 1.25em);}
+.Form--tipo.Form--stacked .Form-group--alert.Form-group--warning{padding-inline: .625em; margin-inline: -.625em; width: calc(100% + 1.25em);}
+
+.Form--tipo.Form--stacked .Form-group .Form-error{margin-left: 0; width: 100%}
+.Form--tipo.Form--stacked .Form-group .Form-warning{margin-left: 0; width: 100%}
+.Form--tipo.Form--stacked .Form-group .Form-hint {margin-left: 0; width: 100%}
+
+@media screen and (max-width: 992px){
+
+    .Form--tipo .Form-group.Form-group--alert .Form-error {margin-left: 0; width: 100%}
+    .Form--tipo .Form-group.Form-group--alert .Form-warning {margin-left: 0; width: 100%}
+    .Form--tipo .Form-group .Form-hint {margin-left: 0; width: 100%}
+
+
+}
+*/

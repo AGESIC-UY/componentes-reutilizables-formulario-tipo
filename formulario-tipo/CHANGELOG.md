@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3] - 2024-01-17
+
+## Changed
+- Se elimina display table para evitar problemas con lectores de pantalla. Se pasa todo a flex
+- Ajustes varios y agregado de moléculas de input con error.
+
+
 ## [1.2] - 2024-01-03
 
 ## Changed

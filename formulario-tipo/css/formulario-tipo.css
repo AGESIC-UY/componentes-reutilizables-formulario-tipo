@@ -3367,7 +3367,7 @@ este es el container de formulario tipo
 .Form--tipo .Form-label {
   padding: 0.75em 0;
   margin: 0;
-  display: table-cell;
+  display: block;
   vertical-align: top;
   width: 35%;
   text-align: right;
@@ -3393,7 +3393,10 @@ este es el container de formulario tipo
   margin-bottom: 0.125em;
   padding-bottom: 0.75em;
   padding-top: 0.75em;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   vertical-align: top;
   width: 100%;
   padding-inline: 0;
@@ -3403,6 +3406,10 @@ este es el container de formulario tipo
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-inline: 0;
+  }
+  .Form--tipo .Form-group .Form-hint {
+    margin-left: 0;
+    width: 100%;
   }
 }
 .Form--tipo .Form-group a {
@@ -3446,6 +3453,15 @@ este es el container de formulario tipo
 }
 .Form--tipo .Form-group--alert.Form-group--warning .Form-widget {
   border-color: #ffd15f !important;
+}
+.Form--tipo .Form-group--alert .Form-error, .Form--tipo .Form-group--alert .Form-warning {
+  margin-left: 35%;
+}
+@media screen and (max-width: 992px) {
+  .Form--tipo .Form-group--alert .Form-error, .Form--tipo .Form-group--alert .Form-warning {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 .Form--tipo .Form-group + fieldset {
   margin-top: 2.5rem;
@@ -3659,6 +3675,7 @@ este es el container de formulario tipo
   color: #555;
   font-size: 0.875em;
   margin-top: 0.25em;
+  margin-left: 35%;
 }
 .Form--tipo .Form-grid {
   max-width: 29em;
@@ -3705,6 +3722,12 @@ este es el container de formulario tipo
 .Form--tipo fieldset + a {
   position: relative;
   top: -2rem;
+}
+.Form--tipo .Form-fieldset .Form-group .Grid .Form-error, .Form--tipo .Form-fieldset .Form-group .Grid .Form-warning, .Form--tipo .Form-fieldset .Form-group .Grid .Form-hint,
+.Form--tipo fieldset .Form-group .Grid .Form-error,
+.Form--tipo fieldset .Form-group .Grid .Form-warning,
+.Form--tipo fieldset .Form-group .Grid .Form-hint {
+  margin-left: 0;
 }
 .Form--tipo .Form-fieldset .Form-group p, .Form--tipo .Form-fieldset .Alert p,
 .Form--tipo fieldset .Form-group p,
@@ -3812,6 +3835,9 @@ este es el container de formulario tipo
   display: table-cell;
   width: auto;
 }
+.Form--tipo .Table--tipo td.Form-group .Form-error, .Form--tipo .Table--tipo td.Form-group .Form-warning, .Form--tipo .Table--tipo td.Form-group .Form-hint {
+  margin-left: 0;
+}
 @media screen and (max-width: 992px) {
   .Form--tipo .Table--tipo td.Form-group {
     padding: 0.75rem 1rem;
@@ -3864,6 +3890,20 @@ este es el container de formulario tipo
   display: block;
   margin-top: 0.25em;
   max-width: 100%;
+}
+
+.Form--stacked.Form--tipo .Form-group--alert.Form-group--error, .Form--stacked.Form--tipo .Form-group--alert.Form-group--warning {
+  padding-inline: 0.625em;
+  margin-inline: -0.625em;
+  width: calc(100% + 1.25em);
+}
+.Form--stacked.Form--tipo .Form-group--alert.Form-group .Form-error, .Form--stacked.Form--tipo .Form-group--alert.Form-group .Form-warning, .Form--stacked.Form--tipo .Form-group--alert.Form-group .Form-hint {
+  margin-left: 0;
+  width: 100%;
+}
+.Form--stacked.Form--tipo .Form-group .Form-hint {
+  margin-left: 0;
+  width: 100%;
 }
 
 .Form--tipo > fieldset > legend,

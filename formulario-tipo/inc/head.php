@@ -29,7 +29,7 @@
     <script src="js/vendor/polyfills.js"></script>
   <![endif]-->
 
-  <!-- Formulario Tipo - Versión 1.4 -->
+  <!-- Formulario Tipo - Versión 1.3.1 -->
 </head>
 <body<?php if (isset($bg_white) && $bg_white) : ?> class="u-bgWhite"<?php endif; ?>>
 

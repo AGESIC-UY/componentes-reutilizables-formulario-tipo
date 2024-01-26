@@ -70,7 +70,7 @@
 
                     <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
 
-                        <h4 class="Alert-title">Forma precencialmente</h4>
+                        <h4 class="Alert-title">Forma presencialmente</h4>
                         <p>También es posible llevar el formulario firmado a las <a href="">oficina del organismo</a></p>
                         
                     </div>

@@ -129,9 +129,9 @@
 
                         <h2>Medios de pago</h2>
 
-                        <div class="Alert--tipo" role="alert" aria-live="assertive">
+                        <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
                     
-                                                
+                                <h4 class="Alert-title">Detalle de la reserva</h4>
                                 <ul class="resumen-datos">
                                     
                                     <li>

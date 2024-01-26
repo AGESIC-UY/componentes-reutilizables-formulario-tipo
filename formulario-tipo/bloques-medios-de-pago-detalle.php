@@ -32,31 +32,29 @@
 
                     <h2 class="Page-title">Medios de pago</h2>
 
-                    <div class="Alert--tipo">
+                        <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
                     
-                                                
-                            <ul class="resumen-datos">
+                                <h4 class="Alert-title">Detalle de la reserva</h4>
+                                <ul class="resumen-datos">
+                                    
+                                    <li>
+                                        <span>Resumen:</span> <strong>12345</strong>
+                                    </li>
                                 
-                                <li>
-                                    <label>Resumen:</label>
-                                    <p>12345</p>
-                                </li>
+                                    <li>
+                                        <span>Concepto:</span> <strong>Timbre</strong>
+                                    </li>
+
+                                    <li>
+                                        <span>Total:</span> <strong>$U 100</strong>
+                                    </li>
                             
-                                <li>
-                                    <label>Concepto:</label>
-                                    <p>Timbre</p>
-                                </li>
-                                <li>
-                                    <label>Total:</label>
-                                    <p>$U 100</p>
-                                </li>
-                        
-                            </ul>
+                                </ul>
+                                
                             
+                                <a href="#">Ocultar detalle</a>
                         
-                            <a href="#">Ocultar detalle</a>
-                    
-                    </div>
+                        </div>
 
 
                     <table class="Table--tipo">

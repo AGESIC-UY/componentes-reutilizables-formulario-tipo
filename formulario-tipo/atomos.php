@@ -466,7 +466,7 @@
                         <div class="Form-group"  >
                           <label class="Form-label" for="adjuntos-2">Archivos con link:</label>
                           <input class="Form-widget" type="file" name="adjuntos-2" id="adjuntos-2">
-                          <a href="#" class="Button Button--link Button--small">+ Agregar otro campo</a>
+                          <a href="#" class="Button Button--link Button--small Form-item-aligned">+ Agregar otro campo</a>
                         </div>
 
 

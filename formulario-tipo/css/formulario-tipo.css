@@ -1554,6 +1554,9 @@ este es el container de formulario tipo
 .Alert--tipo a {
   text-decoration: underline;
 }
+.Alert--tipo p {
+  padding-inline: 0 !important;
+}
 @media screen and (max-width: 768px) {
   .Alert--tipo {
     padding: 1em;
@@ -3473,6 +3476,9 @@ este es el container de formulario tipo
   .Form--tipo .Form-group--aligned {
     padding-left: 35%;
   }
+  .Form--tipo .Form-group--aligned .Form-hint {
+    margin-left: 0;
+  }
 }
 .Form--tipo .Form-group--disabled .Form-label {
   opacity: 0.35;
@@ -3612,6 +3618,7 @@ este es el container de formulario tipo
 @media screen and (max-width: 992px) {
   .Form--tipo .Form-option > span {
     margin-top: 0.1em;
+    max-width: calc(100% - 30px);
   }
 }
 .Form--tipo .Form-option-color {
@@ -3676,6 +3683,30 @@ este es el container de formulario tipo
   font-size: 0.875em;
   margin-top: 0.25em;
   margin-left: 35%;
+  width: 100%;
+}
+.Form--tipo .Form-item-aligned {
+  margin-left: 35%;
+  width: auto;
+  margin-top: 0.25rem;
+}
+@media screen and (max-width: 992px) {
+  .Form--tipo .Form-item-aligned {
+    margin-left: 0;
+  }
+}
+.Form--tipo .Form-item-aligned.Button {
+  width: auto;
+}
+.Form--tipo p.Form-item-aligned {
+  margin-left: 35%;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 992px) {
+  .Form--tipo p.Form-item-aligned {
+    margin-left: 0;
+  }
 }
 .Form--tipo .Form-grid {
   max-width: 29em;
@@ -3765,10 +3796,12 @@ este es el container de formulario tipo
 
 .Form--tipo .Form-options {
   align-items: flex-start;
+  max-width: 65%;
 }
 @media screen and (max-width: 992px) {
   .Form--tipo .Form-options {
     align-items: flex-start;
+    max-width: 100%;
   }
 }
 .Form--tipo .Form-legend, .Form--tipo legend {

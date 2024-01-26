@@ -140,10 +140,10 @@
                                 </li>
                             
                                 <li>
-                                    <span>Fecha:</span> <strong>Fecha:10:30hs</strong>
+                                    <span>Hora:</span> <strong>10:30hs</strong>
                                 </li>
                                 <li>
-                                    <span>Fecha:</span> <strong>Torre Ejecutiva Sur, Liniers 1324 piso 4 - Montevideo</strong>
+                                    <span>Lugar:</span> <strong>Torre Ejecutiva Sur, Liniers 1324 piso 4 - Montevideo</strong>
                                 </li>
                         
                             </ul>
@@ -183,11 +183,15 @@
                                                 <span>Miércoles 13 de Setiembre 11:00 hs.</span>
                                             </label>
 
-                                            <p><a href="#!" id="show-calendar" >Ver calendario completo</a></p>
+                                           
 
                                     </div>
 
+                                    <p class="Form-item-aligned"><a href="#!" id="show-calendar"  >Ver calendario completo</a></p>
+
                                 </div>
+
+                                
 
 
                                 <div class="Form-group u-hide" role="group" id="calendario-agenda-2" aria-labelledby="label-calendario-2">

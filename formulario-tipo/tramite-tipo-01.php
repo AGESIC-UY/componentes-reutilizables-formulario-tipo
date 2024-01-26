@@ -149,7 +149,7 @@
                                     <label class="Form-label" for="documento-identidad">Documento de identidad:*</label>
                                     <input class="Form-widget" name="documento-identidad" type="text" aria-describedby="ayuda-documento-identidad" id="documento-identidad" >
                                     <div class="Form-hint" id="ayuda-documento-identidad">Incluir dígito verificador</div>
-                                    <a href="#">No tengo documento uruguayo</a>
+                                    <a href="#" class="Form-item-aligned">No tengo documento uruguayo</a>
                                 </div>
 
                                 <div class="Form-group" >

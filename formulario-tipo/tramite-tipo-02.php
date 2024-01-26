@@ -246,7 +246,7 @@
                                     <label class="Form-label" for="dato-agregado-1">Dato 1:</label>
                                     <input class="Form-widget" name="dato-agregado-1" type="text" id="dato-agregado-1" >
                           
-                                    <a href="#" class="Button Button--link Button--small">+ Agregar otro campo</a>
+                                    <a href="#" class="Button Button--link Button--small Form-item-aligned">+ Agregar otro campo</a>
                         
                                 </div>
 

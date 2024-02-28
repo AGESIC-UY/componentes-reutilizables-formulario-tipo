@@ -6,7 +6,7 @@ $(function() {
   $('.step-modal-link, .overlay-mobile').on('click', function(e) {
     
     e.preventDefault();
-    $(this).closest(".Steps").toggleClass('is-visible');
+    $(this).closest(".Steps--tipo").toggleClass('is-visible');
 
   });
 

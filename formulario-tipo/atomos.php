@@ -16,15 +16,15 @@
 </div>
 
 
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
       
-                    <div class="Page Page--formulario" >
+                    <div class="Page" >
 
                     <h1 class="Page-title">Átomos</h1> 
                     <h2 class="u-mb3">Encabezados y textos</h2>
@@ -116,6 +116,8 @@
                  
                     <h3><code>.Button</code> aplicado a distintos elementos</h3>
 
+                    <div class="Form--tipo">
+
                     <div class="Button" tabindex="0" role="button">Button div</div>
                     <span class="Button" tabindex="0" role="button">Button span</span>
                     <a href="#" class="Button">Button link</a>
@@ -128,9 +130,13 @@
                       <button class="Button u-outerLink">Button button<span class="u-hideVisually">Enlace externo</span></button>
                     </div>
 
+                    </div>
+
                     <hr>
 
                     <h3>Modificadores de <code>.Button</code></h3>
+
+                    <div class="Form--tipo">
 
                     <div class="u-mt3">
 
@@ -175,9 +181,11 @@
                       <button class="Button Button--link is-disabled" aria-disabled="true"><span class="Icon Icon--print-disabled"></span>Botón enlace deshabilitado c/i<span class="u-hideVisually">Enlace externo</span></button>
                     </div>
 
+                    </div>
+
                     <hr>
 
-                    <form class="Form" action="./">
+                    <form class="Form--tipo" action="./">
                       <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
 
                       <fieldset >
@@ -242,11 +250,11 @@
 
                     </form>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
 
 
               
-                      <fieldset class="u-mt5">
+                      <fieldset >
                         <legend>
                           <span>Selectores</span>
                         </legend>
@@ -265,7 +273,7 @@
 
                       
 
-                      <fieldset class="u-mt5">
+                      <fieldset >
                         <legend>
                           <span>Campos combinados</span>
                         </legend>
@@ -334,7 +342,7 @@
 
                       </fieldset>
 
-                      <fieldset class="u-mt5">
+                      <fieldset >
                         <legend>
                           <span>Fechas</span>
                         </legend>
@@ -373,7 +381,7 @@
                             <div class="Grid-item u-size1of3 u-md-size1of4"></div>
                             
                             <div class="Grid-item u-sizeFull u-md-sizeFull">
-                              <div class="Form-hint u-mt1 u-md-mt1">Ejemplo: 31 12 1980</div>
+                               <div class="Form-hint">Ejemplo: 31 12 1980</div>
                             </div>
                           </div>
                           
@@ -433,7 +441,7 @@
                             <!-- <div class="Grid-item u-size1of3 u-md-size1of4"></div> -->
                             
                             <div class="Grid-item u-sizeFull u-md-sizeFull">
-                              <div class="Form-hint u-mt1 u-md-mt1">Ejemplo: marzo 31  1980</div>
+                              <div class="Form-hint">Ejemplo: marzo 31  1980</div>
                             </div>
                           </div>
                           
@@ -445,7 +453,7 @@
 
                       </fieldset>
 
-                      <fieldset class="u-mt5">
+                      <fieldset >
                         <legend>
                           <span>Archivos adjuntos</span>
                         </legend>
@@ -464,7 +472,7 @@
 
                       </fieldset>
 
-                      <fieldset class="u-mt5">
+                      <fieldset >
                         <legend>
                           <span>Verificación de seguridad</span>
                         </legend>
@@ -482,9 +490,9 @@
                     </form>
 
 
-                    <form class="Form" action="./">
+                    <form class="Form--tipo" action="./">
 
-                        <fieldset class="u-mt5">
+                        <fieldset >
 
                           <legend>
                             
@@ -605,9 +613,9 @@
 
                     
 
-                    <form  class="Form">
+                    <form  class="Form--tipo">
               
-                      <fieldset class="u-mt5">
+                      <fieldset >
                         
                         <legend>
                           <span>Opciones</span>
@@ -629,6 +637,34 @@
                             <label for="opcion_2" class="Form-option">
                               <input type="radio" id="opcion_2" name="opciones">
                               <span>Radio 2</span>
+                            </label>
+                            <label for="opcion_3" class="Form-option">
+                              <input type="radio" id="opcion_3" name="opciones">
+                              <span>Radio 3</span>
+                            </label>
+                          
+                          </div>
+                        
+                        </div>
+
+
+                        <div class="Form-group" role="group"  aria-labelledby="grupo-radios-tags" >
+                          
+                          <div id="grupo-radios-tags" class="Form-label" >Grupo de opciones de etiquetas:</div>
+                          
+                          <div class="Form-options Form-options--tags">
+                          
+                            <label for="opcion_1_tag" class="Form-option">
+                              <input type="radio" id="opcion_1_tag" name="opciones-tag" checked>
+                              <span>Etiqueta 1</span>
+                            </label>
+                            <label for="opcion_2_tag" class="Form-option">
+                              <input type="radio" id="opcion_2_tag" name="opciones-tag">
+                              <span>Etiqueta 2</span>
+                            </label>
+                            <label for="opcion_3_tag" class="Form-option">
+                              <input type="radio" id="opcion_3_tag" name="opciones-tag">
+                              <span>Etiqueta 2</span>
                             </label>
                           
                           </div>
@@ -673,9 +709,9 @@
                     
                     </form>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
 
-                      <fieldset class="u-mt5">
+                      <fieldset >
 
                         <legend>
                           <span>Valoración</span>
@@ -721,9 +757,9 @@
 
                     </form>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
               
-                      <fieldset class="u-mt5">
+                      <fieldset >
                 
                         <legend><span>Grupo de campos solo lectura</span></legend>
 
@@ -749,9 +785,9 @@
                     
                     </form>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
                       
-                      <fieldset class="u-mt5">
+                      <fieldset >
                         
                         <legend>
                            <span>Tipos de datos especiales</span>
@@ -774,7 +810,7 @@
                       
                       </fieldset>
 
-                      <fieldset  class="u-mt5">
+                      <fieldset  >
                         
                         <legend>
                           <span>Campos con indicadores</span>
@@ -784,10 +820,10 @@
                           <label class="Form-label" for="con_tooltip-1">Con ícono:</label>
                           <input type="url" class="Form-widget Form-widget--w-icon" id="con_tooltip-1" name="con_tooltip-1" />
                           
-                          <a href="#" class="Form-icon">
+                          <span href="#" class="Form-icon">
                             <img src="assets/icons/icon-ok-circle.svg" alt="Icono rol validado" />
                             <span class="u-hideVisually">Rol validado</span>
-                          </a>
+                          </span>
                           
                         </div>
 
@@ -829,9 +865,9 @@
                     
                     </form>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form Form--tipo">
                     
-                      <fieldset  class="u-mt5">
+                      <fieldset  >
                           
                           <legend><span>Grupo de campos anidados</span></legend>
 
@@ -868,9 +904,9 @@
                   
                     </form>
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form Form--tipo">
               
-                      <fieldset class="u-mt5">
+                      <fieldset >
 
                         <legend>
                           <span>Botón alineado con los campos</span>
@@ -897,12 +933,12 @@
                     </form>
 
                 
-                    <form action="./" class="Form Form--stacked">
+                    <form action="./" class="Form--tipo Form--stacked">
                 
                 
                     
 
-                    <fieldset class="u-mt5">
+                    <fieldset>
 
                     <legend>
                           <span>Formulario apilado</span>
@@ -940,7 +976,7 @@
 
                     </form>
 
-                    <h2 class="u-mb3 u-mt5">Íconos</h2>
+                    <h2 class="u-mb3">Íconos</h2>
 
                       <p>Los íconos se encuentran en la carpeta <code>/assets/icons</code> y en dos formatos: <code>svg</code> y
                         <code>png</code>.</p>

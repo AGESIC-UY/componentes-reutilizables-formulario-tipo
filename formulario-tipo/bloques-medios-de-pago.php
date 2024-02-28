@@ -16,21 +16,21 @@
 		</div>
 </div>
   
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
 
-                <div class="Page Page--formulario" >
+                <div class="Page">
 
 
                     <h2 class="Page-title">Medios de pago</h2>
 
-                    <div class="Alert">
+                    <div class="Alert--tipo">
                     
                                                 
                             <ul class="resumen-datos">
@@ -57,7 +57,7 @@
                     </div>
 
 
-                    <form action="./" class="Form">
+                    <form action="./" class="Form--tipo">
 
                         <fieldset>
 

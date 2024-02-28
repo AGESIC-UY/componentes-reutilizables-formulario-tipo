@@ -15,23 +15,23 @@
 		</div>
 </div>
 
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
 
-        <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
+        <div class="Grid-item Grid-item--center u-lg-size8of10">
 
 
-            <div class="Page Page--formulario">
+            <div class="Page">
 
                 <h1 class="Page-title">Trámite tipo</h1>
 
 <!-- Pasos -->
 
-                        <div class="Steps">
+                        <div class="Steps--tipo">
 
                             <div class="progress-mobile">
                                 
@@ -129,7 +129,7 @@
 
                         <!-- fin pasos -->
 
-                <div class="Alert Alert--dialog Alert--success" role="alert" aria-live="assertive">
+                <div class="Alert--tipo Alert--dialog Alert--success" role="alert" aria-live="assertive">
                 
                     <h4 class="Alert-title">Su gestión se ha realizado correctamente</h4>
                     <p>Se ha enviado una confirmación a correo@correo.com.uy</p>
@@ -137,15 +137,14 @@
                 
                 </div>
 
-                <div class="Alert Alert--dialog Alert--info" role="alert" aria-live="assertive">
+                <div class="Alert--tipo Alert--dialog Alert--info" role="alert" aria-live="assertive">
                 
                         <h4 class="Alert-title">Información relevante</h4>
                         <p>Lorem ipsum dolor sit amet sed ut perspiciatis unde omnis iste</p>
                 
                 </div>
 
-                <form action="./" class="Form">
-
+                <form action="./" class="Form--tipo">
 
                     <fieldset>
 

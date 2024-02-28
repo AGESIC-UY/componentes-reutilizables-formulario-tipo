@@ -15,22 +15,22 @@
 		</div>
 </div>
 
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-lg-size8of10">
 
 
-                    <div class="Page Page--formulario">
+                    <div class="Page">
 
                         <h1 class="Page-title">Trámite tipo</h1>
 
                         <!-- Pasos -->
 
-                        <div class="Steps">
+                        <div class="Steps--tipo">
 
                             <div class="progress-mobile">
                                 
@@ -129,7 +129,7 @@
 
                         <h2>Datos personales</h2>
 
-                        <div class="Alert Alert--dialog">
+                        <div class="Alert--tipo Alert--dialog">
 
                             <h4 class="Alert-title">Información relevante</h4>
                             <p>Lorem ipsum dolor sit amet Sed ut perspiciatis unde omnis iste</p>
@@ -137,7 +137,7 @@
 
                         </div>
 
-                        <form  class="Form" action="tramite-tipo-02.php">
+                        <form  class="Form--tipo" action="tramite-tipo-02.php">
 
                             <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
 
@@ -177,7 +177,7 @@
 
                             </fieldset>
 
-                            <fieldset class="u-mt5">
+                            <fieldset >
 
                                 <legend>
                                     <span>Datos de domicilio</span>
@@ -242,7 +242,7 @@
 
                             </fieldset>
 
-                            <fieldset class="u-mt5">
+                            <fieldset >
 
                                 <legend>
                                     <span>Datos de contacto</span>
@@ -273,7 +273,7 @@
                             </fieldset>
 
 
-                            <fieldset class="u-mt5">
+                            <fieldset >
 
                                 <legend>
                                     <span>Cláusula de consentimiento informado:</span>

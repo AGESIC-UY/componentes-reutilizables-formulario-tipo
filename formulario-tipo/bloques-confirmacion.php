@@ -16,20 +16,20 @@
 		</div>
 </div>
   
-<main  id="contenido">
+<main  id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
 
                 <div class="Page Page--formulario" >
 
                         <h2 class="Page-title">Confirmación</h2>
 
-                        <div class="Alert Alert--dialog Alert--success" role="alert" aria-live="assertive">
+                        <div class="Alert--tipo Alert--dialog Alert--success" role="alert" aria-live="assertive">
                             
                             <h3 class="Alert-title u-h4">El pago se ha realizado exitosamente</h3>
                             

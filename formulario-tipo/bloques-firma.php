@@ -17,7 +17,7 @@
 </div>
 
   
-<main  id="contenido">
+<main  id="contenido" class="u-main">
 
 
     <div class="Container">
@@ -25,18 +25,19 @@
         <div class="Grid">
 
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center  u-md-size3of4 u-lg-size8of10">
 
 
-              <div class="Page Page--formulario" >
+              <div class="Page" >
 
 
 
-                <h2 class="Firma">Firma</h2>
+                <h2 class="Page-title">Datos de domicilio (Completo)</h2>
 
-                <form action="./" class="Form">
 
-                    <fieldset class="u-mt5">
+                <form action="./" class="Form--tipo">
+
+                    <fieldset >
                         
                         <legend>
 
@@ -67,7 +68,7 @@
 
                     </fieldset>
 
-                    <div class="Alert Alert--dialog" role="alert" aria-live="assertive">
+                    <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
 
                         <h4 class="Alert-title">Forma precencialmente</h4>
                         <p>También es posible llevar el formulario firmado a las <a href="">oficina del organismo</a></p>
@@ -75,7 +76,7 @@
                     </div>
 
 
-                    <fieldset class="u-mt5">
+                    <fieldset >
                         
                         <legend>
 

@@ -15,23 +15,23 @@
 		</div>
 </div>
 
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center u-lg-size8of10">
 
 
 
-                    <div class="Page Page--formulario">
+                    <div class="Page ">
 
                         <h1 class="Page-title">Trámite tipo</h1>
 
                         <!-- Pasos -->
 
-                        <div class="Steps">
+                        <div class="Steps--tipo">
 
                             <div class="progress-mobile">
                                 
@@ -130,7 +130,7 @@
 
                         <h2>Agenda</h2>
 
-                        <div class="Alert Alert--dialog Alert--success" role="alert" aria-live="assertive">
+                        <div class="Alert--tipo Alert--dialog Alert--success" role="alert" aria-live="assertive">
                             <h4 class="Alert-title">Su reserva está confirmada</h4>
                             
                             <ul class="resumen-datos">
@@ -151,9 +151,9 @@
                             <a href="#">Imprimir</a>
                         </div>
 
-                        <form action="tramite-tipo-05.php" class="Form">
+                        <form action="tramite-tipo-05.php" class="Form--tipo">
 
-                        <fieldset class="u-mt5">
+                        <fieldset>
                                     
                             <legend>
 
@@ -161,67 +161,39 @@
                                     
                             </legend>
 
-                            <fieldset>
 
-                                <legend>
+                                <div class="Form-group" role="group"  aria-labelledby="grupo-turnos-disponibles">
 
-                                    <span>Seleccione el día</span>
+                                    <div id="grupo-turnos-disponibles" class="Form-label" >Turnos disponibles:</div>
 
-                                </legend>
+                                    <div class="Form-options Form-options--tags">
 
-                                <div class="Form-group" role="group"  aria-labelledby="grupo-radios-dias-disponibles" >
-                                    
-                                    <div id="grupo-radios-dias-disponibles" class="Form-label" >Días disponibles:</div>
-                                    
-                                        <div class="Form-options">
-
-                                            <label for="110923" class="Form-option">
-                                                <input type="radio" id="110923" name="seleccione-dia" ckecked>
-                                                <span>Lunes 11 de Setiembre</span>
+                                            <label for="110923-0930" class="Form-option">
+                                                <input type="radio" id="110923-0930" name="seleccione-turno" >
+                                                <span>Lunes 11 de Setiembre - 09:30 hs.</span>
                                             </label>
 
-                                            <label for="120923" class="Form-option">
-                                                <input type="radio" id="120923" name="seleccione-dia">
-                                                <span>Martes 12 de Setiembre</span>
+                                            <label for="120923-1030" class="Form-option">
+                                                <input type="radio" id="120923-1030" name="seleccione-turno">
+                                                <span>Martes 12 de Setiembre - 10:30 hs.</span>
                                             </label>
 
-                                            <label for="130923" class="Form-option">
-                                                <input type="radio" id="130923" name="seleccione-dia">
-                                                <span>Miércoles 13 de Setiembre</span>
+                                            <label for="130923-1100" class="Form-option">
+                                                <input type="radio" id="130923-1100" name="seleccione-turno">
+                                                <span>Miércoles 13 de Setiembre 11:00 hs.</span>
                                             </label>
 
-                                            <label for="140923" class="Form-option">
-                                                <input type="radio" id="140923" name="seleccione-dia">
-                                                <span>Jueves 14 de Setiembre</span>
-                                            </label>
+                                            <p><a href="#!" id="show-calendar" >Ver calendario completo</a></p>
 
-                                            <label for="150923" class="Form-option">
-                                                <input type="radio" id="150923" name="seleccione-dia">
-                                                <span>Viernes 15 de Setiembre</span>
-                                            </label>
-
-                                            
-                                            <label for="otro-dia" class="Form-option">
-                                                <input type="radio" id="otro-dia" name="seleccione-dia" value="mostrar-agenda">
-                                                <span>Otro día</span>
-
-                                              
-
-                                            </label>
-
-
-                                            
-
-                                        </div>
-
+                                    </div>
 
                                 </div>
 
 
-                               <div class="Form-group" role="group" id="calendario-agenda" aria-labelledby="label-calendario">
+                                <div class="Form-group u-hide" role="group" id="calendario-agenda-2" aria-labelledby="label-calendario-2">
                         
 
-                                    <div id="label-calendario" class="Form-label">Seleccione el día en el calendario: </div> 
+                                    <div id="label-calendario-2" class="Form-label">Seleccione el día en el calendario: </div> 
 
                                         <div>
 
@@ -317,75 +289,21 @@
 
                                         </div>
 
-                                </div>
+
+                                    </div>
 
 
+                                    <div class="Form-group u-hide" id="horas-disponibles" >
+                                        <label for="combo-1" class="Form-label">Horários disponibles:</label>
+                                        <select name="combo-1" id="combo-1" class="Form-widget Form-widget--small">
+                                            
+                                            <option value="1">8:00 hs.</option>
+                                            <option value="2">9:30 hs.</option>
+                                            <option value="3">10:00 hs.</option>
+                                        </select>
+                                    </div>
 
-                                </fieldset>
-
-                                <fieldset>
-
-                                    <legend>
-
-                                        Horarios disponibles
-
-                                    </legend>
-
-                                    <div class="Form-group" role="group"  aria-labelledby="grupo-radios-horas-manana" >
-
-                                        <div id="grupo-radios-horas-manana" class="Form-label" >Por la mañana:</div>
-
-                                            <div class="Form-options">
-
-                                                <label for="0930" class="Form-option">
-                                                    <input type="radio" id="0930" name="opciones-hora">
-                                                    <span>09:30 hs.</span>
-                                                </label>
-
-                                                <label for="1030" class="Form-option">
-                                                    <input type="radio" id="1030" name="opciones-hora" checked>
-                                                    <span>10:30 hs.</span>
-                                                </label>
-
-                                                <label for="1100" class="Form-option">
-                                                    <input type="radio" id="1100" name="opciones-hora">
-                                                    <span>11:00 hs.</span>
-                                                </label>
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="Form-group" role="group"  aria-labelledby="grupo-radios-horas-tarde" >
-
-                                            <div id="grupo-radios-horas-tarde" class="Form-label" >Por la tarde:</div>
-
-                                                <div class="Form-options">
-
-                                                        <label for="1200" class="Form-option">
-                                                            <input type="radio" id="1200" name="opciones-hora">
-                                                            <span>12:00 hs.</span>
-                                                        </label>
-
-                                                        <label for="1230" class="Form-option">
-                                                            <input type="radio" id="1230" name="opciones-hora">
-                                                            <span>12:30 hs.</span>
-                                                        </label>
-
-                                                        <label for="1300" class="Form-option">
-                                                            <input type="radio" id="1300" name="opciones-hora">
-                                                            <span>13:00 hs.</span>
-                                                        </label>
-
-                                                </div>
-
-                                        </div>
-
-
-
-                            
-                            </fieldset>
-
+                               
 
 
                         <div class="Form-group Form-group--aligned" >
@@ -429,31 +347,31 @@
 
 <script>
 
-    // Script que muestra u oculta el calendario a partir de la selección del radio button "Otro día" en el cuadro "Seleccione el día"
+   
 
 $(document).ready(function() {
-  
-  $('input[name="seleccione-dia"]').change(function() {
-    
-    if ($(this).val() === 'mostrar-agenda') {
-    
-        $('#calendario-agenda').show();
-    
-    } else {
-    
-        $('#calendario-agenda').hide();
-    
-    }
 
-  });
 
-    // se oculta el calendario al cargar
+   // Turnos: le asigna el atributo checked al radio seleccionado
 
-   if ($('input[name="seleccione-dia"]:checked').val() !== 'mostrar') {
 
-    $('#calendario-agenda').hide();
-  
-   }
+    $('input[name="seleccione-turno"]').on('change', function() {
+
+        $('#calendario-agenda-2, #horas-disponibles').addClass('u-hide');
+    
+    });
+
+
+    $('#show-calendar').on('click', function(event){
+
+        event.preventDefault();
+        $('input[name="seleccione-turno"]').prop('checked', false);
+        $('#calendario-agenda-2, #horas-disponibles').toggleClass('u-hide');
+
+
+    })
+
+
 
 });
 

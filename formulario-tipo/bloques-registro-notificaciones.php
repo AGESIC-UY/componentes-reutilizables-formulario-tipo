@@ -17,7 +17,7 @@
 </div>
 
   
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
@@ -26,12 +26,12 @@
             <div class="Grid-item Grid-item--center u-md-size3of4 u-mt5 u-md5 u-lg-size8of10">
 
 
-                <div class="Page Page--formulario" >
+                <div class="Page" >
 
 
                     <h2 class="Page-title">Registro ante notificaciones.gub.uy</h2>
 
-                    <div class="Alert Alert--dialog" role="alert" aria-live="assertive">
+                    <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
                         
                         <h4 class="Alert-title">¿Desea registrar su correo electrónico en notificaciones.gub.uy?</h4>
                         <p>Recibirá notificaciones de sus tramites de manera ágil sencilla y segura</p>

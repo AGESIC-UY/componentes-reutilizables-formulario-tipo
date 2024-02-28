@@ -16,20 +16,20 @@
 		</div>
 </div>
  
-<main id="contenido">
+<main id="contenido" class="u-main">
 
     <div class="Container">
 
         <div class="Grid">
 
-            <div class="Grid-item Grid-item--center u-mt5 u-md5 u-md-size3of4 u-lg-size8of10">
+            <div class="Grid-item Grid-item--center  u-md-size3of4 u-lg-size8of10">
 
 
-              <div class="Page Page--formulario" >
+              <div class="Page" >
 
                 <h2 class="Page-title">Identificación con documento de identidad uruguayo</h2>
 
-                <form action="./" class="Form">
+                <form action="./" class="Form Form--tipo">
 
                     <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
 

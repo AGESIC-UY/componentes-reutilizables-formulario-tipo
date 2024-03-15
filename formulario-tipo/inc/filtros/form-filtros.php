@@ -23,6 +23,23 @@
 				$filter_id = "etiqueta4";
 				include "./inc/filtros/filtro-select.php";
 			?>
+
+			<?php
+				$filter_name = "Radio buttons";
+				$filter_id = "Form-radio";
+				include "./inc/filtros/filtro-radio.php";
+			?>
+
+			<?php
+				$filter_name = "Checkboxes";
+				$filter_id = "Form-checkboxes";
+				include "./inc/filtros/filtro-checkboxes.php";
+			?>
+
+			<?php include "./inc/filtros/filtro-rango.php"; ?>
+
+
+
 	</fieldset>
 	<div class="Form-actions u-mt3 u-md-mt2">
 		<div class="u-mt2">

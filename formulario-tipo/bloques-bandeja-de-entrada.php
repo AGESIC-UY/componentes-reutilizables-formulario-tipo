@@ -36,7 +36,7 @@
 
                         <div class="Page-body">
 
-                            <h1 class="Page-title u-h2 ">Bandeja de entrada</h1>
+                            <h1 class="Page-title u-h2 ">Bandeja de entrada sencilla</h1>
 
                             <form class="Form--tipo">
 
@@ -48,8 +48,8 @@
                                         </div>
                                         <div class="Bar-cell" style="width: 190px;">
                                             <select name="ordenar_bandeja" id="ordenar_bandeja" class="Form-widget">
-                                                <option value="0">Remitente A-Z</option>
-                                                <option value="1">Remitente Z-A</option>
+                                                <option value="0">ID A-Z</option>
+                                                <option value="1">ID Z-A</option>
                                                 <option value="2">Fecha ascentede</option>
                                                 <option value="2">Fecha descendente</option>
                                             </select>
@@ -69,8 +69,8 @@
 
                                         <tr>
 
-                                            <th>Remitente</th>
-                                            <th>Asunto</th>
+                                            <th>ID</th>
+                                            <th>Descripción</th>
                                             <th>Fecha y Hora</th>
                                             <th>Acciones</th>
                                         </tr>
@@ -85,7 +85,7 @@
 
                                             <td><a href="">Resumen de activos de la empresa del mes de agosto</a></td>
                                             <td>12/06/23 - 08:30</td>
-                                            <td class="u-textRight table-actions"><a href="" aria-label="Eliminar"><span class="Icon Icon--delete"></span></a> <a href="#" aria-label="Menú contextual" class="link-tool-contextual-menu" data-target="tool-contextual-menu-tabla"><span class="Icon Icon--dropmenu"></span></a></td>
+                                            <td class="u-textRight table-actions"><a href="" aria-label="Eliminar"><img src="assets/icons/icon-delete.svg" title="Eliminar" alt="Eliminar" width="24" /></a> <a href="#" aria-label="Menú contextual" class="link-tool-contextual-menu" data-target="tool-contextual-menu-tabla"><img src="assets/icons/icon-dropmenu.svg" alt="Menú contextual" title="Menú contextual" width="24" /></a></td>
 
                                         </tr>
 
@@ -96,7 +96,7 @@
 
                                             <td><a href="">Informe anual 2020</a></td>
                                             <td>12/06/23 - 08:30</td>
-                                            <td class="u-textRight table-actions"><a href="" aria-label="Eliminar"><span class="Icon Icon--delete"></span></a> <a href="#" aria-label="Menú contextual" class="link-tool-contextual-menu" data-target="tool-contextual-menu-tabla"><span class="Icon Icon--dropmenu"></span></a></td>
+                                            <td class="u-textRight table-actions"><a href="" aria-label="Eliminar"><img src="assets/icons/icon-delete.svg" title="Eliminar" alt="Eliminar" width="24" /></a> <a href="#" aria-label="Menú contextual" class="link-tool-contextual-menu" data-target="tool-contextual-menu-tabla"><img src="assets/icons/icon-dropmenu.svg" alt="Menú contextual" title="Menú contextual" width="24" /></a></td>
 
                                         </tr>
 
@@ -107,7 +107,7 @@
 
                                             <td><a href="">Gestión de trámites internos</a></td>
                                             <td>12/06/23 - 08:30</td>
-                                            <td class="u-textRight table-actions"><a href="" aria-label="Eliminar"><span class="Icon Icon--delete"></span></a> <a href="#" aria-label="Menú contextual" class="link-tool-contextual-menu" data-target="tool-contextual-menu-tabla"><span class="Icon Icon--dropmenu"></span></a></td>
+                                            <td class="u-textRight table-actions"><a href="" aria-label="Eliminar"><img src="assets/icons/icon-delete.svg" title="Eliminar" alt="Eliminar" width="24" /></a> <a href="#" aria-label="Menú contextual" class="link-tool-contextual-menu" data-target="tool-contextual-menu-tabla"><img src="assets/icons/icon-dropmenu.svg" alt="Menú contextual" title="Menú contextual" width="24" /></a></td>
 
                                         </tr>
 

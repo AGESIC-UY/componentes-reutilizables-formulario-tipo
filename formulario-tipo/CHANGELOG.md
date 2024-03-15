@@ -1,5 +1,14 @@
 # Changelog
 
+
+## [1.3] - 2024-03-15
+## Changed
+- Se ajustan etiquetas del bloque bandeja de entrada y agregan ejemplos de filtros.
+
+## Deleted
+- Se elimina archivo de pruebas
+
+
 ## [1.2] - 2024-01-03
 
 ## Changed

@@ -25,7 +25,7 @@
 													<a href="atomos.php">
 															<div class="Flag">
 																	<div class="Flag-image">
-																			<img src="./img/atomo.jpg" alt="">
+																			<img src="./img/atomo.png" alt="">
 																	</div>
 																	<div class="Flag-body">
 																			<span class="Box-title">Atomos</span>
@@ -38,7 +38,7 @@
 													<a href="moleculas.php">
 															<div class="Flag">
 																	<div class="Flag-image">
-																			<img src="./img/molecula.jpg" alt="">
+																			<img src="./img/moleculas.png" alt="">
 																	</div>
 																	<div class="Flag-body">
 																			<span class="Box-title">Moléculas</span>
@@ -51,7 +51,7 @@
 													<a href="bloques.php">
 															<div class="Flag">
 																	<div class="Flag-image">
-																			<img src="./img/organismo.jpg" alt="">
+																			<img src="./img/bloques.png" alt="">
 																	</div>
 																	<div class="Flag-body">
 																			<span class="Box-title">Bloques</span>
@@ -64,7 +64,7 @@
 													<a href="formulario.php">
 															<div class="Flag">
 																	<div class="Flag-image">
-																			<img src="./img/ejemplo.jpg" alt="">
+																			<img src="./img/ejemplo-completo.png" alt="">
 																	</div>
 																	<div class="Flag-body">
 																			<span class="Box-title">Ejemplo completo</span>
@@ -77,7 +77,7 @@
 													<a href="tramite-tipo-01.php">
 															<div class="Flag">
 																	<div class="Flag-image">
-																			<img src="./img/tramite-tipo.jpg" alt="">
+																			<img src="./img/tramite-tipo.png" alt="">
 																	</div>
 																	<div class="Flag-body">
 																			<span class="Box-title">Trámite tipo</span>
@@ -90,7 +90,7 @@
 													<a href="https://github.com/AGESIC-UY/componentes-reutilizables-formulario-tipo">
 															<div class="Flag">
 																	<div class="Flag-image">
-																			<img src="./img/github-logo.jpg" alt="">
+																			<img src="./img/github.png" alt="">
 																	</div>
 																	<div class="Flag-body">
 																			<span class="Box-title">Repositorio Github</span>

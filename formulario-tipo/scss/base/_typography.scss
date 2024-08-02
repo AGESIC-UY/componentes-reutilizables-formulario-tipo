@@ -15,14 +15,15 @@ a:focus {
   text-decoration: $base-link-hover-decoration;
 }
 
-/*
+
 button:focus,
 :focus {
+  
 	outline: $focus-ring;
 	outline-offset: $focus-offset;
-	
+
 }
-  */
+
 
 /* Headings
    ========================================================================== */
@@ -45,6 +46,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 h3 {

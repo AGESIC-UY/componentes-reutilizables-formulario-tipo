@@ -140,10 +140,10 @@
                                 </li>
                             
                                 <li>
-                                    <span>Fecha:</span> <strong>Fecha:10:30hs</strong>
+                                    <span>Hora:</span> <strong>10:30hs</strong>
                                 </li>
                                 <li>
-                                    <span>Fecha:</span> <strong>Torre Ejecutiva Sur, Liniers 1324 piso 4 - Montevideo</strong>
+                                    <span>Lugar:</span> <strong>Torre Ejecutiva Sur, Liniers 1324 piso 4 - Montevideo</strong>
                                 </li>
                         
                             </ul>
@@ -153,179 +153,148 @@
 
                         <form action="tramite-tipo-05.php" class="Form--tipo">
 
-                        <fieldset>
-                                    
-                            <legend>
+                            <fieldset>
 
-                                <span>Agendar reserva</span>
-                                    
-                            </legend>
+                                <legend>
+                                    <span>Agendar reserva</span>
+                                </legend>
 
 
                                 <div class="Form-group" role="group"  aria-labelledby="grupo-turnos-disponibles">
-
-                                    <div id="grupo-turnos-disponibles" class="Form-label" >Turnos disponibles:</div>
-
-                                    <div class="Form-options Form-options--tags">
-
+                                    <div class="Form-label-wrap">
+                                        <div id="grupo-turnos-disponibles" class="Form-label" >Turnos disponibles:</div>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <div class="Form-options Form-options--tags">
                                             <label for="110923-0930" class="Form-option">
                                                 <input type="radio" id="110923-0930" name="seleccione-turno" >
                                                 <span>Lunes 11 de Setiembre - 09:30 hs.</span>
                                             </label>
-
                                             <label for="120923-1030" class="Form-option">
                                                 <input type="radio" id="120923-1030" name="seleccione-turno">
                                                 <span>Martes 12 de Setiembre - 10:30 hs.</span>
                                             </label>
-
                                             <label for="130923-1100" class="Form-option">
                                                 <input type="radio" id="130923-1100" name="seleccione-turno">
                                                 <span>Miércoles 13 de Setiembre 11:00 hs.</span>
                                             </label>
-
-                                            <p><a href="#!" id="show-calendar" >Ver calendario completo</a></p>
-
+                                        </div>
+                                        <p class="u-mt2"><a href="#!" id="show-calendar" >Ver calendario completo</a></p>
                                     </div>
-
                                 </div>
 
 
-                                <div class="Form-group u-hide" role="group" id="calendario-agenda-2" aria-labelledby="label-calendario-2">
-                        
-
-                                    <div id="label-calendario-2" class="Form-label">Seleccione el día en el calendario: </div> 
-
-                                        <div>
-
-                                            <div class="calendar" id="calendario">
-
-                                                <div class="calendar-header">
-                                                    
-                                                    <div class="previous-month">
-                                                    <button class="nav-button" title="Mes anterior">
-                                                        <img src="assets/icons/icon-prev.svg" alt="<"> 
-                                                        <span>May.</span>
-                                                    </button>
-                                                    </div>
-
-
-                                                    <div class="current-month">
-
-                                                        <span>Junio 2023</span>
-
-                                                    </div>
-
-                                                    <div class="next-month">
-                                                    <button class="nav-button" title="Mes siguiente">
-                                                        <span>Jul.</span>
-                                                        <img src="assets/icons/icon-next.svg" alt=">"> 
-                                                    </button>
-                                                    </div>
-                                                
-                                                </div>
-
-                                                <div class="calendar-grid" role="table" aria-label="Calendario de fechas disponibles">
-
-                                                <!-- <div id="label-tabla-calendario" class="u-hideVisually">Tabla calendario: </div> -->
-                                                    
-                                                    <div class="weekdays" role="row">
-                                                    <div class="weekday" role="columnheader">LU</div>
-                                                    <div class="weekday" role="columnheader">MA</div>
-                                                    <div class="weekday" role="columnheader">MI</div>
-                                                    <div class="weekday" role="columnheader">JU</div>
-                                                    <div class="weekday" role="columnheader">VI</div>
-                                                    <div class="weekday" role="columnheader">SA</div>
-                                                    <div class="weekday" role="columnheader">DO</div>
-                                                    </div>
-                                                    
-                                                    <div class="days">
-                                                        <!-- Días del mes de junio de 2023 -->
-                                                        <div class="day disabled"><span aria-disabled="true">29</span></div>
-                                                        <div class="day disabled"><span aria-disabled="true">30</span></div>
-                                                        <div class="day disabled"><span aria-disabled="true">31</span></div>
-                                                        <div class="day"><span>1</span></div>
-                                                        <div class="day"><span>2</span></div>
-                                                        <div class="day"><span>3</span></div>
-                                                        <div class="day"><span>4</span></div>
-                                                        <div class="day"><span>5</span></div>
-                                                        <div class="day"><span class="current">6</span></div>
-                                                        <div class="day"><span>7</span></div>
-                                                        <div class="day"><span>8</span></div>
-                                                        <div class="day"><span class="marked">9</span></div>
-                                                        <div class="day"><a href="">10</a></div>
-                                                        <div class="day"><a href="">11</a></div>
-                                                        <div class="day"><a href="">12</a></div>
-                                                        <div class="day"><a href="">13</a></div>
-                                                        <div class="day"><a href="">14</a></div>
-                                                        <div class="day"><a href="">15</a></div>
-                                                        <div class="day"><a href="">16</a></div>
-                                                        <div class="day"><span>17</span></div>
-                                                        <div class="day"><span>18</span></div>
-                                                        <div class="day"><span>19</span></div>
-                                                        <div class="day"><span>20</span></div>
-                                                        <div class="day"><span>21</span></div>
-                                                        <div class="day"><span>22</span></div>
-                                                        <div class="day"><span>23</span></div>
-                                                        <div class="day"><span>24</span></div>
-                                                        <div class="day"><span>25</span></div>
-                                                        <div class="day"><span>26</span></div>
-                                                        <div class="day"><span>27</span></div>
-                                                        <div class="day"><span>28</span></div>
-                                                        <div class="day"><span>29</span></div>
-                                                        <div class="day"><span>30</span></div>
-                                                        <div class="day disabled"><span aria-disabled="true">1</span></div>
-                                                        <div class="day disabled"><span aria-disabled="true">2</span></div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="calendar-today">
-
-                                                    <span>9 de Junio de 2023</span>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
+                                <div class="Form-group u-hide" role="group" aria-labelledby="label-calendario-2" id="calendario-agenda-2">
+                                    <div class="Form-label-wrap">
+                                        <div id="label-calendario-2"  class="Form-label">Calendario:</div> 
                                     </div>
+                                    <div class="Form-object-wrap">
+                                        <div class="calendar" id="calendario">
+                                            <div class="calendar-header">
+                                            <div class="previous-month">
+                                                <button class="nav-button" title="Mes anterior">
+                                                <img src="assets/icons/icon-prev.svg"  alt="<" > 
+                                                <span>May.</span>
+                                                </button>
+                                            </div>
+                                            <div class="current-month">
+                                                <span>Junio 2023</span>
+                                            </div>
+                                            <div class="next-month">
+                                                <button class="nav-button" title="Mes siguiente">
+                                                    <span>Jul.</span>
+                                                    <img src="assets/icons/icon-next.svg" alt=">" > 
+                                                </button>
+                                            </div>
+                                            </div>
+                                            <div class="calendar-grid" role="table" aria-label="Calendario de fechas disponibles">
+                                            <div class="weekdays" role="row">
+                                                <div class="weekday" role="columnheader">LU</div>
+                                                <div class="weekday" role="columnheader">MA</div>
+                                                <div class="weekday" role="columnheader">MI</div>
+                                                <div class="weekday" role="columnheader">JU</div>
+                                                <div class="weekday" role="columnheader">VI</div>
+                                                <div class="weekday" role="columnheader">SA</div>
+                                                <div class="weekday" role="columnheader">DO</div>
+                                            </div>
+                                            <div class="days">
+                                                <!-- Días del mes de junio de 2023 -->
+                                                <div class="day disabled"><span aria-disabled="true">29</span></div>
+                                                <div class="day disabled"><span aria-disabled="true">30</span></div>
+                                                <div class="day disabled"><span aria-disabled="true">31</span></div>
+                                                <div class="day"><span>1</span></div>
+                                                <div class="day"><span>2</span></div>
+                                                <div class="day"><span>3</span></div>
+                                                <div class="day"><span>4</span></div>
+                                                <div class="day"><span>5</span></div>
+                                                <div class="day"><span class="current">6</span></div>
+                                                <div class="day"><span>7</span></div>
+                                                <div class="day"><span>8</span></div>
+                                                <div class="day"><span class="marked">9</span></div>
+                                                <div class="day"><a href="">10</a></div>
+                                                <div class="day"><a href="">11</a></div>
+                                                <div class="day"><a href="">12</a></div>
+                                                <div class="day"><a href="">13</a></div>
+                                                <div class="day"><a href="">14</a></div>
+                                                <div class="day"><a href="">15</a></div>
+                                                <div class="day"><a href="">16</a></div>
+                                                <div class="day"><span>17</span></div>
+                                                <div class="day"><span>18</span></div>
+                                                <div class="day"><span>19</span></div>
+                                                <div class="day"><span>20</span></div>
+                                                <div class="day"><span>21</span></div>
+                                                <div class="day"><span>22</span></div>
+                                                <div class="day"><span>23</span></div>
+                                                <div class="day"><span>24</span></div>
+                                                <div class="day"><span>25</span></div>
+                                                <div class="day"><span>26</span></div>
+                                                <div class="day"><span>27</span></div>
+                                                <div class="day"><span>28</span></div>
+                                                <div class="day"><span>29</span></div>
+                                                <div class="day"><span>30</span></div>
+                                                <div class="day disabled"><span aria-disabled="true">1</span></div>
+                                                <div class="day disabled"><span aria-disabled="true">2</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="calendar-today">
+                                                <span>9 de Junio de 2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-                                    <div class="Form-group u-hide" id="horas-disponibles" >
-                                        <label for="combo-1" class="Form-label">Horários disponibles:</label>
-                                        <select name="combo-1" id="combo-1" class="Form-widget Form-widget--small">
-                                            
+                                <div class="Form-group u-hide" id="horas-disponibles"> 
+                                    <div class="Form-label-wrap">
+                                        <label for="combo-hora" class="Form-label">Horarios disponibles:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <select name="combo-hora" id="combo-hora" class="Form-widget Form-widget--small">
                                             <option value="1">8:00 hs.</option>
                                             <option value="2">9:30 hs.</option>
                                             <option value="3">10:00 hs.</option>
                                         </select>
                                     </div>
+                                </div>
 
-                               
-
-
-                        <div class="Form-group Form-group--aligned" >
-
-                            <button type="submit" class="Button Button--primary">Confirmar reserva</button>
-
-                        </div>
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap"></div>
+                                    <div class="Form-object-wrap"><button type="submit" class="Button Button--primary">Confirmar reserva</button></div>
+                                </div>
 
 
-                    </fieldset>
+                            </fieldset>
 
-                        <div class="Form-actions">
 
-                            <div>
-                                <a class="Button Button--link" href="tramite-tipo-03.php">Volver al paso anteror</a>
+                            <div class="Form-actions">
+                                <div class="Form-actions--left">
+                                    <a href="tramite-ripo-03.php" class="Button Button--link" >Volver al paso anteror</a>
+                                </div>
+
+                                <div class="Form-actions--right">
+                                    <button class="Button Button--primary">Ir a Medios de pago</button>
+                                </div>
                             </div>
-
-                            <div>
-                                <button class="Button Button--primary">Ir a Medios de pago</button>
-                            </div>
-                                
-                        </div>
 
                     </form>
 

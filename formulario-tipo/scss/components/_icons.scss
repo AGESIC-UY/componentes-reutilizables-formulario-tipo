@@ -103,13 +103,46 @@ $Icons-path: '../assets/icons';
   }
 }
 
+
+.Icon--delete-white {
+  background-image: url('#{$Icons-path}/icon-trash-white.svg');
+
+  @include no-svg {
+    background-image: url('#{$Icons-path}/icon-trash-white.png');
+  }
+}
+
 .Icon--edit {
   background-image: url('#{$Icons-path}/icon-edit.svg');
 
   @include no-svg {
     background-image: url('#{$Icons-path}/icon-edit.png');
   }
+
 }
+
+.Icon--edit-white {
+  background-image: url('#{$Icons-path}/icon-edit-white.svg');
+
+  @include no-svg {
+    background-image: url('#{$Icons-path}/icon-edit-white.png');
+  }
+
+}
+
+
+.Icon--dropdown {
+
+  background-image: url('#{$Icons-path}/icon-dropdown.svg');
+
+}
+
+.Icon--dropdown-white {
+
+  background-image: url('#{$Icons-path}/icon-dropdown-white.svg');
+
+}
+
 
 
 .Icon--share {

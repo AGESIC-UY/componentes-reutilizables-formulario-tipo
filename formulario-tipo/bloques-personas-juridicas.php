@@ -25,99 +25,105 @@
 
             <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
-
                 <div class="Page" >
-
 
                     <h2 class="Page-title">Representación de Personas jurídicas</h2>
 
                     <form action="./" class="Form--tipo">
 
                         <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
-              
-                        <fieldset >
-                        <legend>
-                          <span>Representación de Personas jurídicas</span>
-                        </legend>
 
                         <fieldset>
+
+                          <legend>
+                            <span>Representación de Personas jurídicas</span>
+                          </legend>
+
+                          <fieldset>
                         
-                            <legend><span>Empresa</span></legend>
+                            <legend>
+                              <span>Empresa</span>
+                            </legend>
 
-                            <div class="Form-group"  >
-                            
-                              <label for="rut" class="Form-label">Rut:*</label>
-                              <input type="text" class="Form-widget" id="rut" name="rut">
-                            
+                            <div class="Form-group">
+                              <div class="Form-label-wrap">
+                                <label class="Form-label" for="rut">Rut:*</label>
+                              </div>
+                              <div class="Form-object-wrap">
+                                <input class="Form-widget" name="rut" type="text" id="rut" required>
+                              </div>
                             </div>
 
                             <div class="Form-group">
-                            
-                              <label for="razon-social" class="Form-label">Razón Social:*</label>
-                              <input type="text" class="Form-widget" id="razon-social" name="razon-social">
-                            
+                              <div class="Form-label-wrap">
+                                <label class="Form-label" for="razon-social">Razón Social:*</label>
+                              </div>
+                              <div class="Form-object-wrap">
+                                <input class="Form-widget" name="razon-social" type="text" id="razon-social" required>
+                              </div>
                             </div>
 
-                            <div class="Form-group"  >
-                          
-                              <label class="Form-label" for="rol">Rol:*</label>
-                              
-                                <select name="combo_stacked" id="rol" class="Form-widget Form-widget--w-icon">
-                          
-                                    <option value="0">Selecciona rol</option>
-                                    <option value="1">Opción 1</option>
-                                    <option value="2">Opción 2</option>
-            
-                               </select>
+                            <div class="Form-group">
 
-                                                    
-                               <span href="#" class="Form-icon">
-                                    <img src="assets/icons/icon-ok-circle.svg" alt="Icono rol validado">
-                                    <span class="u-hideVisually">Rol validado</span>
-                               </span>
-                          
+                              <div class="Form-label-wrap">
+                                <label for="rol" class="Form-label">Rol: *</label>
+                              </div>
+
+                              <div class="Form-object-wrap">
+                                <select class="Form-widget" name="rol" id="rol" required>
+                                  <option value="0">Selecciona rol</option>
+                                  <option value="1">Opción 1</option>
+                                  <option value="2">Opción 2</option>
+                                  <option value="3">Opción 3</option>
+                                </select>
+                                <div class="Form-status Form-status--ok" id="campo-ok">Dato validado</div>
+                              </div>
+
                             </div>
 
-                            <div class="Form-group" role="group"  aria-labelledby="grupo-validacion"  >
-                          
-                                <div id="grupo-validacion" class="Form-label">Validación:*</div>
-                          
+
+
+                            <div class="Form-group" role="group"  aria-labelledby="grupo-validacion" >
+
+                              <div class="Form-label-wrap">
+                                <div id="grupo-validacion" class="Form-label" >Validación:*</div>
+                              </div>
+
+                              <div class="Form-object-wrap">
+
                                 <div class="Form-options">
-                          
-                                    <label for="verificar" class="Form-option">
-                                        
-                                        <input type="radio" id="verificar" name="validacion">
-                                        <span>Verificar registro de DGI/DGR</span>
-                                
-                                    </label>
 
-                                    <label for="presentar" class="Form-option">
-                                        
-                                        <input type="radio" id="presentar" name="validacion">
-                                        <span>Presentar documentación en <a href="#">oficinas del organismo</a> o <a href="#">PAC</a></span>
-                                
-                                    </label>
+                                  <label for="verificar" class="Form-option">
+                                    <input type="radio" id="verificar" name="validacion">
+                                    <span>Verificar registro de DGI/DGR</span>
+                                  </label>
 
-
-                                  
-
-                                   
+                                  <label for="presentar" class="Form-option">
+                                    <input type="radio" id="presentar" name="validacion">
+                                    <span>Presentar documentación en <a href="#">oficinas del organismo</a> o <a href="#">PAC</a></span>
+                                  </label>
 
                                 </div>
 
-                             
+                              </div>
 
-                            
                             </div>
 
-                            <div class="Form-group">
-                                    <label class="Form-label" for="adjuntos-1">Adjuntar certificado notarial electrónico (PDF max 45KB):</label>
-                                    <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
-                                </div>
 
+                            <div class="Form-group">
+
+                              <div class="Form-label-wrap">
+                                <label class="Form-label" for="adjuntos-1">Adjuntar certificado notarial electrónico (PDF max 45KB):</label>
+                              </div>
+
+                              <div class="Form-object-wrap">
+                                <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
+                              </div>
+
+                            </div>
 
                         </fieldset>
-                          
+
                         <a href="#">+ Agregar empresa</a>
 
 

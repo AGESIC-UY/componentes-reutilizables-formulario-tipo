@@ -143,36 +143,46 @@
 
                             <fieldset>
 
-                                <legend><span>Datos personales:</span></legend>
+                                <legend>
+                                    <span>Datos personales:</span>
+                                </legend>
 
                                 <div class="Form-group">
-                                    <label class="Form-label" for="documento-identidad">Documento de identidad:*</label>
-                                    <input class="Form-widget" name="documento-identidad" type="text" aria-describedby="ayuda-documento-identidad" id="documento-identidad" >
-                                    <div class="Form-hint" id="ayuda-documento-identidad">Incluir dígito verificador</div>
-                                    <a href="#">No tengo documento uruguayo</a>
-                                </div>
 
-                                <div class="Form-group" >
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="documento-identidad">Documento de identidad:*</label>
+                                    </div>
 
-
-                                    <label class="Form-label" for="apellido">Apellido:</label>
-                                    <input class="Form-widget" name="apellido" type="text" id="apellido" >
-
-                                    <!--
-
-                                    En caso de que el campo sea requerido, agregar el atributo required="" y el * en el label
-                                    <label class="Form-label" for="apellido">Apellido:</label>
-                                    <input class="Form-widget" name="apellido" type="text" id="apellido" required="">
-
-                                    -->
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" type="text" name="documento-identidad" id="documento-identidad" aria-describedby="ayuda-documento-identidad">
+                                        <div class="Form-hint" id="ayuda-documento-identidad">Incluir dígito verificador</div>
+                                        <div class="Form-hint"><a href="#" class="Form-item-aligned">No tengo documento uruguayo</a></div>
+                                    </div>
 
                                 </div>
 
-                                <div class="Form-group" >
-                                
-                                    <label class="Form-label" for="nombre">Nombre:</label>
-                                    <input class="Form-widget" name="nombre" type="text" id="nombre" >
-                                
+                                <div class="Form-group">
+
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="apellido">Apellido:*</label>
+                                    </div>
+
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" type="text" name="apellido" id="apellido">
+                                    </div>
+
+                                </div>
+
+                                <div class="Form-group">
+
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="nombre">Nombre:*</label>
+                                    </div>
+
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" type="text" name="nombre" id="nombre">
+                                    </div>
+
                                 </div>
 
                             </fieldset>
@@ -183,90 +193,108 @@
                                     <span>Datos de domicilio</span>
                                 </legend>
 
-                                <div class="Form-group" >
+                                <div class="Form-group"> 
 
-                                    <label for="departamento" class="Form-label">Departamento:</label>
-                                    <select name="departamento" id="departamento" class="Form-widget">
-                                        <option selected="">Seleccione un departamento</option>
-                                        <option>Artigas</option>
-                                        <option>Canelones</option>
-                                        <option>Cerro Largo</option>
-                                        <option>Colonia</option>
-                                        <option>Durazno</option>
-                                        <option>Flores</option>
-                                        <option>Florida</option>
-                                        <option>Lavalleja</option>
-                                        <option>Maldonado</option>
-                                        <option>Montevideo</option>
-                                        <option>Paysandú</option>
-                                        <option>Rio Negro</option>
-                                        <option>Rivera</option>
-                                        <option>Rocha</option>
-                                        <option>Salto</option>
-                                        <option>San José</option>
-                                        <option>Soriano</option>
-                                        <option>Tacuarembó</option>
-                                        <option>Treinta y Tres</option>
-                                    </select>
+                                    <div class="Form-label-wrap">
+                                        <label for="departamento" class="Form-label">Departamento:*</label>
+                                    </div>
 
-                                </div>
-
-
-                                <div class="Form-group" >
-
-                                    <label for="localidad" class="Form-label">Localidad:</label>
-
-                                    <select name="localidad" id="localidad" class="Form-widget" >
-                                        <option selected="">Seleccione una localidad</option>
-                                        <option>Montevideo</option>
-                                        <option>Opción 2</option>
-                                        <option>Opción 3</option>
-                                    </select>
+                                    <div class="Form-object-wrap">
+                                        <select name="departamento" id="departamento" class="Form-widget">
+                                            <option selected="">Seleccione un departamento</option>
+                                            <option>Artigas</option>
+                                            <option>Canelones</option>
+                                            <option>Cerro Largo</option>
+                                            <option>Colonia</option>
+                                            <option>Durazno</option>
+                                            <option>Flores</option>
+                                            <option>Florida</option>
+                                            <option>Lavalleja</option>
+                                            <option>Maldonado</option>
+                                            <option>Montevideo</option>
+                                            <option>Paysandú</option>
+                                            <option>Rio Negro</option>
+                                            <option>Rivera</option>
+                                            <option>Rocha</option>
+                                            <option>Salto</option>
+                                            <option>San José</option>
+                                            <option>Soriano</option>
+                                            <option>Tacuarembó</option>
+                                            <option>Treinta y Tres</option>
+                                        </select>
+                                    </div>
 
                                 </div>
 
-                                <div class="Form-group" >
+                                <div class="Form-group"> 
 
-                                    <label class="Form-label" for="domicilio">Domicilio:</label>
-                                    <input class="Form-widget" name="domicilio" type="text" id="domicilio" >
+                                    <div class="Form-label-wrap">
+                                        <label for="localidad" class="Form-label">Localidad:</label>
+                                    </div>
+
+                                    <div class="Form-object-wrap">
+                                        <select name="localidad" id="localidad" class="Form-widget" >
+                                            <option selected="">Seleccione una localidad</option>
+                                            <option>Montevideo</option>
+                                            <option>Opción 2</option>
+                                            <option>Opción 3</option>
+                                        </select>
+                                    </div>
 
                                 </div>
 
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="domicilio">Domicilio:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" name="domicilio" type="text" id="domicilio" >
+                                    </div>
+                                </div>
 
-                                <div class="Form-group Form-group--aligned" >
-
+                                <div class="Form-group" >
+                                    <div class="Form-label-wrap"></div>
+                                    <div class="Form-object-wrap">
                                     <button type="submit" class="Button">Confirmar domicilio</button>
-
+                                    </div>
                                 </div>
 
 
                             </fieldset>
 
-                            <fieldset >
+                            <fieldset>
 
                                 <legend>
                                     <span>Datos de contacto</span>
                                 </legend>
 
-                                <div class="Form-group" >
 
-                                    <label class="Form-label" for="telefono">Teléfono:</label>
-                                    <input class="Form-widget" name="telefono" type="text" id="telefono">
-
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="telefono">Teléfono:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" name="telefono" type="text" id="telefono">
+                                    </div>
                                 </div>
 
-                                <div class="Form-group" >
 
-                                    <label class="Form-label" for="otro-telefono">Otro teléfono:</label>
-                                    <input class="Form-widget" name="otro-telefono" type="text" id="otro-telefono">
-
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="otro-telefono">Otro teléfono:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" name="otro-telefono" type="text" id="otro-telefono">
+                                    </div>
                                 </div>
 
-                                <div class="Form-group" >
-
-                                    <label class="Form-label" for="e-mail">Correo electrónico:</label>
-                                    <input class="Form-widget" name="e-mail" type="email" id="e-mail">
-                                
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="e-mail">Correo electrónico:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" name="e-mail" type="email" id="e-mail" >
+                                    </div>
                                 </div>
 
 
@@ -284,25 +312,29 @@
                                 <p>El responsable de la base de datos es **Titular de la base** y la dirección donde podrá ejercer los derechos de acceso, rectificación, actualización, inclusión o supresión, es **Dirección del organismo**, según lo establecido en la LPDP".</p>
 
 
-                                <div class="Form-group" role="group" aria-labelledby="grupo-terminos" >
 
-                                    <div id="grupo-terminos" class="Form-label">Términos de la cláusula:*</div>
+                                <div class="Form-group" role="group"  aria-labelledby="grupo-terminos" >
 
-                                    <div class="Form-options">
+                                    <div class="Form-label-wrap">
+                                        <div id="grupo-terminos" class="Form-label" >Términos de la cláusula:*</div>
+                                    </div>
 
-                                        <label for="acepto" class="Form-option">
+                                    <div class="Form-object-wrap">
 
-                                            <input type="radio" id="acepto" name="concentimiento">
-                                            <span>Acepto los términos</span>
+                                        <div class="Form-options">
 
-                                        </label>
+                                            <label for="acepto" class="Form-option">
+                                                <input type="radio" id="acepto" name="concentimiento">
+                                                <span>Acepto los términos</span>
+                                            </label>
 
-                                        <label for="no-acepto" class="Form-option">
 
-                                            <input type="radio" id="no-acepto" name="concentimiento">
-                                            <span>No acepto los términos. (No se enviará el mensaje)</span>
+                                            <label for="no-acepto" class="Form-option">
+                                                <input type="radio" id="no-acepto" name="concentimiento">
+                                                <span>No acepto los términos. (No se enviará el mensaje)</span>
+                                            </label>
 
-                                        </label>
+                                        </div>
 
                                     </div>
 
@@ -310,12 +342,14 @@
 
                             </fieldset>
 
-                            <div class="Form-actions u-flex-right">
+                            <div class="Form-actions">
 
-                                <div>
+                                <div class="Form-actions--left">
 
-                                    <button  class="Button Button--primary">Ir a datos del trámite</button>
+                                </div>
 
+                                <div class="Form-actions--right">
+                                    <button class="Button Button--primary">Ir a datos del trámite</button>
                                 </div>
 
                             </div>

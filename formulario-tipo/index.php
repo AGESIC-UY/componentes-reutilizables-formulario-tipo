@@ -18,8 +18,135 @@
 
 									<h2 class="Page-title">Formulario tipo</h2>
 
-									<h3>Accesos</h3>
+									<h3>Elementos de formulario</h3>
+
 									<div class="Box--listadoAccesos u-mt3">    
+										<ul class="Box-gridList Grid Grid--rowSize3">
+											<li class="Grid-item">
+													<a href="navegacion.php">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/navegacion.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Navegación</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+											<li class="Grid-item">
+													<a href="entrada-de-datos-inputs.php">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/inputs.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Entrada de datos (inputs)</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+											<li class="Grid-item">
+													<a href="textos-y-cuadros-de-dialogo.php">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/dialogo.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Presentación de datos y cuadros de diálogo</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+										</ul>
+									</div>	
+											
+											
+									<h3>Ejemplos aplicados</h3>
+
+									<div class="Box--listadoAccesos u-mt3">    
+										<ul class="Box-gridList Grid Grid--rowSize3">
+											<li class="Grid-item">
+													<a href="formulario.php">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/ejemplo-completo.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Ejemplo de formulario</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+											<li class="Grid-item">
+													<a href="bloques.php">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/bloques.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Bloques reutilizables</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+
+											<li class="Grid-item">
+													<a href="tramite-tipo-01.php">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/tramite-tipo.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Trámite tipo</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+										</ul>
+									</div>	
+											
+									<h3>Proyecto y ayudas</h3>
+
+									<div class="Box--listadoAccesos u-mt3">    
+										<ul class="Box-gridList Grid Grid--rowSize3">
+											<li class="Grid-item">
+													<a href="https://github.com/AGESIC-UY/componentes-reutilizables-formulario-tipo">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/github.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Repositorio Github</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+											<li class="Grid-item">
+													<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/guia-para-creacion-formularios">
+															<div class="Flag">
+																	<div class="Flag-image">
+																			<img src="./img/guia.png" alt="">
+																	</div>
+																	<div class="Flag-body">
+																			<span class="Box-title">Guía para la creación de formulario</span>
+																			<span class="Box-info"></span>
+																	</div>
+															</div>
+													</a>
+											</li>
+										</ul>
+									</div>	
+
+
+									<!-- <div class="Box--listadoAccesos u-mt3">    
 										<ul class="Box-gridList Grid Grid--rowSize3">
 											<li class="Grid-item">
 													<a href="atomos.php">
@@ -100,7 +227,7 @@
 													</a>
 											</li>
 										</ul>
-									</div>		
+									</div>		 -->
 
 									<h3>Qué es el Formulario Tipo</h3>
 									<p>El formulario tipo incluye un conjunto de elementos básicos, modelos de interacción y diseño visual para formularios, que puedan utilizarse como soluciones transversales a todos los organismos del Estado Uruguayo.</p>

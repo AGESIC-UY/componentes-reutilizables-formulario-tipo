@@ -129,9 +129,9 @@
 
                         <h2>Medios de pago</h2>
 
-                        <div class="Alert--tipo" role="alert" aria-live="assertive">
+                        <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
                     
-                                                
+                                <h4 class="Alert-title">Detalle de la reserva</h4>
                                 <ul class="resumen-datos">
                                     
                                     <li>
@@ -203,100 +203,106 @@
 
                             <fieldset>
 
-                                <legend><span>Seleccione el medio de pago:</span></legend>
+                                <legend>
+                                    <span>Seleccione el medio de pago:</span>
+                                </legend>
 
-                                <div class="Form-group" role="group"  aria-labelledby="grupo-medios-pago">
-                                
-                                    <div id="grupo-medios-pago" class="Form-label">Medios de pago:</div>
+
+                            <div class="Form-group" role="group"  aria-labelledby="grupo-medios-pago" >
+
+                                <div class="Form-label-wrap">
+                                    <div id="grupo-medios-pago" class="Form-label" >Medios de pago:</div>
+                                </div>
+
+                                <div class="Form-object-wrap">
 
                                     <div class="Form-options">
-                                    
-                                        <label for="enlinea" class="Form-option Form-option--wrap">
-                                            
+
+                                        <label for="enlinea" class="Form-option">
+
                                             <input type="radio" id="enlinea" name="opciones">
-                                            <span>En linea (será redirigido a la página de pago)</span>
+                                            <span>En linea (será redirigido a la página de pago)
 
-                                            <div class="Grid Form-grid medios-pago">
-                                                
-                                                <div class="Grid-item u-size1of3 u-md-size1of4">
-                                                
-                                                    <img src="./img/logo-visa.png" alt="logotipo Visa">
-                                                
-                                                </div>
+                                                <span class="Form-hint">
 
-                                                <div class="Grid-item u-size1of3 u-md-size1of4">
+                                                    <div class="Grid Form-grid medios-pago">
 
-                                                    <img src="./img/logo-bits.png" alt="logotipo Bits">
-                                                
-                                                </div>
+                                                        <div class="Grid-item u-size1of3 u-md-size1of4">
+                                                            <img src="./img/logo-visa.png" alt="logotipo Visa" />
+                                                        </div>
 
-                                                <div class="Grid-item u-size1of3 u-md-size1of4">
+                                                        <div class="Grid-item u-size1of3 u-md-size1of4">
+                                                            <img src="./img/logo-bits.png" alt="logotipo Bits" />
+                                                        </div>
 
-                                                    <img src="./img/logo-brou.png" alt="logotipo Brou">
+                                                        <div class="Grid-item u-size1of3 u-md-size1of4">
+                                                            <img src="./img/logo-brou.png" alt="logotipo Brou" />
+                                                        </div>
 
-                                                </div>
-                                            
-                                            </div>
+                                                    </div>
 
-                                            
-                                        
+                                                </span>
+
+                                            </span>
+
                                         </label>
 
-                                        <label for="redes" class="Form-option Form-option--wrap">
-                                        
+
+                                        <label for="redes" class="Form-option">
+
                                             <input type="radio" id="redes" name="opciones">
-                                            
-                                            <span>Redes de cobranza</span>
+                                            <span>Redes de cobranza
 
-                                            <div class="Grid Form-grid medios-pago">
-                                                
-                                                <div class="Grid-item u-size1of3 u-md-size1of3">
-                                                
-                                                    <img src="./img/logo-abitab.png" alt="abitab">
-                                                    <a href="#">Locales Abitab</a>
-                                                
-                                                </div>
+                                                <span class="Form-hint">
 
-                                                <div class="Grid-item u-size1of3 u-md-size1of3">
+                                                    <div class="Grid Form-grid medios-pago">
+ 
+                                                        <div class="Grid-item u-size1of3 u-md-size1of3">
 
-                                                    <img src="./img/logo-redpagos.png" alt="redpagos">
-                                                    <a href="#">Locales Redpagos</a>
-                                                
-                                                </div>
+                                                            <img src="./img/logo-abitab.png" alt="logotipo Abitab">
+                                                            <a href="#">Locales Abitab</a>
 
-                                                <div class="Grid-item u-size1of3 u-md-size1of3">
+                                                        </div>
 
-                                                    <img src="./img/100x35.png" alt="oficina del organismo">
-                                                    <a href="#">Oficinas del organismo</a>
+                                                        <div class="Grid-item u-size1of3 u-md-size1of3">
 
-                                                </div>
-                                            
-                                            </div>
+                                                            <img src="./img/logo-redpagos.png" alt="logotipo Redpagos">
+                                                            <a href="#">Locales Redpagos</a>
 
-                                    
+                                                        </div>
+
+                                                        <div class="Grid-item u-size1of3 u-md-size1of3">
+
+                                                            <img src="./img/100x35.png" alt="oficina del organismo">
+                                                            <a href="#">Oficinas del organismo</a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </span>
+
+                                            </span>
+
                                         </label>
-                                    
+
                                     </div>
 
                                 </div>
 
-
+                            </div>
 
                             </fieldset>
 
                             <div class="Form-actions">
+                                <div class="Form-actions--left">
+                                    <a href="tramite-ripo-04.php" class="Button Button--link" >Volver al paso anteror</a>
+                                </div>
 
-                                    <div>
-                                        <a class="Button Button--link" href="tramite-tipo-04.php">Volver al paso anteror</a>
-                                    </div>
-
-                                    <div>
-                                       
-                                        <button class="Button Button--primary">Finalizar</button>
-                                    </div>
-                            
+                                <div class="Form-actions--right">
+                                    <button class="Button Button--primary">Finalizar</button>
+                                </div>
                             </div>
-
 
                         </form>
 

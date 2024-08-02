@@ -49,7 +49,7 @@ $Page-md-padding: 1rem 1.25rem;
 }
 
 .Page-description {
-  font-size: 21 / 16 * 1rem;
+  font-size: calc(calc(21 / 16) * 1rem);
   color: #333;
   margin-top: 2rem;
   margin-bottom: 3.5rem;

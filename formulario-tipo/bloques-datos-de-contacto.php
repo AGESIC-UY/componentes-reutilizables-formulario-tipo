@@ -41,26 +41,39 @@
                             <span>Datos de contacto</span>
                           </legend>
 
-                          <div class="Form-group" >
-                            <label class="Form-label" for="telefono">Teléfono:*</label>
-                            <input class="Form-widget" name="telefono" type="text" id="telefono" required>
+                          <div class="Form-group">
+                            <div class="Form-label-wrap">
+                              <label class="Form-label" for="telefono">Teléfono:*</label>
+                            </div>
+                            <div class="Form-object-wrap">
+                              <input class="Form-widget" name="telefono" type="text" id="telefono" required>
+                            </div>
                           </div>
 
-                          <div class="Form-group" >
-                            <label class="Form-label" for="otro-telefono">Otro teléfono:</label>
-                            <input class="Form-widget" name="otro-telefono" type="text" id="otro-telefono">
+                          <div class="Form-group">
+                            <div class="Form-label-wrap">
+                              <label class="Form-label" for="otro-telefono">Otro teléfono:*</label>
+                            </div>
+                            <div class="Form-object-wrap">
+                              <input class="Form-widget" name="otro-telefono" type="text" id="otro-telefono">
+                            </div>
+                          </div>
+
+                          <div class="Form-group">
+                            <div class="Form-label-wrap">
+                              <label class="Form-label" for="e-mail">Correo electrónico:</label>
+                            </div>
+                            <div class="Form-object-wrap">
+                              <input class="Form-widget" name="e-mail" type="email" id="e-mail" required>
+                            </div>
                           </div>
 
 
                           <div class="Form-group" >
-                            <label class="Form-label" for="e-mail">Correo electrónico:</label>
-                            <input class="Form-widget" name="e-mail" type="email" id="e-mail" required>
-                          </div>
-                          
-
-
-                          <div class="Form-group Form-group--aligned" >
-                            <button type="submit" class="Button Button--primary">Enviar</button>
+                            <div class="Form-label-wrap"></div>
+                            <div class="Form-object-wrap">
+                              <button type="submit" class="Button Button--primary">Enviar</button>
+                            </div>
                           </div>
 
 

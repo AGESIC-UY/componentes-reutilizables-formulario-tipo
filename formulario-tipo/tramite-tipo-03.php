@@ -131,32 +131,36 @@
 
                         <form action="tramite-tipo-04.php" class="Form--tipo">
 
-                            <fieldset >
-                                
-                                <legend>
+                            <fieldset>
 
+                                <legend>
                                     <span>Métodos de firma</span>
-                                
                                 </legend>
 
-                                
-                                <div class="Form-group" role="group"  aria-labelledby="grupo-metodos">
-                                
-                                <div id="grupo-metodos" class="Form-label">Métodos:</div>
-                                
-                                <div class="Form-options">
-                                
-                                    <label for="firma-digital" class="Form-option">
-                                    <input type="radio" id="firma-digital" name="metodos">
-                                    <span>Firmar en forma digital</span>
-                                    </label>
 
-                                    <label for="imprimir-formulario" class="Form-option">
-                                    <input type="radio" id="imprimir-formulario" name="metodos">
-                                    <span><a href="">Imprimir formulario</a></span>
-                                    </label>
 
-                                </div>
+                                <div class="Form-group" role="group" aria-labelledby="grupo-metodos" >
+
+                                    <div class="Form-label-wrap">
+                                        <div id="grupo-metodos" class="Form-label" >Métodos:</div>
+                                    </div>
+
+                                    <div class="Form-object-wrap">
+
+                                        <div class="Form-options">
+
+                                            <label for="firma-digital" class="Form-option">
+                                                <input type="radio" id="firma-digital" name="metodos">
+                                                <span>Firmar en forma digital</span>
+                                            </label>
+                                            <label for="imprimir-formulario" class="Form-option">
+                                                <input type="radio" id="imprimir-formulario" name="metodos">
+                                                <span><a href="">Imprimir formulario</a></span>
+                                            </label>
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
@@ -164,35 +168,41 @@
 
                             <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
 
-                                <h4 class="Alert-title">Forma precencialmente</h4>
+                                <h4 class="Alert-title">Forma presencialmente</h4>
                                 <p>También es posible llevar el formulario firmado a las <a href="">oficina del organismo</a></p>
                                 
                             </div>
 
 
                             <fieldset >
-                                
-                                <legend>
 
+                                <legend>
                                     <span>Adjuntar formulario firmado</span>
-                                
                                 </legend>
 
+
+
                                 <div class="Form-group">
-                                <label class="Form-label" for="adjuntos-1">Archivos:</label>
-                                <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
+
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="adjuntos-1">Archivos:</label>
+                                    </div>
+
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
+                                    </div>
+
                                 </div>
-                                
+
 
                             </fieldset>
 
                             <div class="Form-actions">
-                                    <div>
-                                        <a class="Button Button--link" href="tramite-tipo-02.php">Volver al paso anteror</a>
+                                    <div class="Form-actions--left">
+                                        <a href="tramite-ripo-02.php" class="Button Button--link" >Volver al paso anteror</a>
                                     </div>
 
-                                    <div>
-                                       
+                                    <div class="Form-actions--right">
                                         <button class="Button Button--primary">Ir a Agenda</button>
                                     </div>
                             </div>

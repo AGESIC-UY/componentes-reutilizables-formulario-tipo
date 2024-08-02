@@ -19,78 +19,80 @@
   
 <main  id="contenido" class="u-main">
 
-
-    <div class="Container">
+  <div class="Container">
 
         <div class="Grid">
 
+          <div class="Grid-item Grid-item--center  u-md-size3of4 u-lg-size8of10">
 
-            <div class="Grid-item Grid-item--center  u-md-size3of4 u-lg-size8of10">
+            <div class="Page" >
 
-
-              <div class="Page" >
-
-
-
-                <h2 class="Page-title">Datos de domicilio (Completo)</h2>
-
+                <h2 class="Page-title">Método de firma</h2>
 
                 <form action="./" class="Form--tipo">
 
-                    <fieldset >
-                        
-                        <legend>
+                    <fieldset>
 
+                        <legend>
                             <span>Métodos de firma</span>
-                        
                         </legend>
 
-                        
                         <div class="Form-group" role="group" aria-labelledby="grupo-metodos" >
-                          
-                          <div id="grupo-metodos" class="Form-label" >Métodos:</div>
-                          
-                          <div class="Form-options">
-                          
-                            <label for="firma-digital" class="Form-option">
-                              <input type="radio" id="firma-digital" name="metodos">
-                              <span>Firmar en forma digital</span>
-                            </label>
 
-                            <label for="imprimir-formulario" class="Form-option">
-                              <input type="radio" id="imprimir-formulario" name="metodos">
-                              <span><a href="">Imprimir formulario</a></span>
-                            </label>
-
+                          <div class="Form-label-wrap">
+                            <div id="grupo-metodos" class="Form-label" >Métodos:</div>
                           </div>
 
+                          <div class="Form-object-wrap">
+
+                            <div class="Form-options">
+
+                              <label for="firma-digital" class="Form-option">
+                                <input type="radio" id="firma-digital" name="metodos">
+                                <span>Firmar en forma digital</span>
+                              </label>
+                              <label for="imprimir-formulario" class="Form-option">
+                                <input type="radio" id="imprimir-formulario" name="metodos">
+                                <span>Imprimir formulario</span>
+                              </label>
+
+                            </div>
+
+                          </div>
+                        
                         </div>
 
                     </fieldset>
 
                     <div class="Alert--tipo Alert--dialog" role="alert" aria-live="assertive">
 
-                        <h4 class="Alert-title">Forma precencialmente</h4>
+                        <h4 class="Alert-title">Forma presencialmente</h4>
                         <p>También es posible llevar el formulario firmado a las <a href="">oficina del organismo</a></p>
-                        
+
                     </div>
 
+                    <fieldset>
 
-                    <fieldset >
-                        
                         <legend>
-
                             <span>Adjuntar formulario firmado</span>
-                        
                         </legend>
 
-                        <div class="Form-group"  >
-                          <label class="Form-label" for="adjuntos-1">Archivos:</label>
-                          <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
+                        <div class="Form-group">
+
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="adjuntos-1">Archivos:</label>
+                          </div>
+
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
+                          </div>
+
                         </div>
-                        
+
 
                     </fieldset>
+
+                  
 
                 </form>
 

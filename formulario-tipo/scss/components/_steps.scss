@@ -4,17 +4,20 @@ $Steps-height: 68px;
 $Steps-background-color: #003DA5;
 $Steps-border-color: $gray-border;
 
-.Steps {
+.Steps--tipo {
   margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: transparent;
   background-clip: border-box;
   overflow: hidden;
-  border-radius: $Box-border-radius;
+ // border-radius: $Box-border-radius;
 
 
 
   @include md(down) {
+
+
+
     border-radius: $Box-border-radius 0 0 $Box-border-radius;
 
 
@@ -324,7 +327,7 @@ $Steps-border-color: $gray-border;
   }
 
 
-  &--many{
+  &.Steps--many{
 
 
 
@@ -354,34 +357,34 @@ $Steps-border-color: $gray-border;
 
   }
 
-}
-
-.Steps-inner {
-  border: none;
-  display: block;
-
-  h4{display: none};
- 
-
-  @include md {
-    overflow: hidden;
-    display: flex;
-  }
-
-  @include md(down) {
-    padding-left: 4px; // corrige alineacion de los margin-left de inline-block items
-
-   // Remover scrollbar
-    -ms-overflow-style: none; // IE 10+
-    // scrollbar-width: none; // Firefox
-
-    &::-webkit-scrollbar {
-      display: none; // Safari and Chrome
+  .Steps-inner {
+    border: none;
+    display: block;
+  
+    h4{display: none};
+   
+  
+    @include md {
+      overflow: hidden;
+      display: flex;
     }
+  
+    @include md(down) {
+      padding-left: 4px; // corrige alineacion de los margin-left de inline-block items
+  
+     // Remover scrollbar
+      -ms-overflow-style: none; // IE 10+
+      // scrollbar-width: none; // Firefox
+  
+      &::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+      }
+    }
+  
+    
   }
 
   
-}
 
 .Steps-item {
   padding: 2px;
@@ -396,10 +399,9 @@ $Steps-border-color: $gray-border;
 
   &:focus, &:focus-visible{
 
-    
-    border:1px solid #003DA5 !important;
+    border: 1px solid $focus-color !important;
     outline: none;
-    box-shadow: inset 0 1px 2px rgb(0 61 165 / 8%), 0 0 0 0.2em rgb(0 61 165 / 10%);
+    box-shadow: inset 0 1px 2px rgba(255, 190, 70, 0.075), 0 0 0 0.2em rgba(255, 190, 70, 0.3);
 
   }  
 
@@ -527,6 +529,8 @@ $Steps-border-color: $gray-border;
 }
 
 
+
+
 .Steps-inner > .Steps-item:first-child {
   padding-left: 0;
 }
@@ -546,8 +550,12 @@ $Steps-border-color: $gray-border;
   border: 2px solid $gray-border;
 }
 
+
+}
+
+
 @include md(down) {
-  .Steps {
+  .Steps--tipo {
     overflow: hidden;
     position: relative;
   
@@ -575,12 +583,14 @@ $Steps-border-color: $gray-border;
         border-radius: $Box-border-radius;
       }
     }
+
+    .Steps-inner {
+      white-space: unset;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      display: none;
+    }
   }
 
-  .Steps-inner {
-    white-space: unset;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    display: none;
-  }
+
 }

@@ -46,29 +46,36 @@
                             <p>El responsable de la base de datos es **Titular de la base** y la dirección donde podrá ejercer los derechos de acceso, rectificación, actualización, inclusión o supresión, es **Dirección del organismo**, según lo establecido en la LPDP".</p>
 
 
-                            <div class="Form-group" role="group" aria-labelledby="grupo-terminos">
-                                
-                                <div id="grupo-terminos" class="Form-label">Términos de la cláusula:*</div>
-                                
-                                <div class="Form-options">
-                                
-                                    <label for="acepto" class="Form-option">
-                                    
-                                        <input type="radio" id="acepto" name="concentimiento">
-                                        <span>Acepto los términos</span>
-                                    
-                                    </label>
-                                    
-                                    <label for="no-acepto" class="Form-option">
-                                    
-                                        <input type="radio" id="no-acepto" name="concentimiento">
-                                        <span>No acepto los términos. (No se enviará el mensaje)</span>
-                                    
-                                    </label>
-                                
+
+
+                            <div class="Form-group" role="group"  aria-labelledby="grupo-terminos" >
+
+                                <div class="Form-label-wrap">
+                                    <div id="grupo-terminos" class="Form-label" >Términos de la cláusula:*</div>
                                 </div>
-                            
+
+                                <div class="Form-object-wrap">
+
+                                    <div class="Form-options">
+
+                                        <label for="acepto" class="Form-option">
+                                            <input type="radio" id="acepto" name="concentimiento">
+                                            <span>Acepto los términos</span>
+                                        </label>
+
+
+                                        <label for="no-acepto" class="Form-option">
+                                            <input type="radio" id="no-acepto" name="concentimiento">
+                                            <span>No acepto los términos. (No se enviará el mensaje)</span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
                             </div>
+
+
 
                         </fieldset>
             

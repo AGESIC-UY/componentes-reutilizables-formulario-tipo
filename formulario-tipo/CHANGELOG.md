@@ -1,13 +1,21 @@
 # Changelog
 
+## [1.3.1] - 2024-01-25
 
-## [1.3] - 2024-03-15
+## Added
+- Se incopora la clase de css "Form-item-aligned" para emular el comportamiento de un hint para los divs que contengan esa clase.
+- Se incorpora información comentada sobre la versión en el archivo inc/head.php.
+
 ## Changed
-- Se ajustan etiquetas del bloque bandeja de entrada y agregan ejemplos de filtros.
+- Se realizaron ajustes de css relacionados con la eliminación del display table
+- Se corrigieron errores en algunas alertas
 
-## Deleted
-- Se elimina archivo de pruebas
 
+## [1.3] - 2024-01-17
+
+## Changed
+- Se elimina display table para evitar problemas con lectores de pantalla. Se pasa todo a flex
+- Ajustes varios y agregado de moléculas de input con error.
 
 ## [1.2] - 2024-01-03
 

@@ -1,0 +1,234 @@
+.calendar {
+    width: 366px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid $gray-border;
+    padding: .5rem;
+    margin: .75rem 0;
+    border-radius: $field-radius;
+
+    @include sm(down) {
+
+      
+      
+      width: 100%;
+
+    }
+
+
+    
+    &-header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem .5rem;
+      width: 100%;
+      
+      .nav-button {
+        
+        cursor: pointer;
+        font-size: .875rem;
+
+        img{width: 1rem;}
+        
+        
+
+      }
+      
+      .month-select {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .current-month{
+
+        span{
+
+            font-weight: bold;
+
+        }
+
+      }
+
+      .previous-month{
+
+        .button{
+
+            display: flex;
+            justify-content: flex-start;
+
+        }
+      
+      }
+
+      .next-month{
+
+        .button{
+
+            display: flex;
+            justify-content: flex-end;
+
+        }
+      
+      }
+
+    }
+    
+    &-grid {
+    //   border: 1px solid #ccc;
+      display: -ms-grid;
+      display: grid;
+      width: 100%;
+      
+      
+      .weekdays {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(7, 1fr);
+        font-size: .875rem;
+        padding: 5px;
+
+
+
+      }
+      
+      .weekday {
+        text-align: center;
+      }
+      
+      .days {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+        padding: 5px;
+
+        @include sm(down) {
+
+          gap: 2px;
+
+        }
+
+      }
+      
+      .day {
+        text-align: center;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+
+        @include sm(down) {
+
+          width: 100%;
+          height: 2rem;
+
+        }
+        
+        
+        span{
+
+            padding: 5px;
+            //display: block;
+            border-radius: $field-radius;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include sm(down) {
+
+              width: 100%;
+              height: 2rem;
+    
+            }
+
+            &.marked{
+
+                color: $white;
+                background: $blue;
+
+            }
+
+            &.current{
+
+                //border: 2px solid $blue;
+                //border-radius: 99%;
+                padding: 3px;
+                width: 44px;
+                height: 44px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @include sm(down) {
+
+                  width: 2rem;
+                  height: 2rem;
+        
+                }
+
+            }
+
+        }
+
+        &.disabled{
+
+            color: $gray-555;
+
+        }
+
+        a{
+
+            color: $blue;
+            text-decoration: underline;
+            background: $light-blue;
+            padding: 5px;
+            border-radius: $field-radius;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //background: darken(#c33, 12%);
+
+
+        }
+
+      }
+    }
+
+    &-today{
+
+        width: 100%;
+
+        span{
+
+            font-size: 1.125rem;
+            padding: 1rem;
+            text-align: center;
+            //color: $white;
+            width: 100%;
+            display: block;
+            border: 1px solid $gray-border;
+            font-weight: bold;
+            //background: $green;
+
+        }
+
+    }
+
+  }

@@ -130,17 +130,14 @@
                         <h2>Datos del trámite</h2>
 
                         <div class="Alert--tipo Alert--dialog Alert--danger" role="alert" aria-live="assertive">
-                                
+
                                 <h4 class="Alert-title">Hay <strong>2 errores</strong> en el formulario</h4>
 
                                 <ol>
-
                                     <li><a href="#">Debe ingresar una fecha</a></li>
                                     <li><a href="#">Debe ingresa una cifra</a></li>
-                                    
                                 </ol>
-                                
-                            
+
                         </div>
 
                         <form action="tramite-tipo-03.php" class="Form--tipo">
@@ -149,155 +146,205 @@
 
                             <fieldset>
 
-                                <legend><span>Datos personales:</span></legend>
+                                <legend>
+                                    <span>Datos personales:</span>
+                                </legend>
 
                                 <p>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id.</p>
 
-                                <div class="Form-group">
-                                    
-                                    <label class="Form-label" for="example-campo-con-ayuda">Etiqueta de campo con ayuda:</label>
-                                    <input class="Form-widget" name="example-campo-con-ayuda" type="text" id="example-campo-con-ayuda" aria-describedby="ayuda-campo">
-                                    <div class="Form-hint" id="ayuda-campo">Este es un texto de ayuda</div>
-                                
+
+                                <div class="Form-group" >
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="example-campo-con-ayuda">Etiqueta de campo con ayuda:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" name="example-campo-con-ayuda" type="text" id="example-campo-con-ayuda" aria-describedby="ayuda-example-campo-con-ayuda" />
+                                        <div class="Form-hint" id="ayuda-example-campo-con-ayuda">Este es un texto de ayuda</div>
+                                    </div>
                                 </div>
+
 
                                 <div class="Form-group Form-group--disabled">
-                            
-                                    <label class="Form-label" for="example-campo-disabled">Etiqueta de campo deshabilitado:</label>
-                                    <input class="Form-widget" type="text" id="example-campo-disabled" name="example-campo-disabled" disabled="">
-                                    
-                                </div>
-
-                                <div class="Form-group">
-                          
-                                    <label for="combo-1" class="Form-label">Etiqueta de combo:</label>
-                                    <select name="combo-1" id="combo-1" class="Form-widget">
-                                        <option value="0">Opción seleccionada de un combo</option>
-                                        <option value="1">Opción 1</option>
-                                        <option value="2">Opción 2</option>
-                                        <option value="3">Opción 3</option>
-                                    </select>
-                                
-                                </div>
-
-                                <div class="Form-group">
-                          
-                                    <div class="Form-label">Dato de solo lectura:</div>
-                                    <div class="Form-widget Form-widget--read">Información ya ingresada</div>
-                                
-                                </div>
-
-                                <div class="Form-group">
-                                    
-                                    <label for="example-campo-textarea" class="Form-label">Etiqueta de campo extenso:</label>
-                                    <textarea name="example-campo-textarea" id="example-campo-textarea" class="Form-widget" placeholder="Campo extenso para desarrollo de texto"></textarea>
-                                
-                                </div>
-
-                                <div class="Form-group" role="group" aria-labelledby="grupo-radios">
-                          
-                                    <div id="grupo-radios" class="Form-label">Grupo de opciones de radio button:</div>
-                          
-                                    <div class="Form-options">
-                          
-                                        <label for="opcion_1" class="Form-option">
-                                            <input type="radio" id="opcion_1" name="opciones" >
-                                            <span>Radio 1</span>
-                                        </label>
-                                    
-                                        <label for="opcion_2" class="Form-option">
-                                            <input type="radio" id="opcion_2" name="opciones" checked>
-                                            <span>Radio 2</span>
-                                        </label>
-                                        
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="example-campo-disabled">Etiqueta de campo deshabilitado:</label>
                                     </div>
-                                
-                                </div>
-
-                                <div class="Form-group" role="group" aria-labelledby="grupo-checkboxes">
-                          
-                                      <div id="grupo-checkboxes" class="Form-label">Grupo de opciones de checkboxes:</div>
-                                        
-                                      <div  class="Form-options">
-                                          
-                                         <label for="opcion_check_3" class="Form-option">
-                                              <input type="checkbox" id="opcion_check_3" name="opciones_check_2">
-                                              <span>Checkbox 1</span>
-                                         </label>
-
-                                         <label for="opcion_check_4" class="Form-option">
-                                              <input type="checkbox" id="opcion_check_4" name="opciones_check_2" checked>
-                                              <span>Checkbox 2</span>
-                                          </label>
-                                      
-                                      </div>
-                                
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" type="text" id="example-campo-disabled" name="example-campo-disabled" disabled>
+                                    </div>
                                 </div>
 
                                 <div class="Form-group">
-                          
-                                    <label for="fecha-campo" class="Form-label">Fecha:</label>
-                                    <input type="date" class="Form-widget Form-widget--medium" name="fecha-campo" id="fecha-campo">
-                        
+                                    <div class="Form-label-wrap">
+                                        <label for="combo-1" class="Form-label">Etiqueta de combo:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <select class="Form-widget" name="combo-1" id="combo-1" >
+                                            <option value="0">Opción seleccionada de un combo</option>
+                                            <option value="1">Opción 1</option>
+                                            <option value="2">Opción 2</option>
+                                            <option value="3">Opción 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="example-campo-sololectura">Dato de solo lectura:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input type="text" class="Form-widget Form-widget--read" value="Información ya ingresada" id="example-campo-sololectura" readonly/>
+                                    </div>
+                                </div>
+
+
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label for="example-campo-textarea" class="Form-label" >Etiqueta de campo extenso:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <textarea name="example-campo-textarea" id="example-campo-textarea" class="Form-widget" placeholder="Campo extenso para desarrollo de texto"></textarea>
+                                    </div>
+                                </div>
+
+
+                                <div class="Form-group" role="group"  aria-labelledby="grupo-radios" >
+                                    <div class="Form-label-wrap">
+                                        <div id="grupo-radios" class="Form-label" >Grupo de opciones de radio button:</div>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <div class="Form-options">
+                                            <label for="opcion_1" class="Form-option">
+                                                <input type="radio" id="opcion_1" name="opciones">
+                                                <span>Radio 1</span>
+                                            </label>
+                                            <label for="opcion_2" class="Form-option">
+                                                <input type="radio" id="opcion_2" name="opciones">
+                                                <span>Radio 2</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Form-group" role="group"  aria-labelledby="grupo-checkboxes" >
+                                    <div class="Form-label-wrap">
+                                        <div id="grupo-checkboxes" class="Form-label" >Grupo de opciones de checkboxes:</div>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <div class="Form-options">
+                                            <label for="opcion_check_3" class="Form-option">
+                                                <input type="checkbox" id="opcion_check_3" name="opciones_check_2">
+                                                <span>Checkbox 1</span>
+                                            </label>
+                                            <label for="opcion_check_4" class="Form-option">
+                                                <input type="checkbox" id="opcion_check_4" name="opciones_check_2">
+                                                <span>Checkbox 2</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label for="fecha-campo" class="Form-label">Fecha:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input type="date" class="Form-widget Form-widget--medium" name="fecha-campo" id="fecha-campo">
+                                    </div>
+                                </div>
+
+
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="dato-agregado-1">Dato 1:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" name="dato-agregado-1" type="text" id="dato-agregado-1" aria-describedby="link-agregar-otro-dato" />
+                                        <!-- <a href="#" class="Button Button--link-simple" id="link-agregar-otro-dato">Agregar otro dato</a> -->
+                                    </div>
                                 </div>
 
                                 <div class="Form-group">
-                                    
-                                    <label class="Form-label" for="dato-agregado-1">Dato 1:</label>
-                                    <input class="Form-widget" name="dato-agregado-1" type="text" id="dato-agregado-1" >
-                          
-                                    <a href="#" class="Button Button--link Button--small">+ Agregar otro campo</a>
-                        
+
+                                    <div class="Form-label-wrap"></div>
+                                    <div class="Form-object-wrap"><a href="#" class="Button Button--link-simple" >+ Agregar otro campo</a></div>
+                            
+                                </div>
+
+
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="adjuntos-1">Archivos:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
+                                    </div>
+                                </div>
+
+
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label for="combo-requerido" class="Form-label">Etiqueta de combo requerido:*</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <select class="Form-widget" name="combo-requerido" id="combo-requerido" >
+                                            <option value="0">Opción seleccionada de un combo</option>
+                                            <option value="1">Opción 1</option>
+                                            <option value="2">Opción 2</option>
+                                            <option value="3">Opción 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="Form-group">
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="con_tooltip-2">Con modal de ayuda:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input type="url" class="Form-widget" id="con_tooltip-2" name="con_tooltip-2" aria-describedby="consulta-campo-con-link" />
+                                        <div class="Form-status Form-status--question" id="consulta-campo-con-link"><a href="" data-toggle="modal" data-target="#modalExample">Link al modal</a></div>
+                                    </div>
+                                </div>
+
+                                   <!-- Modal -->
+
+                                <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalTitle">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="modalTitle">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deleniti, possimus doloribus nulla aspernatur perspiciatis amet saepe quis deserunt cum eaque facilis odit quos officiis nihil ipsum dolorem explicabo reiciendis?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="Button" data-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="Button Button--primary u-ml2">Guardar cambios</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="Form-group">
-                          
-                                    <label class="Form-label" for="adjuntos-1">Archivos:</label>
-                                    <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
-                        
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="con_tooltip-1">Con ícono:</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input type="text" class="Form-widget" id="con_tooltip-1" name="con_tooltip-1" aria-describedby="campo-ok" value="1.121.122-4"/>
+                                        <div class="Form-status Form-status--ok" id="campo-ok">Dato validado</div>
+                                    </div>
                                 </div>
 
-                                <div class="Form-group">
-                          
-                                    <label for="combo-requerido" class="Form-label">Etiqueta de combo requerido*:</label>
-                                    <select name="combo-requerido" id="combo-requerido" class="Form-widget" >
-                                        <option value="0">Opción seleccionada de un combo</option>
-                                        <option value="1">Opción 1</option>
-                                        <option value="2">Opción 2</option>
-                                        <option value="3">Opción 3</option>
-                                    </select>
-                                
-                                </div>
-
-                                <div class="Form-group">
-                          
-                                    <label class="Form-label" for="con_tooltip-2">Con tooltip de ayuda:</label>
-                                    <input type="url" class="Form-widget  Form-widget--w-icon" id="con_tooltip-2" name="con_tooltip-2">
-                                    <a href="#" class="Form-icon" data-toggle="modal" data-target="#modalExample">
-                                        <img src="assets/icons/icon-help-circle.svg" alt="Icono ayuda">
-                                        <span class="u-hideVisually">Ayuda</span>
-                                    </a>
-
-                                </div>
-
-                                <div class="Form-group">
-
-                                    <label class="Form-label" for="con_tooltip-1">Con ícono:</label>
-                                    <input type="url" class="Form-widget Form-widget--w-icon" id="con_tooltip-1" name="con_tooltip-1">
-                                    
-                                    <span href="#" class="Form-icon">
-                                        <img src="assets/icons/icon-ok-circle.svg" alt="Icono rol validado">
-                                        <span class="u-hideVisually">Rol validado</span>
-                                    </span>
-                          
-                                </div>
-
-                                <div class="Form-group Form-group--alert Form-group--error">
-                          
-                                    <label class="Form-label" for="fecha-campo-fecha-error">Etiqueta de campo con error:</label>
-                                    <input class="Form-widget Form-widget--medium" name="fecha-campo-fecha-error" id="fecha-campo-fecha-error"  type="date" aria-describedby="error-campo-fecha"> 
-                                    <div class="Form-error" id="error-campo-fecha"><strong>ERROR</strong> - Este campo es obligatorio</div>
-                        
+                                <div class="Form-group Form-group--alert Form-group--error" >
+                                    <div class="Form-label-wrap">
+                                        <label class="Form-label" for="fecha-campo-fecha-error">Fecha (con error):</label>
+                                    </div>
+                                    <div class="Form-object-wrap">
+                                        <input type="date" class="Form-widget Form-widget--medium" name="fecha-campo-fecha-error"  id="fecha-campo-fecha-error" aria-describedby="error-campo-fecha">
+                                        <div class="Form-status Form-status--error" id="error-campo-fecha"><strong>ERROR</strong> - Este campo es obligatorio</div>
+                                    </div>
                                 </div>
 
                                 <fieldset>
@@ -306,157 +353,160 @@
                                         <span>Título de subgrupo de campos</span>
                                     </legend>
 
-                                    <div class="Form-group" role="group"  aria-labelledby="grupo-etiqueta">
-                                        
-                                        <div class="Form-label" id="grupo-etiqueta">Grupo de opciones de radio button:</div>
-                                        
-                                        <div class="Form-options">
-                                        
-                                            <label for="opcion_1_b" class="Form-option">
-                                                <input type="radio" id="opcion_1_b" name="opciones_b" checked>
-                                                <span>Opción grupo 1</span>
-                                            </label>
-                                    
-                                            <label for="opcion_2_b" class="Form-option">
-                                                <input type="radio" id="opcion_2_b" name="opciones_b">
-                                                <span>Opción grupo 2</span>
-                                            </label>
-                                    
+                                    <div class="Form-group" role="group"  aria-labelledby="grupo-etiqueta" >
+                                        <div class="Form-label-wrap">
+                                            <div id="grupo-etiqueta" class="Form-label" >Grupo de opciones de radio button:</div>
                                         </div>
-                                    
+                                        <div class="Form-object-wrap">
+                                            <div class="Form-options">
+                                                <label for="etiqueta_1_b" class="Form-option">
+                                                    <input type="radio" id="etiqueta_1_b" name="opciones_b" checked>
+                                                    <span>Opción etiqueta 1</span>
+                                                </label>
+                                                <label for="etiqueta_2_b" class="Form-option">
+                                                    <input type="radio" id="etiqueta_2_b" name="opciones_b">
+                                                    <span>Opción etiqueta 2</span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 
                                 </fieldset>
 
                                 <a href="#">+ Agregar otro fieldset igual</a>
 
-                                <table class="Table--tipo Table--middle Table--responsive">
+                                <div class="Table-wrapper">
 
-                                    <caption>Nombre de la tabla</caption>
+                                    <table class="Table--tipo Table--middle Table--responsive">
 
-                                    <thead>
-                                        
-                                        <tr>
+                                        <caption>Tabla con elementos de formulario</caption>
 
-                                            <th>Título Columna 1</th>
-                                            <th>Título Columna 2</th>
-                                            <th>Título Columna 3</th>
-                                            <th>Título Columna 4</th>
-                                            <th>Título Columna 5</th>
-                                            
-                                        </tr>
+                                        <thead>
 
-                                    </thead>
+                                            <tr>
 
-                                    <tbody>
+                                                <th>Título Columna 1</th>
+                                                <th>Título Columna 2</th>
+                                                <th>Título Columna 3</th>
+                                                <th>Título Columna 4</th>
+                                                <th>Título Columna 5</th>
 
-                                        <tr>
-                                            <td class="Form-group" data-title="Título Columna 1">
+                                            </tr>
 
-                                                <div class="Form-options">
-                                                
-                                                    <label for="radio-table" class="Form-option u-textCenter u-sm-textLeft">
-                                                    
-                                                        <input type="radio" id="radio-table" name="radio-table">
-                                                        <span class="u-hideVisually">Radio</span>
-                                                    
-                                                    </label>
-                                                
-                                                </div>
-                                            
-                                            </td>
-                                            <td data-title="Título Columna 2">Fila 1 Columna 1</td>
-                                            <td data-title="Título Columna 3">Fila 1 Columna 2</td>
-                                            <td data-title="Título Columna 4">Fila 1 Columna 3</td>
-                                            <td class="u-textRight" data-title="Título Columna 5">$1.004</td>
-                                        </tr>
+                                        </thead>
 
-                                        <tr>
-                                            <td class="Form-group" data-title="Título Columna 1">
+                                        <tbody>
 
-                                                <div class="Form-options">
+                                            <tr>
+                                                <td class="Form-group" data-title="Título Columna 1">
 
-                                                    <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
+                                                    <div class="Form-options">
 
-                                                        <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
-                                                        <span class="u-hideVisually">Checkbox</span>
-                                                                                                            
-                                                    </label>
+                                                        <label for="radio-table" class="Form-option u-textCenter u-sm-textLeft">
 
-                                                </div>
+                                                            <input type="radio" id="radio-table" name="radio-table">
+                                                            <span class="u-hideVisually">Radio</span>
 
-                                            </td>
-                                            <td data-title="Título Columna 2">Fila 2 Columna 2</td>
-                                            <td class="Form-group Form-group--error Form-group--alert" data-title="Título Columna 3">
-                                                
-                                                                                                
-                                                    <label class="Form-label u-hideVisually" for="example-campo-error-tabla">Etiqueta de campo con error tabla:</label>
-                                                    <input class="Form-widget" name="example-campo-error-tabla" type="text" id="example-campo-error-tabla" placeholder="input">
-                                                    <div class="Form-error"><strong>ERROR</strong> - Este campo es obligatorio</div>
-                                                
+                                                        </label>
 
-                                            </td>
-                                            <td data-title="Título Columna 4">Fila 2 Columna 3</td>
-                                            <td class="u-textRight Form-group" data-title="Título Columna 5">                                       
-                                            
-                                                    <label class="Form-label u-hideVisually" for="input-text-tabla">Importe:</label>
-                                                    <input class="Form-widget u-textRight" name="input-text-tabla" type="text" id="input-text-tabla" value="$ 1.001">
+                                                    </div>
 
-                                                    
-                                            </td>
-                                        </tr>
+                                                </td>
+                                                <td data-title="Título Columna 2">Fila 1 Columna 1</td>
+                                                <td data-title="Título Columna 3">Fila 1 Columna 2</td>
+                                                <td data-title="Título Columna 4">Fila 1 Columna 3</td>
+                                                <td class="u-textRight" data-title="Título Columna 5">$1.004</td>
+                                            </tr>
 
-                                        <tr>
-                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><a href=""><span class="Icon Icon--delete"></span><span class="u-hideVisually">Eliminar</span></a></td>
-                                            <td class="Form-group" data-title="Título Columna 2">
+                                            <tr>
+                                                <td class="Form-group" data-title="Título Columna 1">
 
-                                                <label for="select-table" class="Form-label u-hideVisually">Etiqueta de combo en tabla:</label>
-                                                <select name="select-table" id="select-table" class="Form-widget">
-                                                <option value="0">Opción seleccionada de un combo</option>
-                                                <option value="1">Opción 1</option>
-                                                <option value="2">Opción 2</option>
-                                                <option value="3">Opción 3</option>
-                                                </select>
+                                                    <div class="Form-options">
 
-                                            </td>
-                                            <td data-title="Título Columna 3">Fila 3 Columna 3</td>
-                                            <td data-title="Título Columna 4">Fila 3 Columna 4</td>
-                                            <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
-                                        </tr>
+                                                        <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
 
-                                        <tr>
-                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><a href=""><span class="Icon Icon--edit"></span><span class="u-hideVisually">Editar</span></a></td>
-                                            <td data-title="Título Columna 2">Fila 4 Columna 2</td>
-                                            <td data-title="Título Columna 3">Fila 4 Columna 3</td>
-                                            <td data-title="Título Columna 4">Fila 4 Columna 4</td>
-                                            <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
-                                        </tr>
+                                                            <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
+                                                            <span class="u-hideVisually">Checkbox</span>
 
-                                        
+                                                        </label>
 
-                                    </tbody>
+                                                    </div>
 
-                                    <tfoot>
-                                        <tr>
-                                            <td class="u-textRight" colspan="4"  > 
-                                                Total
-                                            </td>
-                                            <td class="u-textRight">
-                                                $86.683
-                                            </td>
-                                        </tr>
-                                    </tfoot>
+                                                </td>
+                                                <td data-title="Título Columna 2">Fila 2 Columna 2</td>
 
-                            </table>
+
+                                                <td class="Form-group Form-group--error Form-group--alert" data-title="Título Columna 3">
+
+                                                        <label class="Form-label u-hideVisually" for="example-campo-error-tabla">Etiqueta de campo con error en tabla:</label>
+                                                        <input class="Form-widget" name="example-campo-error-tabla" type="text" id="example-campo-error-tabla" placeholder="input">
+                                                        <div class="Form-status Form-status--error"><strong>ERROR</strong> - Este campo es obligatorio</div>
+
+                                                </td>
+                                                <td data-title="Título Columna 4">Fila 2 Columna 3</td>
+                                                <td class="u-textRight Form-group" data-title="Título Columna 5">                                       
+
+                                                        <label class="Form-label u-hideVisually" for="input-text-tabla">Importe:</label>
+                                                        <input class="Form-widget u-textRight" name="input-text-tabla" type="text" id="input-text-tabla" value="$ 1.001">
+
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><a href="#"><span class="Icon Icon--delete"></span><span class="u-hideVisually ">Eliminar</span></a></td>
+                                                <td class="Form-group" data-title="Título Columna 2">
+
+                                                    <label for="select-table" class="Form-label u-hideVisually">Etiqueta de combo en tabla:</label>
+                                                    <select name="select-table" id="select-table" class="Form-widget">
+                                                    <option value="0">Opción seleccionada de un combo</option>
+                                                    <option value="1">Opción 1</option>
+                                                    <option value="2">Opción 2</option>
+                                                    <option value="3">Opción 3</option>
+                                                    </select>
+
+                                                </td>
+                                                <td data-title="Título Columna 3">Fila 3 Columna 3</td>
+                                                <td data-title="Título Columna 4">Fila 3 Columna 4</td>
+                                                <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><a href="#"><span class="Icon Icon--edit"></span><span class="u-hideVisually ">Editar</span></a></td>
+                                                <td data-title="Título Columna 2">Fila 4 Columna 2</td>
+                                                <td data-title="Título Columna 3">Fila 4 Columna 3</td>
+                                                <td data-title="Título Columna 4">Fila 4 Columna 4</td>
+                                                <td  class="u-textRight" data-title="Título Columna 5">$ 1.001</td>
+                                            </tr>
+
+
+
+                                        </tbody>
+
+                                        <tfoot>
+                                            <tr>
+                                                <td class="u-textRight" colspan="4"  > 
+                                                    Total
+                                                </td>
+                                                <td class="u-textRight">
+                                                    $86.683
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+
+                                    </table>
+
+                                </div>
+
                             
                             </fieldset>
 
                             <div class="Form-actions">
-                                    <div>
+                                    <div class="Form-actions--left">
                                         <a href="tramite-ripo-01.php" class="Button Button--link" >Volver al paso anteror</a>
                                     </div>
 
-                                    <div>
+                                    <div class="Form-actions--right">
                                         <button class="Button" >Acción secundaria</button>
                                         <button class="Button Button--primary">Ir a Firma</button>
                                     </div>

@@ -5,11 +5,11 @@ $Table-sm-cell-padding: 6px 10px;
 $Table-striped-color: #f8f8f8;
 $Table-row-color: #fff;
 
-.Table {
+.Table--tipo {
 
   width: 100%;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  //margin-top: 2.5rem;
   border-spacing: 0;
   border-collapse: collapse;
   
@@ -36,6 +36,30 @@ $Table-row-color: #fff;
     
     }
 
+    &.table-actions{
+
+      text-align: right;
+      white-space: nowrap;
+     
+
+      button + button{
+        margin-left: .25em
+      }
+
+    }
+
+    &.table-buttons{
+
+      white-space: nowrap;
+      text-align: right;
+      
+
+      button + button{
+        margin-left: .25em
+      }
+
+    }
+
   }
 
   th {
@@ -51,6 +75,9 @@ $Table-row-color: #fff;
     border-top: 1px solid #bbb;
   }
 
+
+
+
   tfoot{
 
     margin-top: 3em;
@@ -59,63 +86,58 @@ $Table-row-color: #fff;
 
   }
 
+  &.Table--striped tr:nth-child(2n) {
+    background-color: $Table-striped-color;
+  }
 
+  &.Table--borderless {
+    thead {
+      tr {
+        background-color: transparent;
+      }
 
-
-}
-
-/**
- * Modifiers
- */
-
-.Table--striped tr:nth-child(2n) {
-  background-color: $Table-striped-color;
-}
-
-.Table--borderless {
-  thead {
-    tr {
-      background-color: transparent;
+      th {
+        border-top: 0;
+      }
     }
 
-    th {
-      border-top: 0;
+    th,
+    td {
+      border-right: 0;
+      border-left: 0;
     }
   }
 
-  th,
-  td {
-    border-right: 0;
-    border-left: 0;
+  .Table--small {
+    th,
+    td {
+      padding: $Table-sm-cell-padding;
+    }
   }
-}
-
-.Table--small {
-  th,
-  td {
-    padding: $Table-sm-cell-padding;
-  }
-}
 
 // Titulo de las columnas de tablas responsive
 // Cada td debe tener el atributo data-title y eso insertara el titulo
 // Se mantiene estilos para .content-before para evitar conflicto con lo ya existente
 // No se utiliza JavaScript para insertar los titulos de columnas
-.content-before {
-  display: none;
-  padding-bottom: 5px;
-  text-align: left;
-  font-weight: normal;
+  .content-before {
+    display: none;
+    padding-bottom: 5px;
+    text-align: left;
+    font-weight: normal;
 
-  @include md(down) {
-    .content-before {
-      display: block;
+    @include md(down) {
+      .content-before {
+        display: block;
+      }
     }
   }
-}
+
+
+
 
 @include md(down) {
-  .Table--responsive {
+
+  &.Table--responsive {
     width: 100%;
     max-width: 100%;
 
@@ -235,32 +257,46 @@ $Table-row-color: #fff;
 
     }
 
-  }
-}
 
-@include md(down) {
-  .Table--responsive td[data-title]::before {
     font-weight: normal;
     content: attr(data-title) " ";
     display: block;
+
+
   }
-
-
 }
 
-.Table--middle td,
-.Table--middle th {
+
+
+&.Table--middle td,
+&.Table--middle th {
 	vertical-align: middle;
 }
 
-.Table-wrapper {
-  max-width: 100%;
-  margin: 0.5rem 0 2.75rem;
-  overflow-x: auto;
-
 
 
 }
+
+
+
+
+
+
+.Table-wrapper {
+  max-width: 100%;
+  margin: 0.5rem 0 2.5rem;
+  overflow-x: auto;
+
+  @include md(down) {
+
+    margin-bottom: 0;
+
+  }
+
+}
+
+
+
 
 
 .Table-wrapper--not-overflow{

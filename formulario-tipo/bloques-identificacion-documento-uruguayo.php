@@ -24,7 +24,6 @@
 
             <div class="Grid-item Grid-item--center  u-md-size3of4 u-lg-size8of10">
 
-
               <div class="Page" >
 
                 <h2 class="Page-title">Identificación con documento de identidad uruguayo</h2>
@@ -35,39 +34,58 @@
 
                     <fieldset>
 
-                        <legend><span>Datos personales:</span></legend>
+                        <legend>
+                          <span>Datos personales:</span>
+                        </legend>
 
-                        <div class="Form-group" >
 
-                          <label class="Form-label" for="documento-identidad">Documento de identidad:*</label>
-                          <input class="Form-widget" name="documento-identidad" type="text" aria-describedby="ayuda-documento-identidad" id="documento-identidad" required>
-                          <div class="Form-hint" id="ayuda-documento-identidad">Incluir dígito verificador</div>
-                          <a href="#">No tengo documento uruguayo</a>
-                          
+                        <div class="Form-group">
+
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="documento-identidad">Documento de identidad:*</label>
+                          </div>
+
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" type="text" name="documento-identidad" id="documento-identidad" aria-describedby="ayuda-documento-identidad">
+                            <div class="Form-hint" id="ayuda-documento-identidad">Incluir dígito verificador</div>
+                            <div class="Form-hint"><a href="#" class="Form-item-aligned">No tengo documento uruguayo</a></div>
+                          </div>
+
+                        </div>
+
+
+                        <div class="Form-group">
+
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="apellido">Apellido:*</label>
+                          </div>
+
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" type="text" name="apellido" id="apellido" required>
+                          </div>
+
                         </div>
 
                         <div class="Form-group">
-                          
-                          <label class="Form-label" for="apellido">Apellido:*</label>
-                          <input class="Form-widget" name="apellido" type="text" id="apellido" required>
-                         
+
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="nombre">Nombre:*</label>
+                          </div>
+
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" type="text" name="nombre" id="nombre" required>
+                          </div>
+
                         </div>
 
                         <div class="Form-group" >
-                          
-                          <label class="Form-label" for="nombre">Nombre:*</label>
-                          <input class="Form-widget" name="nombre" type="text" id="nombre" required>
-                         
-                        </div>
-
-                        <div class="Form-group Form-group--aligned">
-                          
-                          <button class="Button Button--primary">Enviar</button>
-                                                  
+                            <div class="Form-label-wrap"></div>
+                            <div class="Form-object-wrap">
+                              <button type="submit" class="Button Button--primary">Enviar</button>
+                            </div>
                         </div>
 
                     </fieldset>
-
 
                 </form>
 

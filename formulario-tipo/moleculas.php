@@ -25,20 +25,10 @@
 
             <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
-
-
                     <div class="Page Page--formulario" >
-      
-
-
                     <h2 class="Page-title">Moléculas</h2>
-
-                    
-
+<!--
                     <h3>Pasos</h3>
-
-                
-     
 
                     <div class="Steps--tipo">
 
@@ -66,7 +56,7 @@
 								
 
 							</ul>
-							<!-- <p class="step-info">Nombre del paso actual</p> -->
+							
 						
                         </div>
 
@@ -149,7 +139,7 @@
                                 
 
                             </ul>
-                            <!-- <p class="step-info">Nombre del paso actual</p> -->
+
 
                         </div>
 
@@ -263,7 +253,7 @@
                                 <li class="progress-dot progress-dot--active"></li>
                                 <li class="progress-dot progress-dot--active"></li>
                             </ul>
-                            <!-- <p class="step-info">Nombre del paso actual</p> -->
+
 
                         </div>
 
@@ -348,8 +338,8 @@
                             </div>
 
                     </div>
-
-                    <hr>
+-->
+                    <!-- <hr>
 
                     <h3>Cuadros de diálogo</h3>
 
@@ -361,7 +351,7 @@
 
                     <div class="Alert--tipo Alert--dialog Alert--warning" role="alert" aria-live="assertive">
                         <h4 class="Alert-title">Título de mensaje de advertencia</h4>
-                        <p>Mensaje deMensaje de aviso ante una situación determinada.</p>
+                        <p>Mensaje de aviso ante una situación determinada.</p>
                         <a href="#">Enlace de acción</a>
                     </div>
 
@@ -381,22 +371,21 @@
                         <h4 class="Alert-title">Título de mensaje de información</h4>
                         <p>Mensaje que brinda información complementaria.</p>
                         <a href="#">Enlace de acción</a>
-                    </div>
-
+                    </div> -->
+<!-- 
                     <hr>
 
                     <h2 class="u-mb3">Cuadro de diálogo con listado</h2>
 
                     <div class="Alert--tipo Alert--dialog Alert--danger" role="alert" aria-live="assertive">
-                                
+
                         <h4 class="Alert-title">Hay <strong>3 errores</strong> en el formulario</h4>
                         <ol>
                             <li><a href="#">Debe ingresar una fecha</a></li>
                             <li><a href="#">Lorem ipsum ad his scripta</a></li>
                             <li><a href="#">Blandit incorrupte quaerendum in quo</a></li>
                         </ol>
-                                
-                            
+
                     </div>
 
                     <div class="Alert--tipo Alert--dialog Alert--warning" role="alert" aria-live="assertive">
@@ -416,9 +405,9 @@
 
                     </div>
 
-                    <hr>
+                    <hr> -->
 
-                    <h2 class="u-mb3">Notificaciones</h2>
+                    <!-- <h2 class="u-mb3">Notificaciones</h2>
 
                     <div class="Alert--tipo" role="alert">
                         <strong>simple:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
@@ -440,7 +429,7 @@
                         <strong>danger:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
                     </div>
 
-                    <hr>
+                    <hr> -->
 
 
 
@@ -512,7 +501,7 @@
                             <tr>
                                 <td data-title="Hora" class="u-textRight">09:30</td>
                                 <td data-title="Temática">Gobierno Digital en Uy: Avances y Desafíos </td>
-                                <td data-title="Disertantes">José Clastornik</td>
+                                <td data-title="Disertantes">Juan Pérez</td>
                             </tr>
                             <tr>
                                 <td data-title="Hora" class="u-textRight">10:00</td>
@@ -585,10 +574,9 @@
 
                                 <caption>Tabla 2. Tabla con elementos de formulario</caption>
 
-                                       
 
                                         <thead>
-                                            
+
                                             <tr>
 
                                                 <th>Título Columna 1</th>
@@ -640,13 +628,13 @@
 
                                                 </td>
                                                 <td data-title="Título Columna 2">Fila 2 Columna 2</td>
+
+
                                                 <td class="Form-group Form-group--error Form-group--alert" data-title="Título Columna 3">
-                                                    
-                                                                                                       
+
                                                         <label class="Form-label u-hideVisually" for="example-campo-error-tabla">Etiqueta de campo con error en tabla:</label>
                                                         <input class="Form-widget" name="example-campo-error-tabla" type="text" id="example-campo-error-tabla" placeholder="input">
-                                                        <div class="Form-error"><strong>ERROR</strong> - Este campo es obligatorio</div>
-                                                    
+                                                        <div class="Form-status Form-status--error"><strong>ERROR</strong> - Este campo es obligatorio</div>
 
                                                 </td>
                                                 <td data-title="Título Columna 4">Fila 2 Columna 3</td>
@@ -710,7 +698,295 @@
 
                     </div>
 
-                    <hr>
+
+
+
+                            <div class="Table-wrapper">
+
+                                <table class="Table--tipo Table--striped Table--responsive">
+
+                                    <caption>Tabla 3. Tabla con íconos y menú contextual</caption>
+
+                                    <thead>
+
+                                        <tr>
+
+                                            <th>Remitente</th>
+                                            <th>Asunto</th>
+                                            <th>Fecha y Hora</th>
+                                            <th>Acciones</th>
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+
+                                            <td>MEF</td>
+
+                                            <td><a href="">Resumen de activos de la empresa del mes de agosto</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-actions">
+                                                <button aria-label="Eliminar"><span class="Icon Icon--delete"></span></button>
+                                                <button aria-label="Menú contextual" class="link-tool-contextual-menu"><span class="Icon Icon--dropmenu"></span></button>
+
+                                                <!-- menú contextual -->
+
+                                                <div class="tool-contextual-menu">
+
+                                                    <div class="tool-contextual-menu-wrap">
+                                                            <a href="#">Reenviar <span class="u-hideVisually">Reenviar Resumen de activo de la empresa del mes de agosto</span></a>
+                                                            <a href="#">Responder <span class="u-hideVisually">Responder Resumen de activo de la empresa del mes de agosto</span></a>
+                                                            <a href="#">Eliminar <span class="u-hideVisually">Elminar Resumen de activo de la empresa del mes de agosto</span></a>
+                                                    </div>
+
+                                                </div>
+                                            
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td>OPP</td>
+
+                                            <td><a href="">Informe anual 2020</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-actions">
+                                                <button aria-label="Eliminar"><span class="Icon Icon--delete"></span></button>
+                                                <button aria-label="Menú contextual" class="link-tool-contextual-menu" ><span class="Icon Icon--dropmenu"></span></button>
+
+                                                <!-- menú contextual -->
+
+                                                <div class="tool-contextual-menu">
+
+                                                    <div class="tool-contextual-menu-wrap">
+                                                            <a href="#">Reenviar <span class="u-hideVisually">Reenviar Informe anual 2020</span></a>
+                                                            <a href="#">Responder <span class="u-hideVisually">Responder Informe anual 2020</span></a>
+                                                            <a href="#">Eliminar <span class="u-hideVisually">Elminar Informe anual 2020</span></a>
+                                                    </div>
+
+                                                </div>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td>Juan Gonzáles</td>
+
+                                            <td><a href="">Gestión de trámites internos</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-actions">
+                                                <button aria-label="Eliminar"><span class="Icon Icon--delete"></span></button>
+                                                <button aria-label="Menú contextual" class="link-tool-contextual-menu"><span class="Icon Icon--dropmenu"></span></button>
+
+                                                <!-- menú contextual -->
+
+                                                <div class="tool-contextual-menu">
+
+                                                    <div class="tool-contextual-menu-wrap">
+                                                            <a href="#">Reenviar <span class="u-hideVisually">Reenviar Gestión de trámites internos</span></a>
+                                                            <a href="#">Responder <span class="u-hideVisually">Responder Gestión de trámites internos</span></a>
+                                                            <a href="#">Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></a>
+                                                    </div>
+
+                                                </div>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                        
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                            <div class="Table-wrapper">
+
+                                <table class="Table--tipo Table--striped Table--responsive">
+
+                                    <caption>Tabla 4. Tabla con botones</caption>
+
+                                    <thead>
+
+                                        <tr>
+
+                                            <th>Remitente</th>
+                                            <th>Asunto</th>
+                                            <th>Fecha y Hora</th>
+                                            <th>Acciones</th>
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+
+                                            <td>MEF</td>
+                                            <td><a href="">Resumen de activos de la empresa del mes de agosto</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-buttons"><button class="Button Button--primary Button--small"><span class="Icon Icon--edit-white"></span>Editar</button> <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button></td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td>OPP</td>
+                                            <td><a href="">Informe anual 2020</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-buttons"><button class="Button Button--primary Button--small"><span class="Icon Icon--edit-white"></span>Editar</button> <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button></td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td>Juan Gonzáles</td>
+                                            <td><a href="">Gestión de trámites internos</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-buttons">
+                                                <button class="Button Button--primary Button--small"><span class="Icon Icon--edit-white"></span>Editar</button>
+                                                <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button>
+                                            
+                                            </td>
+
+                                        </tr>
+
+
+                                        
+
+                                    </tbody>
+
+                                </table>
+                                
+
+
+
+                            </div>
+
+
+                            <div class="Table-wrapper">
+
+                                <table class="Table--tipo Table--striped Table--responsive">
+
+                                    <caption>Tabla 5. Tabla con boton y menú contextual</caption>
+
+                                    <thead>
+
+                                        <tr>
+
+                                            <th>Remitente</th>
+                                            <th>Asunto</th>
+                                            <th>Fecha y Hora</th>
+                                            <th>Acciones</th>
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+
+                                            <td>MEF</td>
+                                            <td><a href="">Resumen de activos de la empresa del mes de agosto</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-buttons">
+                                                <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></button>
+                                                <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+
+                                                <!-- menú contextual -->
+
+                                                <div class="tool-contextual-menu">
+
+                                                    <div class="tool-contextual-menu-wrap">
+                                                            <a href="#">Reenviar <span class="u-hideVisually">Reenviar Informe anual 2020</span></a>
+                                                            <a href="#">Responder <span class="u-hideVisually">Responder Informe anual 2020</span></a>
+                                                    </div>
+
+                                                </div>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td>OPP</td>
+                                            <td><a href="">Informe anual 2020</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-buttons">
+                                                <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar </button>
+                                                <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+
+                                                <!-- menú contextual -->
+
+                                                <div class="tool-contextual-menu">
+
+                                                    <div class="tool-contextual-menu-wrap">
+                                                            <a href="#">Reenviar <span class="u-hideVisually">Reenviar Informe anual 2020</span></a>
+                                                            <a href="#">Responder <span class="u-hideVisually">Responder Informe anual 2020</span></a>
+                                                    </div>
+
+                                                </div>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td>Juan Gonzáles</td>
+                                            <td><a href="">Gestión de trámites internos</a></td>
+                                            <td>12/06/23 - 08:30</td>
+                                            <td class="table-buttons">
+                                                <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></button>
+                                                <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+
+                                                <!-- menú contextual -->
+
+                                                <div class="tool-contextual-menu">
+
+                                                    <div class="tool-contextual-menu-wrap">
+                                                            <a href="#">Reenviar <span class="u-hideVisually">Reenviar Gestión de trámites internos</span></a>
+                                                            <a href="#">Responder <span class="u-hideVisually">Responder Gestión de trámites internos</span></a>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </td>
+
+                                        </tr>
+
+
+                                        
+
+                                    </tbody>
+
+                                </table>
+                                
+
+
+
+                            </div>
+
+
+                            <hr>
+
+
 
                     <h2 class="u-mb3">Paginación</h2>
 
@@ -737,6 +1013,8 @@
 
         
         </div >
+
+
 
 </main>
 

@@ -1,9 +1,9 @@
 /** @define Pagination; weak */
 
-.Pagination {
+.Pagination--tipo {
   text-align: center;
   margin-top: 4rem;
-}
+
 
 .Pagination-text {
   margin-bottom: 1rem;
@@ -54,12 +54,26 @@
 }
 
 @include md(down) {
-  .Pagination li {
+
+  .Pagination-links {
+
+    li{
+
     display: none;
+
+    &.Pagination-next,
+    &.Pagination-prev {
+      display: inline-block !important;
+    }
+
   }
 
-  .Pagination-next,
-  .Pagination-prev {
-    display: inline-block !important;
   }
+
+
+
+}
+
+
+
 }

@@ -32,16 +32,20 @@
                     <form action="./" class="Form Form--tipo">
 
                         <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
-                                      <fieldset>
+
+                        <fieldset>
 
                           <legend>
                             <span>Datos de domicilio</span>
                           </legend>
 
-                          <div class="Form-group" >
+                          <div class="Form-group"> 
 
-                            <label for="departamento" class="Form-label">Departamento:*</label>
+                            <div class="Form-label-wrap">
+                              <label for="departamento" class="Form-label">Departamento:*</label>
+                            </div>
 
+                            <div class="Form-object-wrap">
                               <select name="departamento" id="departamento" class="Form-widget" required>
                                   <option selected="">Seleccione un departamento</option>
                                   <option>Artigas</option>
@@ -64,31 +68,41 @@
                                   <option>Tacuarembó</option>
                                   <option>Treinta y Tres</option>
                               </select>
+                            </div>
 
                           </div>
 
+                          <div class="Form-group"> 
 
-                          <div class="Form-group" >
+                            <div class="Form-label-wrap">
+                              <label for="localidad" class="Form-label">Localidad:*</label>
+                            </div>
 
-                            <label for="localidad" class="Form-label">Localidad:*</label>
-
+                            <div class="Form-object-wrap">
                               <select name="localidad" id="localidad" class="Form-widget" required>
                                   <option selected="">Seleccione una localidad</option>
                                   <option>Montevideo</option>
                                   <option>Opción 2</option>
                                   <option>Opción 3</option>
                               </select>
-                              
+                            </div>
+
+                          </div>
+
+                          <div class="Form-group">
+                            <div class="Form-label-wrap">
+                              <label class="Form-label" for="domicilio">Domicilio:*</label>
+                            </div>
+                            <div class="Form-object-wrap">
+                              <input class="Form-widget" name="domicilio" type="text" id="domicilio" required>
+                            </div>
                           </div>
 
                           <div class="Form-group" >
-                            <label class="Form-label" for="domicilio">Domicilio:*</label>
-                            <input class="Form-widget" name="domicilio" type="text" id="domicilio" required>
-                          </div>
-
-
-                          <div class="Form-group Form-group--aligned" >
-                            <button type="submit" class="Button Button--primary">Confirmar domicilio</button>
+                            <div class="Form-label-wrap"></div>
+                            <div class="Form-object-wrap">
+                              <button type="submit" class="Button Button--primary">Confirmar domicilio</button>
+                            </div>
                           </div>
 
 

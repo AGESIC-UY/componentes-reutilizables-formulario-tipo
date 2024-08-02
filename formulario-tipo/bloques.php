@@ -238,6 +238,18 @@
 										<p>Bloque que permite listar, filtrar y ordenar mensajes.</p>
 									</div>
 								</li>
+								
+								<li class="Media">
+									<!--<div class="Media-image">
+										<img src="img/200x120.png" alt="">
+									</div>-->
+									<div class="Media-body">
+										<h3>
+											<a href="bloques-panel-filtros.php">Panel de filtros</a>
+										</h3>
+										<p>Bloque lateral con panel de filtos genérico.</p>
+									</div>
+								</li>
 						
 						</ul>
 				 </div>

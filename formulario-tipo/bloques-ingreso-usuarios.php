@@ -25,10 +25,7 @@
 
             <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
-
               <div class="Page" >
-
-                
 
                 <h2 class="Page-title">Ingreso de usuario</h2>
 
@@ -36,27 +33,40 @@
 
                     <fieldset>
 
-                        <legend><span>Ingreso de usuario:</span></legend>
+                        <legend>
+                          <span>Ingreso de usuario:</span>
+                        </legend>
 
-                        <div class="Form-group" >
+                        <!-- <div class="Form-group" >
+                            <label class="Form-label" for="usuario">Usuario:</label>
+                            <input class="Form-widget" name="usuario" type="text" id="usuario">
+                        </div> -->
 
-                          <label class="Form-label" for="usuario">Usuario:</label>
-                          <input class="Form-widget" name="usuario" type="text" id="usuario">
-                                                
+                        <div class="Form-group">
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="usuario">Usuario:</label>
+                          </div>
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" name="usuario" type="text" id="usuario">
+                          </div>
+                        </div>
+
+                        <div class="Form-group">
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="contrasena">Contraseña:</label>
+                          </div>
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" name="contrasena" type="password" aria-describedby="enlace-olvide-contrasena" id="contrasena">
+                            <div class="Form-hint" ><a href="">Olvidé mi contraseña</a></div>
+                          </div>
                         </div>
 
                         <div class="Form-group" >
-
-                          <label class="Form-label" for="contrasena">Contraseña:</label>
-                          <input class="Form-widget" name="contrasena" type="password" aria-describedby="enlace-olvide-contrasena" id="contrasena">
-                          <div class="Form-hint" id="enlace-olvide-contrasena"><a href="">Olvidé mi contraseña</a></div>
-                                                
-                        </div>
-
-
-                        <div class="Form-group Form-group--aligned" >
-                          <button class="Button Button--primary" aria-describedby="enlace-registro">Ingresar</button>
-                          <div class="Form-hint" id="enlace-registro"><a href="">No estoy registrado</a></div>
+                          <div class="Form-label-wrap"></div>
+                          <div class="Form-object-wrap">
+                            <button class="Button Button--primary" aria-describedby="enlace-registro">Ingresar</button>
+                            <div class="Form-hint" id="enlace-registro"><a href="">No estoy registrado</a></div>
+                          </div>
                         </div>
 
                     </fieldset>

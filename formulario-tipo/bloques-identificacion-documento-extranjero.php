@@ -24,9 +24,7 @@
 
             <div class="Grid-item Grid-item--center u-md-size3of4 u-lg-size8of10">
 
-
               <div class="Page" >
-
 
                 <h2 class="Page-title">Identificación con documento de identidad extranjero</h2>
 
@@ -36,46 +34,48 @@
 
                     <fieldset>
 
-                        <legend><span>Datos personales:</span></legend>
+                       <legend>
+                         <span>Datos personales:</span>
+                       </legend>
 
-                        <fieldset class="fieldset-form-multifield">
-                        
-                          <legend>
-                            <span>Identificación de usuario:</span>
-                          </legend>
+                        <div class="Form-group" role="group"  aria-labelledby="documento-de-identidad">
 
-                        <div class="Form-group" >
-                          
-                          <div class="Form-label">Documento de Identidad:</div>
-                          
-                          <div class="Grid Form-grid">
-                            <div class="Grid-item u-size1of3">
-                              <label for="select-cedula" class="u-hideVisually" >Tipo de Documento</label>
-                              <select name="select-cedula" id="select-cedula" class="Form-widget" >
-                                <option value="ci">C.I.</option>
-                                <option value="pasaporte">Pasaporte</option>
-                              </select>
-
+                            <div class="Form-label-wrap">
+                                <div id="documento-de-identidad" class="Form-label">Documento de Identidad:</div>
                             </div>
 
-                            <div class="Grid-item u-size2of3">
-                              <label for="numero-cedula" class="u-hideVisually">Número de Documento</label>
-                              <input type="text" class="Form-widget" name="numero-cedula" aria-describedby="ayuda-documento-identidad" id="numero-cedula" >
-                              <div class="Form-hint" id="ayuda-documento-identidad">Incluir dígito verificador</div>
+                            <div class="Form-object-wrap">
+
+                                <div class="Grid Form-grid">
+
+                                  <div class="Grid-item u-size1of3">
+                                    <label for="select-cedula" class="u-hideVisually" >Tipo de Documento</label>
+                                    <select name="select-cedula" id="select-cedula" class="Form-widget" >
+                                      <option value="ci">C.I.</option>
+                                      <option value="pasaporte">Pasaporte</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="Grid-item u-size2of3">
+                                    <label for="numero-cedula" class="u-hideVisually">Número de Documento</label>
+                                    <input type="text" class="Form-widget" name="numero-cedula" aria-describedby="ayuda-documento-identidad" id="numero-cedula" >
+                                    <div class="Form-hint" id="ayuda-documento-identidad">Incluir dígito verificador</div>
+                                  </div>
+
+                                </div>
+
                             </div>
-                          
-                          </div>
 
                         </div>
 
-                        </fieldset>
+                        <div class="Form-group">
 
+                          <div class="Form-label-wrap">
+                            <label for="pais-emisor" class="Form-label">País emisor:*</label>
+                          </div>
 
-                        <div class="Form-group" >
-                          
-                          <label for="pais-emisor" class="Form-label">País emisor:*</label>
-                          
-                          <select name="pais-emisor" id="pais-emisor" class="Form-widget">
+                          <div class="Form-object-wrap">
+                            <select class="Form-widget" name="pais-emisor" id="pais-emisor" >
                                 <option>Seleccionar país emisor</option>
                                 <option>Akrotiri</option>
                                 <option>Albania</option>
@@ -332,31 +332,36 @@
                                 <option>Yibuti</option>
                                 <option>Zambia</option>
                                 <option>Zimbabue</option>
-                          
-                          </select>
-                        
+                            </select>
+                          </div>
+
                         </div>
 
+                        <div class="Form-group">
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="apellido">Apellidos:*</label>
+                          </div>
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" name="apellido" type="text" id="apellido" required>
+                          </div>
+                        </div>
+
+
+                        <div class="Form-group">
+                          <div class="Form-label-wrap">
+                            <label class="Form-label" for="nombres">Nombres:*</label>
+                          </div>
+                          <div class="Form-object-wrap">
+                            <input class="Form-widget" name="nombres" type="text" id="nombres" required>
+                          </div>
+                        </div>
 
 
                         <div class="Form-group" >
-                          
-                          <label class="Form-label" for="apellido">Apellidos:*</label>
-                          <input class="Form-widget" name="apellido" type="text" id="apellido" required>
-                         
-                        </div>
-
-                        <div class="Form-group" >
-                          
-                          <label class="Form-label" for="nombres">Nombres:*</label>
-                          <input class="Form-widget" name="nombres" type="text" id="nombres" required>
-                         
-                        </div>
-
-                        <div class="Form-group Form-group--aligned" >
-                          
-                          <button class="Button Button--primary">Enviar</button>
-                                                  
+                            <div class="Form-label-wrap"></div>
+                            <div class="Form-object-wrap">
+                              <button type="submit" class="Button Button--primary">Enviar</button>
+                            </div>
                         </div>
 
                     </fieldset>

@@ -1,5 +1,7 @@
+.Form--tipo{
 .calendar {
-    width: 366px;
+    width: 100%;
+    max-width: 366px;
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
@@ -12,11 +14,15 @@
     margin: .75rem 0;
     border-radius: $field-radius;
 
-    @include sm(down) {
+
+    
+
+    @include md(down) {
 
       
       
       width: 100%;
+      
 
     }
 
@@ -114,7 +120,7 @@
 
         @include sm(down) {
 
-          gap: 2px;
+          gap: 4px;
 
         }
 
@@ -126,8 +132,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 44px;
-        height: 44px;
+        width: 100%;
+        max-width: 44px;
+        //height: 44px;
+        aspect-ratio: 1;
 
         @include sm(down) {
 
@@ -142,8 +150,10 @@
             padding: 5px;
             //display: block;
             border-radius: $field-radius;
-            width: 44px;
-            height: 44px;
+            width: 100%;
+            max-width: 44px;
+            //height: 44px;
+            aspect-ratio: 1;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -157,18 +167,21 @@
 
             &.marked{
 
-                color: $white;
-                background: $blue;
+                color: $blue;
+                background: $light-blue;
+                border: 1px solid $light-blue;
 
             }
 
             &.current{
 
-                border: 2px solid $blue;
+                border: 1px solid $gray-border;
                 border-radius: 99%;
                 padding: 3px;
-                width: 44px;
-                height: 44px;
+                width: 100%;
+                max-width: 44px;
+                //height: 44px;
+                aspect-ratio: 1;
                 margin: auto;
                 display: flex;
                 justify-content: center;
@@ -194,8 +207,9 @@
         a{
 
             color: $blue;
-            text-decoration: underline;
-            background: $light-blue;
+            text-decoration: none;
+            background: transparent;
+            border: 1px solid $blue;
             padding: 5px;
             border-radius: $field-radius;
             width: 100%;
@@ -203,7 +217,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            //text-decoration: underline;
             //background: darken(#c33, 12%);
+
+            &:hover{
+
+              background: $light-blue;
+              text-decoration: underline;
+
+            }
 
 
         }
@@ -214,17 +236,20 @@
     &-today{
 
         width: 100%;
+        //display: none;
 
         span{
 
-            font-size: 1.125rem;
-            padding: 1rem;
+            font-size: 1rem;
+            padding: .5rem 1rem;
             text-align: center;
             //color: $white;
             width: 100%;
             display: block;
-            border: 1px solid $gray-border;
-            font-weight: bold;
+            border: 1px solid $light-blue;
+            color: $blue;
+            background-color: $light-blue;
+            //font-weight: bold;
             //background: $green;
 
         }
@@ -232,3 +257,5 @@
     }
 
   }
+
+}

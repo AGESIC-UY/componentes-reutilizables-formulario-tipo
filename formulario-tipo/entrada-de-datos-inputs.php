@@ -431,6 +431,7 @@
                                 </div>
                                 <div class="Form-object-wrap">
                                     <input class="Form-widget" type="file" name="adjuntos-1" id="adjuntos-1">
+                                    <div class="Form-hint" id="ayuda-campo">Formatos aceptados: PDF, JPG y ZIP de hasta 3Mb.</div>
                                 </div>
                             </div>
 

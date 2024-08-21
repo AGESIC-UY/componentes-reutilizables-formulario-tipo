@@ -277,7 +277,7 @@
                                     <td class="table-actions">
 
                                         <button aria-label="Eliminar"><span class="Icon Icon--delete"></span></button>
-                                        <button aria-label="Menú contextual" class="link-tool-contextual-menu"><span class="Icon Icon--dropmenu"></span></button>
+                                        <button aria-label="Menú contextual" class="link-tool-contextual-menu"><span class="Icon Icon--dropmenu"><span class="u-hideVisually">Acciones para Resumen de activo de la empresa del mes de agosto</span></span></button>
 
                                         <!-- menú contextual -->
 
@@ -300,7 +300,7 @@
                                     <td class="table-actions">
 
                                         <button aria-label="Eliminar"><span class="Icon Icon--delete"></span></button>
-                                        <button aria-label="Menú contextual" class="link-tool-contextual-menu" ><span class="Icon Icon--dropmenu"></span></button>
+                                        <button aria-label="Menú contextual" class="link-tool-contextual-menu" ><span class="Icon Icon--dropmenu"><span class="u-hideVisually">Acciones para Reenviar Informe anual 2020</span></span></button>
 
                                         <!-- menú contextual -->
 
@@ -325,7 +325,7 @@
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-actions">
                                         <button aria-label="Eliminar"><span class="Icon Icon--delete"></span></button>
-                                        <button aria-label="Menú contextual" class="link-tool-contextual-menu"><span class="Icon Icon--dropmenu"></span></button>
+                                        <button aria-label="Menú contextual" class="link-tool-contextual-menu"><span class="Icon Icon--dropmenu"><span class="u-hideVisually">Acciones para Reenviar Gestión de trámites internos</span></span></button>
 
                                         <!-- menú contextual -->
 
@@ -427,8 +427,8 @@
                                     <td><a href="">Resumen de activos de la empresa del mes de agosto</a></td>
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-buttons">
-                                        <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></button>
-                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+                                        <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Resumen de activos de la empresa del mes de agosto</span></button>
+                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Resumen de activos de la empresa del mes de agosto</span></button>
 
                                         <!-- menú contextual -->
 
@@ -448,7 +448,7 @@
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-buttons">
                                         <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar </button>
-                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Informe anual 2020</span></button>
 
                                         <!-- menú contextual -->
 
@@ -468,7 +468,7 @@
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-buttons">
                                         <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></button>
-                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Elminar Gestión de trámites internos</span></button>
 
                                         <!-- menú contextual -->
 

@@ -1846,6 +1846,14 @@ este es el container de formulario tipo
   background-image: url("../assets/icons/icon-print-white.png");
 }
 
+@media (prefers-color-scheme: dark) {
+  .Icon--print {
+    background-image: url("../assets/icons/icon-print-white.svg");
+  }
+  .no-svg .Icon--print {
+    background-image: url("../assets/icons/icon-print-white.png");
+  }
+}
 .Icon--print-disabled {
   background-image: url("../assets/icons/icon-print-disabled.svg");
 }
@@ -1856,9 +1864,25 @@ este es el container de formulario tipo
 .Icon--dropmenu {
   background-image: url("../assets/icons/icon-dropmenu.svg");
 }
+.Icon--dropmenu-white {
+  background-image: url("../assets/icons/icon-dropmenu-white.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .Icon--dropmenu {
+    background-image: url("../assets/icons/icon-dropmenu-white.svg");
+  }
+}
 
 .Icon--eye {
   background-image: url("../assets/icons/icon-eye.svg");
+}
+.Icon--eye-white {
+  background-image: url("../assets/icons/icon-eye.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .Icon--eye {
+    background-image: url("../assets/icons/icon-eye-white.svg");
+  }
 }
 
 .Icon--publish {
@@ -1867,9 +1891,22 @@ este es el container de formulario tipo
 .Icon--publish-white {
   background-image: url("../assets/icons/icon-publish-white.svg");
 }
+@media (prefers-color-scheme: dark) {
+  .Icon--publish {
+    background-image: url("../assets/icons/icon-publish-white.svg");
+  }
+}
 
 .Icon--editor-back {
   background-image: url("../assets/icons/icon-back-editor.svg");
+}
+.Icon--editor-back-white {
+  background-image: url("../assets/icons/icon-back-editor-white.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .Icon--editor-back {
+    background-image: url("../assets/icons/icon-back-editor-white.svg");
+  }
 }
 
 .Icon--contextual-menu {
@@ -1893,11 +1930,26 @@ este es el container de formulario tipo
   background-image: url("../assets/icons/icon-trash-white.png");
 }
 
+@media (prefers-color-scheme: dark) {
+  .Icon--delete {
+    background-image: url("../assets/icons/icon-trash-white.svg");
+  }
+  .no-svg .Icon--delete {
+    background-image: url("../assets/icons/icon-trash-white.png");
+  }
+}
+
 .Icon--edit {
   background-image: url("../assets/icons/icon-edit.svg");
 }
 .no-svg .Icon--edit {
   background-image: url("../assets/icons/icon-edit.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  .Icon--edit {
+    background-image: url("../assets/icons/icon-edit-white.svg");
+  }
 }
 
 .Icon--edit-white {
@@ -1910,21 +1962,49 @@ este es el container de formulario tipo
 .Icon--dropdown {
   background-image: url("../assets/icons/icon-dropdown.svg");
 }
-
 .Icon--dropdown-white {
   background-image: url("../assets/icons/icon-dropdown-white.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .Icon--dropdown {
+    background-image: url("../assets/icons/icon-dropdown-white.svg");
+  }
 }
 
 .Icon--keyboard-arrow-down {
   background-image: url("../assets/icons/icon-keyboard-arrow-down.svg");
 }
+.Icon--keyboard-arrow-down-white {
+  background-image: url("../assets/icons/icon-keyboard-arrow-down-white.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .Icon--keyboard-arrow-down {
+    background-image: url("../assets/icons/icon-keyboard-arrow-down-white.svg");
+  }
+}
 
 .Icon--keyboard-arrow-up {
   background-image: url("../assets/icons/icon-keyboard-arrow-up.svg");
 }
+.Icon--keyboard-arrow-up-white {
+  background-image: url("../assets/icons/icon-keyboard-arrow-up-white.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .Icon--keyboard-arrow-up {
+    background-image: url("../assets/icons/icon-keyboard-arrow-up-white.svg");
+  }
+}
 
 .Icon--view-window {
   background-image: url("../assets/icons/icon-view-window.svg");
+}
+.Icon--view-window-white {
+  background-image: url("../assets/icons/icon-view-window-white.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .Icon--view-window {
+    background-image: url("../assets/icons/icon-view-window-white.svg");
+  }
 }
 
 .Icon--share {
@@ -1934,11 +2014,43 @@ este es el container de formulario tipo
   background-image: url("../assets/icons/icon-share.png");
 }
 
+.Icon--share-white {
+  background-image: url("../assets/icons/icon-share-white.svg");
+}
+.no-svg .Icon--share-white {
+  background-image: url("../assets/icons/icon-share-white.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  .Icon--share {
+    background-image: url("../assets/icons/icon-share-white.svg");
+  }
+  .no-svg .Icon--share {
+    background-image: url("../assets/icons/icon-share-white.png");
+  }
+}
+
 .Icon--download {
   background-image: url("../assets/icons/icon-download.svg");
 }
 .no-svg .Icon--download {
   background-image: url("../assets/icons/icon-download.png");
+}
+
+.Icon--download-white {
+  background-image: url("../assets/icons/icon-download-white.svg");
+}
+.no-svg .Icon--download-white {
+  background-image: url("../assets/icons/icon-download-white.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  .Icon--download {
+    background-image: url("../assets/icons/icon-download-white.svg");
+  }
+  .no-svg .Icon--download {
+    background-image: url("../assets/icons/icon-download-white.png");
+  }
 }
 
 .Icon--phone {
@@ -1948,11 +2060,43 @@ este es el container de formulario tipo
   background-image: url("../assets/icons/icon-phone.png");
 }
 
+.Icon--phone-white {
+  background-image: url("../assets/icons/icon-phone-white.svg");
+}
+.no-svg .Icon--phone-white {
+  background-image: url("../assets/icons/icon-phone-white.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  .Icon--phone {
+    background-image: url("../assets/icons/icon-phone-white.svg");
+  }
+  .no-svg .Icon--phone {
+    background-image: url("../assets/icons/icon-phone-white.png");
+  }
+}
+
 .Icon--search {
   background-image: url("../assets/icons/icon-search.svg");
 }
 .no-svg .Icon--search {
   background-image: url("../assets/icons/icon-search.png");
+}
+
+.Icon--search-white {
+  background-image: url("../assets/icons/icon-search-white.svg");
+}
+.no-svg .Icon--search-white {
+  background-image: url("../assets/icons/icon-search-white.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  .Icon--search {
+    background-image: url("../assets/icons/icon-search-white.svg");
+  }
+  .no-svg .Icon--search {
+    background-image: url("../assets/icons/icon-search-white.png");
+  }
 }
 
 /**
@@ -2198,6 +2342,10 @@ este es el container de formulario tipo
 .Table--tipo td a,
 .Table--tipo th a {
   color: #000000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
 }
 .Table--tipo td p,
 .Table--tipo th p {
@@ -2255,6 +2403,11 @@ este es el container de formulario tipo
 .Table--tipo tr.table-row-highlight {
   box-shadow: inset 4px 0 0 #ffd15f !important;
   background-color: #fff6dc !important;
+}
+@media (prefers-color-scheme: dark) {
+  .Table--tipo tr.table-row-highlight {
+    background-color: #F5E9C6 !important;
+  }
 }
 .Table--tipo tr.table-row-highlight td a {
   font-weight: 500;
@@ -3853,6 +4006,10 @@ este es el container de formulario tipo
 .Form--tipo .Table--tipo thead th a {
   color: inherit;
   line-height: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
 }
 .Form--tipo .Table--tipo thead th a:hover {
   text-decoration: none;

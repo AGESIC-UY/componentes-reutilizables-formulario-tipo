@@ -63,6 +63,16 @@ $Icons-path: '../assets/icons';
 
   }
 
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-print-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-print-white.png');
+    }
+
+  }
+
   &-disabled{
 
 
@@ -82,7 +92,82 @@ $Icons-path: '../assets/icons';
 
   background-image: url('#{$Icons-path}/icon-dropmenu.svg');
 
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-dropmenu-white.svg');
+
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-dropmenu-white.svg');
+
+  }
+
 }
+
+.Icon--eye{
+
+  background-image: url('#{$Icons-path}/icon-eye.svg');
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-eye.svg');
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-eye-white.svg');
+
+  }
+
+}
+
+.Icon--publish{
+
+  background-image: url('#{$Icons-path}/icon-publish.svg');
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-publish-white.svg');
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-publish-white.svg');
+
+  }
+
+
+
+}
+
+
+
+
+
+.Icon--editor-back{
+
+  background-image: url('#{$Icons-path}/icon-back-editor.svg');
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-back-editor-white.svg');
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-back-editor-white.svg');
+
+  }
+
+}
+
 
 
 .Icon--contextual-menu{
@@ -96,27 +181,49 @@ $Icons-path: '../assets/icons';
 }
 
 .Icon--delete {
+  
   background-image: url('#{$Icons-path}/icon-trash.svg');
 
   @include no-svg {
     background-image: url('#{$Icons-path}/icon-trash.png');
   }
-}
 
+  &-white{
 
-.Icon--delete-white {
-  background-image: url('#{$Icons-path}/icon-trash-white.svg');
+    background-image: url('#{$Icons-path}/icon-trash-white.svg');
 
-  @include no-svg {
-    background-image: url('#{$Icons-path}/icon-trash-white.png');
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-trash-white.png');
+    }
+
   }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-trash-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-trash-white.png');
+    }
+
+  }
+
 }
+
+
 
 .Icon--edit {
   background-image: url('#{$Icons-path}/icon-edit.svg');
 
   @include no-svg {
     background-image: url('#{$Icons-path}/icon-edit.png');
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-edit-white.svg');
+
+
   }
 
 }
@@ -135,13 +242,81 @@ $Icons-path: '../assets/icons';
 
   background-image: url('#{$Icons-path}/icon-dropdown.svg');
 
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-dropdown-white.svg');
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-dropdown-white.svg');
+
+  }
+
 }
 
-.Icon--dropdown-white {
 
-  background-image: url('#{$Icons-path}/icon-dropdown-white.svg');
+.Icon--keyboard-arrow-down{
+
+  background-image: url('#{$Icons-path}/icon-keyboard-arrow-down.svg');
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-keyboard-arrow-down-white.svg');
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-keyboard-arrow-down-white.svg');
+
+  }
 
 }
+
+.Icon--keyboard-arrow-up{
+
+  background-image: url('#{$Icons-path}/icon-keyboard-arrow-up.svg');
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-keyboard-arrow-up-white.svg');
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-keyboard-arrow-up-white.svg');
+  
+  
+  }
+
+}
+
+
+
+
+
+.Icon--view-window{
+
+  background-image: url('#{$Icons-path}/icon-view-window.svg');
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-view-window-white.svg');
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-view-window-white.svg');
+
+  }
+
+
+}
+
 
 
 
@@ -151,6 +326,27 @@ $Icons-path: '../assets/icons';
   @include no-svg {
     background-image: url('#{$Icons-path}/icon-share.png');
   }
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-share-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-share-white.png');
+    }
+
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-share-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-share-white.png');
+    }
+
+  }
 }
 
 .Icon--download {
@@ -158,6 +354,26 @@ $Icons-path: '../assets/icons';
 
   @include no-svg {
     background-image: url('#{$Icons-path}/icon-download.png');
+  }
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-download-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-download-white.png');
+    }
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-download-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-download-white.png');
+    }
+
   }
 }
 
@@ -167,6 +383,26 @@ $Icons-path: '../assets/icons';
   @include no-svg {
     background-image: url('#{$Icons-path}/icon-phone.png');
   }
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-phone-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-phone-white.png');
+    }
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+  
+    background-image: url('#{$Icons-path}/icon-phone-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-phone-white.png');
+    }
+    
+  }
 }
 
 .Icon--search {
@@ -174,6 +410,27 @@ $Icons-path: '../assets/icons';
 
   @include no-svg {
     background-image: url('#{$Icons-path}/icon-search.png');
+  }
+
+  &-white{
+
+    background-image: url('#{$Icons-path}/icon-search-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-search-white.png');
+    }
+
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+
+    background-image: url('#{$Icons-path}/icon-search-white.svg');
+
+    @include no-svg {
+      background-image: url('#{$Icons-path}/icon-search-white.png');
+    }
+
   }
 }
 

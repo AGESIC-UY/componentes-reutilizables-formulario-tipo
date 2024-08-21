@@ -35,8 +35,6 @@ $(".link-tool-contextual-menu").click(function(e) {
   // Mostrar u ocultar el menú contextual según sea necesario
   if (!estaAbierto) {
     
-
-
     // Obtengo valores
     var iconoMenuAncho = linkMenu.outerWidth(true); // Ancho del link
     var iconoMenuAlto = linkMenu.outerHeight(); // Alto del link
@@ -57,7 +55,6 @@ $(".link-tool-contextual-menu").click(function(e) {
     opcionesMenu.css({
       
       top: (iconoMenuPosRel.top + iconoMenuAlto + 4) + "px",
-      //left: (iconoMenuPosRel.left - menuAncho + iconoMenuAncho)  + "px" 
       left: leftPosition + "px"
 
     });
@@ -67,22 +64,18 @@ $(".link-tool-contextual-menu").click(function(e) {
     // Verificar si el menú se pasa del borde inferior de la ventana
 
     var menuBottom = iconoMenuPosAbs.top + menuAlto; // Posición del borde inferior del menú
+    var menuTop = iconoMenuPosAbs.top; // Posición del borde superior del menu
     var windowScrollTop = $(window).scrollTop(); // Posición del scroll con respecto al top
     var windowHeight = $(window).height(); // Altura de la ventana
     var windowBottom = windowScrollTop + windowHeight; // Posición del scroll con respecto al borde inferior de la ventana
+    var windowTop = menuTop - $(window).scrollTop();
 
-    //console.info('menuBottom: '+ menuBottom + ', windowBottom: ' + windowBottom);
 
-    if(menuBottom > windowBottom){
-
-       opcionesMenu.css({
-
-          top: (iconoMenuPosRel.top - menuAlto - 4) + "px"
-
-      })
-    
+    // si no hay espacio debajo del ícono, hay espacio en la parte superior y el menu no tiene el class que lo obliga a desplegar hacia abajo, el menú se despliega hacia arriba.
+    if(menuBottom > windowBottom && windowTop > menuAlto && !opcionesMenu.hasClass('tool-contextual-menu--down')){
+       opcionesMenu.css({top: (iconoMenuPosRel.top - menuAlto - 4) + "px"})
     }
-
+    
     // Mostrar menú
     opcionesMenu.delay(20).fadeIn(100);
     linkMenu.addClass("abierto");
@@ -138,11 +131,11 @@ $(document).on('keydown', function(event) {
 });
 
 // Cerrar el menú al utilizar la tuerca
-$(document).on('mousewheel', function(event) {
-  $(".tool-contextual-menu").hide();
-  $(".link-tool-contextual-menu").removeClass('abierto');
-  $(".tool-contextual-menu").removeClass('abierto');
-});
+// $(document).on('mousewheel', function(event) {
+//   $(".tool-contextual-menu").hide();
+//   $(".link-tool-contextual-menu").removeClass('abierto');
+//   $(".tool-contextual-menu").removeClass('abierto');
+// });
 
 // Cerrar el menú al cambiar tamaño de la pantalla
 $(window).on('resize', function(event) {

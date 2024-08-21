@@ -28,6 +28,15 @@ $Table-row-color: #fff;
     vertical-align: top;
     border: 1px solid $gray-border;
 
+    a{
+      color: $black;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 4px;
+    
+    }
+
     p{
       
       margin-bottom: 0;
@@ -73,7 +82,70 @@ $Table-row-color: #fff;
   tr {
     background-color: $Table-row-color;
     border-top: 1px solid #bbb;
+
+    &.has-sub-row{
+
+
+      td{
+
+        border-bottom: none;
+
+      }
+
+    }
+
+
+
+    &.sub-row{
+
+      border-top: none;
+
+      td{
+
+        border-top: none;
+        border-bottom: none;
+        font-size: .875em;
+        padding-top: 0;
+        padding-left: 1.5rem;
+
+    }
+
+    }
+
+    &:last-child{
+
+      &.sub-row{
+
+        td{border-bottom: 1px solid $gray-border;}
+
+      }
+
+    }
+
+    &.table-row-highlight{
+
+
+      box-shadow: inset 4px 0 0 #ffd15f!important;
+      background-color: #fff6dc!important;
+
+      @media (prefers-color-scheme: dark) {
+
+        background-color: #F5E9C6!important;
+
+      }
+
+      td{
+
+        a{font-weight: 500;}
+
+      }
+
+
+    }
+
   }
+
+  
 
 
 
@@ -86,9 +158,28 @@ $Table-row-color: #fff;
 
   }
 
-  &.Table--striped tr:nth-child(2n) {
-    background-color: $Table-striped-color;
-  }
+
+   &.Table--striped{ 
+
+    tr{
+
+      &:nth-child(2n){
+
+        background-color: $Table-striped-color;
+
+      }
+
+      &:nth-child(2n+1){
+
+        background-color: $Table-row-color;
+
+      }
+
+    }
+
+   }
+  
+
 
   &.Table--borderless {
     thead {
@@ -176,7 +267,8 @@ $Table-row-color: #fff;
       border-left: 1px solid #ccc;
       border-right: 1px solid #ccc;
       padding: 8px 0 16px 0;
-      position: relative;
+      //position: relative;
+      position: static;
 
       &:last-child{
 
@@ -189,7 +281,7 @@ $Table-row-color: #fff;
     tr td {
       border: none !important;
       border-top: 1px solid #eee;
-      position: relative;
+      position: static;
       white-space: normal;
       text-align: left;
       padding-bottom: 0;

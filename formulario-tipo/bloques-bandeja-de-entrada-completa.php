@@ -1,5 +1,5 @@
 <?php
-  $title = 'Bloques - Backend Registros';
+  $title = 'Bloques - Bandeja de entrada completa';
 ?>
 
 <?php include "inc/head.php"; ?>
@@ -9,7 +9,7 @@
 				<ul>
 						<li><a href="index.php">Formulario Tipo</a></li>
 						<li><a href="bloques.php">Bloques</a></li>
-						<li>Backend Registros</li>
+						<li>Bandeja de entrada completa</li>
 				</ul>
 		</div>
 </div>
@@ -26,7 +26,7 @@
 
                     <h1 class="Page-title u-h2 link-tool-contextual">
                         <a href="" class="link-tool-contextual-menu u-textColorInherit u-hoverHideUnderline">Todos los registros <span class="Icon Icon--right Icon--dropdown"></span></a>
-                        <div class="tool-contextual-menu">
+                        <div class="tool-contextual-menu tool-contextual-menu--down">
                             <div class="tool-contextual-menu-wrap">
                                 <a href="#">Todos los registros</a>
                                 <hr />
@@ -92,7 +92,7 @@
                     <form class="Form--tipo">
 
                         <table class="Table--tipo Table--striped Table--responsive">
-
+                            <caption class="u-hideVisually">Listado de registros</caption>
                             <thead>
                                 <tr>
                                     <th class="Form-group">
@@ -134,11 +134,11 @@
                                     </td>
                                     <td class="u-nowrap">
                                         <button class="Button Button--small Button--Icon">
-                                            <span class="Icon Icon--view-window" title="Ver versión publicada" alt="Ver versión publicada"></span>
-                                            <span class="u-hideVisually">Ver versión publicada</span>
+                                            <span class="Icon Icon--view-window" title="Ver versión publicada id 2768" alt="Ver versión publicada id 2768"></span>
+                                            <span class="u-hideVisually">Ver versión publicada id 2768</span>
                                         </button>
                                         <button class="Button Button--small link-tool-contextual-menu">
-                                            Más acciones<span class="Icon Icon--right Icon--dropdown"></span>
+                                            Más acciones <span class="u-hideVisually">para id 2768</span> <span class="Icon Icon--right Icon--dropdown"></span>
                                         </button>
                                         <div class="tool-contextual-menu">
                                             <div class="tool-contextual-menu-wrap">
@@ -159,7 +159,7 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td>2768</td>
+                                    <td>2769</td>
                                     <td><a href="">Nombre de un registro para ejemplificar el listado en la Bandeja de Entrada Tipo</a></td>
                                     <td>En edición</td>
                                     <td>XXXX</td>
@@ -172,10 +172,10 @@
                                     <td class="u-nowrap">
                                         <button class="Button Button--small Button--Icon">
                                             <span class="Icon Icon--view-window" title="Ver versión publicada" alt="Ver versión publicada"></span>
-                                            <span class="u-hideVisually">Ver versión publicada</span>
+                                            <span class="u-hideVisually">Ver versión publicada id 2769</span>
                                         </button>
                                         <button class="Button Button--small link-tool-contextual-menu">
-                                            Más acciones<span class="Icon Icon--right Icon--dropdown"></span>
+                                            Más acciones <span class="u-hideVisually">para id 2769</span> <span class="Icon Icon--right Icon--dropdown"></span>
                                         </button>
                                         <div class="tool-contextual-menu">
                                             <div class="tool-contextual-menu-wrap">
@@ -196,7 +196,7 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td>2768</td>
+                                    <td>2770</td>
                                     <td><a href="">Nombre de un registro para ejemplificar el listado en la Bandeja de Entrada Tipo</a></td>
                                     <td>Publicado</td>
                                     <td>XXXX</td>
@@ -209,10 +209,10 @@
                                     <td class="u-nowrap">
                                         <button class="Button Button--small Button--Icon">
                                             <span class="Icon Icon--view-window" title="Ver versión publicada" alt="Ver versión publicada"></span>
-                                            <span class="u-hideVisually">Ver versión publicada</span>
+                                            <span class="u-hideVisually">Ver versión publicada id 2770</span>
                                         </button>
                                         <button class="Button Button--small link-tool-contextual-menu">
-                                            Más acciones<span class="Icon Icon--right Icon--dropdown"></span>
+                                            Más acciones <span class="u-hideVisually">para id 2770</span> <span class="Icon Icon--right Icon--dropdown"></span>
                                         </button>
                                         <div class="tool-contextual-menu">
                                             <div class="tool-contextual-menu-wrap">
@@ -233,7 +233,7 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td>2768</td>
+                                    <td>2771</td>
                                     <td><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit sagittis</a></td>
                                     <td>Borrador</td>
                                     <td>XXXX</td>
@@ -246,10 +246,10 @@
                                     <td class="u-nowrap">
                                         <button class="Button Button--small Button--Icon">
                                             <span class="Icon Icon--view-window" title="Ver versión publicada" alt="Ver versión publicada"></span>
-                                            <span class="u-hideVisually">Ver versión publicada</span>
+                                            <span class="u-hideVisually">Ver versión publicada id 2771</span>
                                         </button>
                                         <button class="Button Button--small link-tool-contextual-menu">
-                                            Más acciones<span class="Icon Icon--right Icon--dropdown"></span>
+                                            Más acciones <span class="u-hideVisually">para id 27771</span> <span class="Icon Icon--right Icon--dropdown"></span>
                                         </button>
                                         <div class="tool-contextual-menu">
                                             <div class="tool-contextual-menu-wrap">
@@ -298,7 +298,7 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td>2768</td>
+                                    <td>2772</td>
                                     <td><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit sagittis</a></td>
                                     <td>Eliminado</td>
                                     <td>XXXX</td>
@@ -311,10 +311,10 @@
                                     <td class="u-nowrap">
                                         <button class="Button Button--small Button--Icon">
                                             <span class="Icon Icon--view-window" title="Ver versión publicada" alt="Ver versión publicada"></span>
-                                            <span class="u-hideVisually">Ver versión publicada</span>
+                                            <span class="u-hideVisually">Ver versión publicada id 2772</span>
                                         </button>
                                         <button class="Button Button--small link-tool-contextual-menu">
-                                            Más acciones<span class="Icon Icon--right Icon--dropdown"></span>
+                                            Más acciones <span class="u-hideVisually">para id 2772</span> <span class="Icon Icon--right Icon--dropdown"></span>
                                         </button>
                                         <div class="tool-contextual-menu">
                                             <div class="tool-contextual-menu-wrap">
@@ -349,7 +349,7 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td>2768</td>
+                                    <td>2773</td>
                                     <td><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit sagittis</a></td>
                                     <td>Publicado</td>
                                     <td>XXXX</td>
@@ -362,10 +362,10 @@
                                     <td class="u-nowrap">
                                         <button class="Button Button--small Button--Icon">
                                             <span class="Icon Icon--view-window" title="Ver versión publicada" alt="Ver versión publicada"></span>
-                                            <span class="u-hideVisually">Ver versión publicada</span>
+                                            <span class="u-hideVisually">Ver versión publicada <span class="u-hideVisually">para id 2773</span></span>
                                         </button>
                                         <button class="Button Button--small link-tool-contextual-menu">
-                                            Más acciones<span class="Icon Icon--right Icon--dropdown"></span>
+                                            Más acciones <span class="u-hideVisually">para id 2773</span> <span class="Icon Icon--right Icon--dropdown"></span>
                                         </button>
                                         <div class="tool-contextual-menu">
                                             <div class="tool-contextual-menu-wrap">

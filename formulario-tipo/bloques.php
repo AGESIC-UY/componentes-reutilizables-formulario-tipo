@@ -238,6 +238,15 @@
 										<p>Bloque que permite listar, filtrar y ordenar mensajes.</p>
 									</div>
 								</li>
+
+								<li class="Media">
+									<div class="Media-body">
+										<h3>
+											<a href="bloques-bandeja-de-entrada-completa.php">Bandeja de entrada completa</a>
+										</h3>
+										<p>El bloque permite listar, ordenar y aplicar filtros con botones y menús contextuales para registros y subregistros.</p>
+									</div>
+								</li>
 								
 								<li class="Media">
 									<!--<div class="Media-image">

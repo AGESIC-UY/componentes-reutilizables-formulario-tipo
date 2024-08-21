@@ -50,6 +50,18 @@
   box-shadow: none;
 }
 
+  &--Icon{
+
+    padding: .625em;
+
+    .Icon{
+
+      margin-right: 0;
+
+    }
+
+  }
+
 
 }
 
@@ -318,6 +330,16 @@
     margin-bottom: 0;
     padding: 0.5em 0.75em;
     white-space: nowrap;
+
+    &.Button--Icon{
+
+      .Icon{
+
+        margin-right: 0;
+
+      }
+
+    }
     
     .Icon {
       margin-right: 4px;

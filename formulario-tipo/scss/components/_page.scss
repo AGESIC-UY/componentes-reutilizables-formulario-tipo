@@ -38,7 +38,27 @@ $Page-md-padding: 1rem 1.25rem;
     margin-top: .75rem;
     margin-bottom: 2rem;
   }
+
 }
+
+
+.Page-title--wrap{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  .Page-title{
+
+    flex-grow: 1;
+
+  }
+
+
+}
+
+
 
 .Page-heading {
   font-weight: 400;

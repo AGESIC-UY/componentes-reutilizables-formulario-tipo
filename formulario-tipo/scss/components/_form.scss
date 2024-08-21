@@ -700,7 +700,74 @@ $Form-widget-max-width: 28em;
 
     .Table--tipo{
 
-        
+        thead{
+
+            th{
+
+                vertical-align: middle;
+                
+                a{
+
+                    color: inherit;
+                    line-height: 1;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 4px;
+
+                    &:hover{
+
+                        text-decoration: none;
+
+                    }
+
+                    .Icon{
+
+                        height: 1em;
+                        width: 1em;
+
+                    }
+
+                }
+
+                &.Form-group{
+
+                    display: table-cell;
+                    padding: 0;
+                    width: auto;
+
+                    .Form-options{
+
+                        align-items: center;
+
+                        @include md(down){
+
+                            align-items: flex-start;
+
+                        }
+
+                        .Form-option{
+
+                            display: block;
+                            margin: 0;
+                            padding: 0;
+                            min-height: 0;
+
+                            span{
+
+                                &.u-hideVisually{width: 1px;}
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
 
         tbody{
 
@@ -718,10 +785,18 @@ $Form-widget-max-width: 28em;
 
                         align-items: center;
 
+                        @include md(down){
+
+                            align-items: flex-start;
+
+                        }
+
                         .Form-option{
 
                             display: block;
                             margin: 0;
+                            padding: 0;
+                            min-height: 0;
 
                             span{
 

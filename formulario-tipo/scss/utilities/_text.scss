@@ -107,6 +107,12 @@
 /* Misc
    ========================================================================== */
 
+.u-nowrap{
+
+  white-space: nowrap;
+
+}   
+
 .u-breakWord {
   word-wrap: break-word !important;
 }
@@ -125,4 +131,10 @@
 
 .u-textRed {
 	color: #c33;
+}
+
+.u-hoverHideUnderline:hover, .u-hoverHideUnderline:focus {
+
+  text-decoration: none!important;
+
 }

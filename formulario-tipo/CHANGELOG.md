@@ -1,4 +1,8 @@
 # Changelog
+## [1.3.2] - 2024-08-21
+## Added
+- Ayudas contexturales para el uso de componentes
+- Formatos permimitidos en input file
 
 ## [1.3.1] - 2024-01-25
 

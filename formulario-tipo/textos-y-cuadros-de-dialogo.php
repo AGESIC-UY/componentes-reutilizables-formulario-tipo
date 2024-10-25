@@ -41,37 +41,7 @@
                     <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Delectus nihil <em>nesciunt saepe perferendis</em> repellat ratione aliquam <a href="#" class="u-outerLink">expedita aliquid deleniti<span class="u-hideVisually">Enlace externo</span></a> quasi animi laboriosam, molestias architecto <mark>recusandae dolor</mark> perspiciatis accusamus earum minima.</p>
                     <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Delectus nihil <em>nesciunt saepe perferendis</em> repellat ratione aliquam <a href="#">expedita aliquid deleniti</a> quasi animi laboriosam, molestias architecto <mark>recusandae dolor</mark> perspiciatis accusamus earum minima.</p>
 
-                    <h2 class="u-mb4 u-mt6">Listas</h2>
-
-                    <ul>
-                      <li>Lorem ipsum dolor sit amet.</li>
-                      <li>Esse necessitatibus, adipisci saepe laboriosam.
-                        <ul>
-                          <li>Lorem ipsum dolor sit.</li>
-                          <li>Assumenda cumque tenetur quidem.</li>
-                          <li>Corrupti enim rem voluptate.</li>
-                        </ul>
-                      </li>
-                      <li>Neque tempore est, natus ad!</li>
-                      <li>Ex labore officiis, tempore nemo!</li>
-                      <li>Vitae libero, quae doloribus dignissimos?</li>
-                    </ul>
-
-                    <ol>
-                      <li>Lorem ipsum dolor sit amet.</li>
-                      <li>Esse necessitatibus, adipisci saepe laboriosam.
-                        <ol>
-                          <li>Lorem ipsum dolor sit.</li>
-                          <li>Assumenda cumque tenetur quidem.</li>
-                          <li>Corrupti enim rem voluptate.</li>
-                        </ol>
-                      </li>
-                      <li>Neque tempore est, natus ad!</li>
-                      <li>Ex labore officiis, tempore nemo!</li>
-                      <li>Vitae libero, quae doloribus dignissimos?</li>
-                    </ol>
-
-                    <h3><code>.u-bullet</code></h3>
+                    <h2 class="u-mb4 u-mt6">Listas con viñeta</h2>
 
                     <ul class="u-bullet">
                       <li>Lorem ipsum dolor sit amet.</li>
@@ -86,6 +56,23 @@
                       <li>Ex labore officiis, tempore nemo!</li>
                       <li>Vitae libero, quae doloribus dignissimos?</li>
                     </ul>
+
+                    <h2 class="u-mb4 u-mt6">Listas numeradas</h2>
+                    <ol>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Esse necessitatibus, adipisci saepe laboriosam.
+                        <ol>
+                          <li>Lorem ipsum dolor sit.</li>
+                          <li>Assumenda cumque tenetur quidem.</li>
+                          <li>Corrupti enim rem voluptate.</li>
+                        </ol>
+                      </li>
+                      <li>Neque tempore est, natus ad!</li>
+                      <li>Ex labore officiis, tempore nemo!</li>
+                      <li>Vitae libero, quae doloribus dignissimos?</li>
+                    </ol>
+
+                    
 
                     <h2 class="u-mb4 u-mt6">Cuadros de diálogo</h2>
 
@@ -371,9 +358,10 @@
                                     <td>MEF</td>
                                     <td><a href="">Resumen de activos de la empresa del mes de agosto</a></td>
                                     <td>12/06/23 - 08:30</td>
-                                    <td class="table-buttons">
+                                    <td class="table-buttons">                                        
                                         <button class="Button Button--primary Button--small"><span class="Icon Icon--edit-white"></span>Editar</button>
-                                        <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button>
+                                        <button class="Button Button--inverse Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button>
+                                        
                                     </td>
                                 </tr>
 
@@ -381,9 +369,10 @@
                                     <td>OPP</td>
                                     <td><a href="">Informe anual 2020</a></td>
                                     <td>12/06/23 - 08:30</td>
-                                    <td class="table-buttons">
+                                    <td class="table-buttons">                                        
                                         <button class="Button Button--primary Button--small"><span class="Icon Icon--edit-white"></span>Editar</button>
-                                        <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button>
+                                        <button class="Button Button--inverse Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button>
+                                        
                                     </td>
                                 </tr>
 
@@ -392,8 +381,9 @@
                                     <td><a href="">Gestión de trámites internos</a></td>
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-buttons">
-                                        <button class="Button Button--primary Button--small"><span class="Icon Icon--edit-white"></span>Editar</button>
-                                        <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button>
+                                    <button class="Button Button--primary Button--small"><span class="Icon Icon--edit-white"></span>Editar</button>
+                                    <button class="Button Button--inverse Button--small"><span class="Icon Icon--delete-white"></span>Eliminar</button>
+                                    
                                     </td>
                                 </tr>
 
@@ -428,7 +418,7 @@
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-buttons">
                                         <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Resumen de activos de la empresa del mes de agosto</span></button>
-                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Resumen de activos de la empresa del mes de agosto</span></button>
+                                        <button class="Button Button--inverse Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Resumen de activos de la empresa del mes de agosto</span></button>
 
                                         <!-- menú contextual -->
 
@@ -448,7 +438,7 @@
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-buttons">
                                         <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar </button>
-                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Informe anual 2020</span></button>
+                                        <button class="Button Button--inverse Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Informe anual 2020</span></button>
 
                                         <!-- menú contextual -->
 
@@ -468,7 +458,7 @@
                                     <td>12/06/23 - 08:30</td>
                                     <td class="table-buttons">
                                         <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></button>
-                                        <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Elminar Gestión de trámites internos</span></button>
+                                        <button class="Button Button--inverse Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span> <span class="u-hideVisually">En Elminar Gestión de trámites internos</span></button>
 
                                         <!-- menú contextual -->
 

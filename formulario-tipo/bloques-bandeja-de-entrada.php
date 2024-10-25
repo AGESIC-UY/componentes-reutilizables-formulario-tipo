@@ -87,7 +87,7 @@
                                             <td>12/06/23 - 08:30</td>
                                             <td class="u-textRight table-actions">
                                                 <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></button>
-                                                <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+                                                <button class="Button Button--inverse Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
 
                                             
                                                 <!-- menú contextual -->
@@ -117,7 +117,7 @@
                                             <td>12/06/23 - 08:30</td>
                                             <td class="u-textRight table-actions">
                                                 <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Informe anual 2020</span></button>
-                                                <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+                                                <button class="Button Button--inverse Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
 
                                                 <!-- menú contextual -->
 
@@ -142,7 +142,7 @@
                                             <td>12/06/23 - 08:30</td>
                                             <td class="u-textRight table-actions">
                                                 <button class="Button Button--primary Button--small"><span class="Icon Icon--delete-white"></span>Eliminar <span class="u-hideVisually">Elminar Gestión de trámites internos</span></button>
-                                                <button class="Button Button--primary Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
+                                                <button class="Button Button--inverse Button--small link-tool-contextual-menu">Más acciones<span class="Icon Icon--right Icon--dropdown-white"></span></button>
 
                                                 <!-- menú contextual -->
 

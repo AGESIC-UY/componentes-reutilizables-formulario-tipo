@@ -844,6 +844,13 @@
 
                     </form>
 
+                   
+
+                    <h3>Formularios apilados</h3>
+                    <p>Cuando el espacio en pantalla es reducido y el formulario se muestra en una porción pequeña de la pantalla, posicionar las etiquetas por encima de los campos optimiza el espacio y genera una buena agrupación etiqueta / campo.</p>
+
+                <div class="u-size6of12">
+
                     <form action="./" class="Form--tipo Form--stacked">
 
                         <fieldset>
@@ -984,6 +991,7 @@
                         </fieldset>
 
                     </form>
+                </div>
 
                     <h2>Tablas con ingreso de datos</h2>
 

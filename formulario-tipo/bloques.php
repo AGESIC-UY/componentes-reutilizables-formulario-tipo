@@ -27,7 +27,7 @@
 
 						<div class="Page">
 
-							<h2 class="Page-title">Bloques</h2>
+							<h2 class="Page-title">Bloques reutilizables</h2>
 
 							<p class="Page-description">Soluciones específicas para problemas complejos, transversales a todos los organismos.</p>
 

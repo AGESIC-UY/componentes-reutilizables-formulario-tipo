@@ -1,4 +1,12 @@
 # Changelog
+
+
+## [1.3.3] - 2024-10-25
+## Changed
+- Corrección de textos y presentnación
+- Ajuste para no mostrar más de una acción principal en tablas
+- Ejemplo con grilla y explicación para formularios apilados
+
 ## [1.3.2] - 2024-08-21
 ## Added
 - Ayudas contexturales para el uso de componentes

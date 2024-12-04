@@ -43,22 +43,29 @@
 
                     <h2 class="u-mb4 u-mt6">Listas con viñeta</h2>
 
-                    <ul class="u-bullet">
+                    <ul class="List-text">
                       <li>Lorem ipsum dolor sit amet.</li>
                       <li>Esse necessitatibus, adipisci saepe laboriosam.
-                        <ul class="u-bullet">
-                          <li>Lorem ipsum dolor sit.</li>
+                        <ul>
+                          <li>Lorem ipsum dolor sit. Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.</li>
                           <li>Assumenda cumque tenetur quidem.</li>
                           <li>Corrupti enim rem voluptate.</li>
                         </ul>
                       </li>
                       <li>Neque tempore est, natus ad!</li>
-                      <li>Ex labore officiis, tempore nemo!</li>
+                      <li>Ex labore officiis, tempore nemo!
+                        <ol>
+                           <li>Lorem ipsum dolor sit.</li>
+                           <li>Assumenda cumque tenetur quidem.</li>
+                           <li>Corrupti enim rem voluptate.</li>
+                        </ol>
+                      </li>
                       <li>Vitae libero, quae doloribus dignissimos?</li>
                     </ul>
 
                     <h2 class="u-mb4 u-mt6">Listas numeradas</h2>
-                    <ol>
+
+                    <ol class="List-text">
                       <li>Lorem ipsum dolor sit amet.</li>
                       <li>Esse necessitatibus, adipisci saepe laboriosam.
                         <ol>
@@ -67,7 +74,13 @@
                           <li>Corrupti enim rem voluptate.</li>
                         </ol>
                       </li>
-                      <li>Neque tempore est, natus ad!</li>
+                      <li>Neque tempore est, natus ad!
+                        <ul>
+                          <li>Lorem ipsum dolor sit. Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.</li>
+                          <li>Assumenda cumque tenetur quidem.</li>
+                          <li>Corrupti enim rem voluptate.</li>
+                        </ul>
+                      </li>
                       <li>Ex labore officiis, tempore nemo!</li>
                       <li>Vitae libero, quae doloribus dignissimos?</li>
                     </ol>

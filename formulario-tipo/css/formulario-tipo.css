@@ -698,6 +698,22 @@ dd + dt {
   margin-top: 1em;
 }
 
+ul.List-text li, ol.List-text li {
+  margin-top: 0.5em;
+}
+ul.List-text li:first-child, ol.List-text li:first-child {
+  margin-top: 0;
+}
+ul.List-text li ul, ul.List-text li ol, ol.List-text li ul, ol.List-text li ol {
+  margin-top: 0.35em;
+}
+ul.List-text li ul li, ul.List-text li ol li, ol.List-text li ul li, ol.List-text li ol li {
+  margin-top: 0.25em;
+}
+ul.List-text li ul li:first-child, ul.List-text li ol li:first-child, ol.List-text li ul li:first-child, ol.List-text li ol li:first-child {
+  margin-top: 0;
+}
+
 /** @define Container */
 /* este es el container de portal base */
 .Container {

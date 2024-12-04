@@ -117,3 +117,25 @@ dd {
 dd + dt {
   margin-top: 1em;
 }
+
+
+ul, ol{
+
+  li{
+
+    padding-bottom: .5em;
+
+    li{
+
+      padding-bottom: .25em;
+      &:first-child{ padding-top: .35em;}
+      &:last-child{ padding-bottom: 0;}
+      
+
+    }
+
+  }
+
+}
+
+

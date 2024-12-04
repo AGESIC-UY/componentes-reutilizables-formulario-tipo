@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.3.4] - 2024-11-28
+## Changed
+- Ajustes en listados "ul" y "ol"
 
 ## [1.3.3] - 2024-10-25
 ## Changed

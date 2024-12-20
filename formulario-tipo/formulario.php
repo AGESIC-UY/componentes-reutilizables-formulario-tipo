@@ -22,9 +22,16 @@
         <div class="Grid">
 
             <div class="Grid-item Grid-item--center u-lg-size8of10">
+							
+							<div class="Alert--tipo u-mt0 u-mb4 u-p3">
+								<p class="u-h5">Guía para la creación de formularios digitales:</p>
+								<ul class="List-text">
+									<li><a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/guia-para-creacion-1" class="u-outerLink">Estructura básica de un formulario<span class="u-hideVisually">Enlace externo</span></a></li>
+									<li><a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/guia-para-creacion-5" class="u-outerLink">Recomendaciones y buenas prácticas para elaborar buenos formularios<span class="u-hideVisually">Enlace externo</span></a></li>
+								</ul>
+							</div>
 
-
-                    <div class="Page">
+									<div class="Page">
 
                     <h1 class="Page-title">Nombre del trámite</h1>
 

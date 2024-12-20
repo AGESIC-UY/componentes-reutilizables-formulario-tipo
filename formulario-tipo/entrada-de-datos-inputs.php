@@ -157,8 +157,12 @@
 
                     </form>
 
-                    <h2>Campos</h2>
-
+                    <h2 class="u-mt6 u-mb2">Campos</h2>
+									
+										<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/componentes-del-formulario-0" class="u-outerLink">Guía para la creación de formularios digitales: Campos<span class="u-hideVisually">Enlace externo</span></a>
+                    
+										<div class="Alert Alert--tipo u-mt3 u-mb4">Evitar el diseño de formularios de más de una columna.</div>
+									
                     <form class="Form--tipo" action="./">
 
                         <p class="Form-note">Todos los campos indicados con * son obligatorios</p>
@@ -348,11 +352,12 @@
                                 </div>
 
                             </div>
-                            <h3 class="u-h6 u-mt3">Fecha de Nacimiento</h3>
-                            <p>Los calendarios son una mala opción, porque salvo que sea el formulario de inscripción de bebés recién nacidos, exigen una enorme e innecesaria cantidad de navegación en casi todos los casos.</p>
-
-                            <p>Utilizar campos de texto para el día y el año evita recorrer las listas largas para llegar al valor correcto.</p>
-
+                            <h3 class="u-h6 u-mt4 u-px2">Campos para selección de fecha de nacimiento</h3>
+													
+														<p class="u-mt1">
+															<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/componentes-del-formulario-9" class="u-outerLink">Guía para la creación de formularios digitales: Campos y calendarios de selección de fecha<span class="u-hideVisually">Enlace externo</span></a>
+														</p>
+                            
                             <div class="Form-group" role="group" aria-labelledby="fecha-multicampo">
 
                                 <div class="Form-label-wrap">
@@ -543,10 +548,15 @@
 
                         </fieldset>
 
+												
 
                         <fieldset>
 
                             <legend><span>Opciones</span></legend>
+													
+														<p class="u-mt1">
+															<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/componentes-del-formulario-8" class="u-outerLink">Guía para la creación de formularios digitales: Combos, checkboxes y radiobuttons<span class="u-hideVisually">Enlace externo</span></a>
+														</p>
 
                             <div class="Form-group" role="group"  aria-labelledby="grupo-radios" >
                                 <div class="Form-label-wrap">
@@ -812,7 +822,7 @@
                         <fieldset>
 
                             <legend><span>Botón alineado con los campos</span></legend>
-                            <p>El uso de este tipo de alineación está previsto para formularios muy cortos, como puede ser el caso de solicitud de usuario y contraseña u otros ejemplos de formularios muy breves o que no son la tarea central dentro de una página.</p>
+                            <p>Utilizar esta alineación solamente para formularios muy cortos, como la solicitud de usuario y contraseña, o cuando no son la tarea central dentro de una página.</p>
                             
                             <div class="Form-group" >
                                 <div class="Form-label-wrap">
@@ -845,153 +855,151 @@
                     </form>
 
                    
+                    <h3 class="u-mb3 u-mt6">Formularios apilados</h3>
 
-                    <h3>Formularios apilados</h3>
-                    <p>Cuando el espacio en pantalla es reducido y el formulario se muestra en una porción pequeña de la pantalla, posicionar las etiquetas por encima de los campos optimiza el espacio y genera una buena agrupación etiqueta / campo.</p>
+										<div class="u-size6of12">
 
-                <div class="u-size6of12">
+												<form action="./" class="Form--tipo Form--stacked">
 
-                    <form action="./" class="Form--tipo Form--stacked">
+														<fieldset>
 
-                        <fieldset>
+																<legend><span>Formulario apilado</span></legend>
 
-                            <legend><span>Formulario apilado</span></legend>
+																<div class="Form-group">
+																		<div class="Form-label-wrap">
+																				<label for="ejemplo_stacked" class="Form-label">Etiqueta 1:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<input type="text" class="Form-widget" id="ejemplo_stacked">
+																		</div>
+																</div>
 
-                            <div class="Form-group">
-                                <div class="Form-label-wrap">
-                                    <label for="ejemplo_stacked" class="Form-label">Etiqueta 1:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <input type="text" class="Form-widget" id="ejemplo_stacked">
-                                </div>
-                            </div>
+																<div class="Form-group">
+																		<div class="Form-label-wrap">
+																				<label for="combo_stacked" class="Form-label">Etiqueta de combo:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<select name="combo_stacked" id="combo_stacked" class="Form-widget">
+																						<option value="0">Opción seleccionada de un combo</option>
+																						<option value="1">Opción 1</option>
+																						<option value="2">Opción 2</option>
+																						<option value="3">Opción 3</option>
+																				</select>
+																		</div>
+																</div>
 
-                            <div class="Form-group">
-                                <div class="Form-label-wrap">
-                                    <label for="combo_stacked" class="Form-label">Etiqueta de combo:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <select name="combo_stacked" id="combo_stacked" class="Form-widget">
-                                        <option value="0">Opción seleccionada de un combo</option>
-                                        <option value="1">Opción 1</option>
-                                        <option value="2">Opción 2</option>
-                                        <option value="3">Opción 3</option>
-                                    </select>
-                                </div>
-                            </div>
+																<div class="Form-group">
+																		<div class="Form-label-wrap">
+																				<label for="ejemplo_stacked_2" class="Form-label">Etiqueta 2:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<input type="text" class="Form-widget" id="ejemplo_stacked_2">
+																		</div>
+																</div>
 
-                            <div class="Form-group">
-                                <div class="Form-label-wrap">
-                                    <label for="ejemplo_stacked_2" class="Form-label">Etiqueta 2:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <input type="text" class="Form-widget" id="ejemplo_stacked_2">
-                                </div>
-                            </div>
+																<div class="Form-group Form-group--alert Form-group--error" >
 
-                            <div class="Form-group Form-group--alert Form-group--error" >
+																		<div class="Form-label-wrap">
+																				<label class="Form-label" for="example-campo-stacked-error">Etiqueta de campo con error:</label>
+																		</div>
 
-                                <div class="Form-label-wrap">
-                                    <label class="Form-label" for="example-campo-stacked-error">Etiqueta de campo con error:</label>
-                                </div>
+																		<div class="Form-object-wrap">
+																				<input class="Form-widget" name="example-campo-stacked-error" type="text" id="example-campo-stacked-error" aria-describedby="error-campo">
+																				<div class="Form-status Form-status--error" id="error-campo"><strong>ERROR</strong> - Este campo es obligatorio</div>
+																		</div>
 
-                                <div class="Form-object-wrap">
-                                    <input class="Form-widget" name="example-campo-stacked-error" type="text" id="example-campo-stacked-error" aria-describedby="error-campo">
-                                    <div class="Form-status Form-status--error" id="error-campo"><strong>ERROR</strong> - Este campo es obligatorio</div>
-                                </div>
+																</div>
 
-                            </div>
+																<div class="Form-group Form-group--alert Form-group--warning">
 
-                            <div class="Form-group Form-group--alert Form-group--warning">
+																		<div class="Form-label-wrap">
+																				<label class="Form-label" for="example-campo-stacked-warning">Etiqueta de campo con advertencia:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<input class="Form-widget" name="example-campo-stacked-warning" type="text" id="example-campo-stacked-warning" aria-describedby="advertencia-campo">
+																				<div class="Form-status Form-status--warning" id="advertencia-campo"><strong>Advertencia</strong> - No se pudo validar el dato</div>
+																		</div>
 
-                                <div class="Form-label-wrap">
-                                    <label class="Form-label" for="example-campo-stacked-warning">Etiqueta de campo con advertencia:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <input class="Form-widget" name="example-campo-stacked-warning" type="text" id="example-campo-stacked-warning" aria-describedby="advertencia-campo">
-                                    <div class="Form-status Form-status--warning" id="advertencia-campo"><strong>Advertencia</strong> - No se pudo validar el dato</div>
-                                </div>
+																</div>
 
-                            </div>
+																<div class="Form-group">
 
-                            <div class="Form-group">
+																		<div class="Form-label-wrap">
+																				<label class="Form-label" for="example-campo-stacked-con-ayuda">Etiqueta de campo con ayuda:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<input class="Form-widget" name="example-campo-stacked-con-ayuda" type="text" id="example-campo-stacked-con-ayuda" aria-describedby="ayuda-campo">
+																				<div class="Form-hint" id="ayuda-campo">Este es un texto de ayuda</div>
+																		</div>
 
-                                <div class="Form-label-wrap">
-                                    <label class="Form-label" for="example-campo-stacked-con-ayuda">Etiqueta de campo con ayuda:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <input class="Form-widget" name="example-campo-stacked-con-ayuda" type="text" id="example-campo-stacked-con-ayuda" aria-describedby="ayuda-campo">
-                                    <div class="Form-hint" id="ayuda-campo">Este es un texto de ayuda</div>
-                                </div>
+																</div>
 
-                            </div>
+																<div class="Form-group" >
+																		<div class="Form-label-wrap"></div>
+																		<div class="Form-object-wrap"><button type="submit" class="Button Button--primary">Filtrar</button></div>
+																</div>
 
-                            <div class="Form-group" >
-                                <div class="Form-label-wrap"></div>
-                                <div class="Form-object-wrap"><button type="submit" class="Button Button--primary">Filtrar</button></div>
-                            </div>
+														</fieldset>
 
-                        </fieldset>
+												</form>
 
-                    </form>
+												<form action="./" class="Form--tipo Form--stacked Form--stacked--hidden-fieldset u-mb4">
 
-                    <form action="./" class="Form--tipo Form--stacked Form--stacked--hidden-fieldset u-mb4">
+														<fieldset>
 
-                        <fieldset>
+																<legend><span>Formulario apilado con fieldset oculto</span></legend>
 
-                            <legend><span>Formulario apilado con fieldset oculto</span></legend>
+																<div class="Form-group">
+																		<div class="Form-label-wrap">
+																				<label for="ejemplo_stacked-sin-fieldset" class="Form-label">Etiqueta 1:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<input type="text" class="Form-widget" id="ejemplo_stacked-sin-fieldset">
+																		</div>
+																</div>
 
-                            <div class="Form-group">
-                                <div class="Form-label-wrap">
-                                    <label for="ejemplo_stacked-sin-fieldset" class="Form-label">Etiqueta 1:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <input type="text" class="Form-widget" id="ejemplo_stacked-sin-fieldset">
-                                </div>
-                            </div>
+																<div class="Form-group">
+																		<div class="Form-label-wrap">
+																				<label for="combo_stacked-sin-fieldset" class="Form-label">Etiqueta de combo:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<select name="combo_stacked-sin-fieldset" id="combo_stacked-sin-fieldset" class="Form-widget">
+																						<option value="0">Opción seleccionada de un combo</option>
+																						<option value="1">Opción 1</option>
+																						<option value="2">Opción 2</option>
+																						<option value="3">Opción 3</option>
+																				</select>
+																		</div>
+																</div>
 
-                            <div class="Form-group">
-                                <div class="Form-label-wrap">
-                                    <label for="combo_stacked-sin-fieldset" class="Form-label">Etiqueta de combo:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <select name="combo_stacked-sin-fieldset" id="combo_stacked-sin-fieldset" class="Form-widget">
-                                        <option value="0">Opción seleccionada de un combo</option>
-                                        <option value="1">Opción 1</option>
-                                        <option value="2">Opción 2</option>
-                                        <option value="3">Opción 3</option>
-                                    </select>
-                                </div>
-                            </div>
+																<div class="Form-group Form-group--alert Form-group--error" >
+																		<div class="Form-label-wrap">
+																				<label class="Form-label" for="example-campo-stacked-error">Etiqueta de campo con error:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<input class="Form-widget" name="example-campo-stacked-error" type="text" id="example-campo-stacked-error" aria-describedby="error-campo">
+																				<div class="Form-status Form-status--error" id="error-campo"><strong>ERROR</strong> - Este campo es obligatorio</div>
+																		</div>
+																</div>
 
-                            <div class="Form-group Form-group--alert Form-group--error" >
-                                <div class="Form-label-wrap">
-                                    <label class="Form-label" for="example-campo-stacked-error">Etiqueta de campo con error:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <input class="Form-widget" name="example-campo-stacked-error" type="text" id="example-campo-stacked-error" aria-describedby="error-campo">
-                                    <div class="Form-status Form-status--error" id="error-campo"><strong>ERROR</strong> - Este campo es obligatorio</div>
-                                </div>
-                            </div>
+																<div class="Form-group">
+																		<div class="Form-label-wrap">
+																				<label for="ejemplo_stacked-2-sin-fieldset" class="Form-label">Etiqueta 2:</label>
+																		</div>
+																		<div class="Form-object-wrap">
+																				<input type="text" class="Form-widget" id="ejemplo_stacked-2-sin-fieldset">
+																		</div>
+																</div>
 
-                            <div class="Form-group">
-                                <div class="Form-label-wrap">
-                                    <label for="ejemplo_stacked-2-sin-fieldset" class="Form-label">Etiqueta 2:</label>
-                                </div>
-                                <div class="Form-object-wrap">
-                                    <input type="text" class="Form-widget" id="ejemplo_stacked-2-sin-fieldset">
-                                </div>
-                            </div>
+																<div class="Form-group" >
+																		<div class="Form-label-wrap"></div>
+																		<div class="Form-object-wrap"><button type="submit" class="Button Button--primary">Filtrar</button></div>
+																</div>
 
-                            <div class="Form-group" >
-                                <div class="Form-label-wrap"></div>
-                                <div class="Form-object-wrap"><button type="submit" class="Button Button--primary">Filtrar</button></div>
-                            </div>
+														</fieldset>
 
-                        </fieldset>
-
-                    </form>
-                </div>
+												</form>
+										</div>
 
                     <h2>Tablas con ingreso de datos</h2>
 

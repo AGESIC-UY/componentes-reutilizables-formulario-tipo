@@ -27,7 +27,7 @@
 
                     <h1 class="Page-title">Presentación de datos, cuadros de diálogo y tablas</h1>
 
-                    <h2 class="u-mb4 u-mt6">Encabezados y textos</h2>
+                    <h2 class="u-mb3 u-mt6">Encabezados y textos</h2>
 
                     <h1>h1. Encabezado de primer nivel</h1>
                     <h2>h2. Encabezado de segundo nivel</h2>
@@ -36,12 +36,12 @@
                     <h5>h5. Encabezado de quinto nivel</h5>
                     <h6>h6. Encabezado de sexto nivel</h6>
 
-                    <h2 class="u-mb4 u-mt6">Párrafos (<code>strong, em, mark, a</code>)</h2>
+                    <h2 class="u-mb3 u-mt6">Párrafos (<code>strong, em, mark, a</code>)</h2>
 
                     <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Delectus nihil <em>nesciunt saepe perferendis</em> repellat ratione aliquam <a href="#" class="u-outerLink">expedita aliquid deleniti<span class="u-hideVisually">Enlace externo</span></a> quasi animi laboriosam, molestias architecto <mark>recusandae dolor</mark> perspiciatis accusamus earum minima.</p>
                     <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Delectus nihil <em>nesciunt saepe perferendis</em> repellat ratione aliquam <a href="#">expedita aliquid deleniti</a> quasi animi laboriosam, molestias architecto <mark>recusandae dolor</mark> perspiciatis accusamus earum minima.</p>
 
-                    <h2 class="u-mb4 u-mt6">Listas con viñeta</h2>
+                    <h2 class="u-mb3 u-mt6">Listas con viñeta</h2>
 
                     <ul class="List-text">
                       <li>Lorem ipsum dolor sit amet.</li>
@@ -63,7 +63,7 @@
                       <li>Vitae libero, quae doloribus dignissimos?</li>
                     </ul>
 
-                    <h2 class="u-mb4 u-mt6">Listas numeradas</h2>
+                    <h2 class="u-mb3 u-mt6">Listas numeradas</h2>
 
                     <ol class="List-text">
                       <li>Lorem ipsum dolor sit amet.</li>
@@ -87,7 +87,10 @@
 
                     
 
-                    <h2 class="u-mb4 u-mt6">Cuadros de diálogo</h2>
+                    <h2 class="u-mb2 u-mt6">Cuadros de diálogo</h2>
+										<p>
+											<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/guia-para-creacion-4" class="u-outerLink">Guía para la creación de formularios digitales: Manejo de errores y mensajes<span class="u-hideVisually">Enlace externo</span></a>
+										</p>
 
                     <div class="Alert--tipo Alert--dialog Alert--success" role="alert" aria-live="assertive">
                         <h4 class="Alert-title">Título de mensaje de validación exitosa</h4>
@@ -119,7 +122,7 @@
                         <a href="#">Enlace de acción</a>
                     </div>
 
-                    <h2 class="u-mb4 u-mt6">Cuadro de diálogo con listado</h2>
+                    <h2 class="u-mb3 u-mt6">Cuadro de diálogo con listado</h2>
 
                     <div class="Alert--tipo Alert--dialog Alert--danger" role="alert" aria-live="assertive">
 
@@ -145,7 +148,7 @@
 
                     </div>
 
-                    <h2 class="u-mb4 u-mt6">Notificaciones</h2>
+                    <h2 class="u-mb3 u-mt6">Notificaciones</h2>
                     <p>Para mensajes de relevancia relativa, que no requieren acciones por parte del usuario.</p>
 
                     <div class="Alert--tipo" role="alert">
@@ -168,7 +171,10 @@
                         <strong>danger:</strong> lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, libero.
                     </div>
 
-                    <h2 class="u-mb4 u-mt6">Tablas</h2>
+                    <h2 class="u-mb2 u-mt6">Tablas</h2>
+										<p class="u-mb3">
+											<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/componentes-del-formulario-11" class="u-outerLink">Guía para la creación de formularios digitales: Tablas<span class="u-hideVisually">Enlace externo</span></a>
+										</p>
 
                     <div class="Table-wrapper">
 

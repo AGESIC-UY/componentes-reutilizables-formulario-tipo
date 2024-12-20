@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.5] - 2024-12-19
+## Changed
+- Ajuste de textos y agregan enlaces a la Guía para la creación de formularios digitales
+
+
 ## [1.3.4] - 2024-11-28
 ## Changed
 - Ajustes en listados "ul" y "ol"

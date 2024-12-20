@@ -25,9 +25,13 @@
 
                 <div class="Page">
 
-                    <h1 class="Page-title">Navegación</h1>
+                    <h1 class="Page-title u-mb3">Navegación</h1>
+									
+										<p>
+											<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/guia-para-creacion-1" class="u-outerLink">Guía para la creación de formularios digitales: Estructura básica de un formulario<span class="u-hideVisually">Enlace externo</span></a>
+										</p>
 
-                    <h2>Pasos</h2>
+                    <h2 class="u-mt6 u-mb3">Pasos</h2>
                     <p>La línea de pasos se utiliza cuando el formulario es extenso y se requiere hacerlo en etapas, es decir, en varias pantallas.</p>
 
                     <div class="Steps--tipo">
@@ -227,8 +231,12 @@
 
                     <hr />
 
-                    <h2 class="u-mb3">Enlaces</h2>
-                    <p>Existen dos tipos de enlace, azules y negros. Se recomienda el uso del enlace azul, que es el estándar. El enlace negro es solo para vínculos que se requiera que tengan menor jerarquía visual. Los enlaces que conducen a un sitio externo, llevan un ícono que indica esta acción. </p>
+                    <h2 class="u-mt6 u-mb2">Enlaces</h2>
+                    <p>
+											<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/componentes-del-formulario-7" class="u-outerLink">Guía para la creación de formularios digitales: Botones, enlaces y paginación<span class="u-hideVisually">Enlace externo</span></a>
+										</p>
+									
+										<p class="u-mb3">Usar como estándar el enlace azul. El enlace negro es solo para vínculos que requieran una menor jerarquía visual.</p>
 
                     <div class="u-p1 u-inlineBlock">
                         <a href="#">Enlace</a>
@@ -248,7 +256,11 @@
 
                     <hr />
 
-                    <h2 class="u-mb3">Botones</h2>
+                    <h2 class="u-mt6 u-mb2">Botones</h2>
+									
+										<p class="u-mb3">
+											<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/componentes-del-formulario-7" class="u-outerLink">Guía para la creación de formularios digitales: Botones, enlaces y paginación<span class="u-hideVisually">Enlace externo</span></a>
+										</p>
 
                     <h3 class="u-mb3"><code>.Button</code> aplicado a distintos elementos</h3>
                     <p>Cómo se transforman distintos elementos con estilo de botón.</p>
@@ -270,8 +282,8 @@
                     </div>
 
                     <h3 class="u-mt6 u-mb3">Modificadores de <code>.Button</code></h3>
-                    <p>Los botones se utilizan para identificar las acciones principales de un formulario. Pueden contener íconos (impresión y link fuera del sitio) o estar en estado deshabilitado.</p>
-                    <div class="Form--tipo">
+                    
+										<div class="Form--tipo">
 
                         <div>
 
@@ -288,7 +300,7 @@
                         <div class="u-mt3">
 
                             <h4>Secundarios</h4>
-                            <p>Los botones secundarios se utilizan para acciones de menor relevancia o de segundo orden. Hay cuatro variantes que pueden utilizarse según la relevancia de la acción:</p>
+                            <p>Los botones secundarios se utilizan para acciones de menor relevancia o de segundo orden.</p>
                             <h5>Amarillo</h5>
                             <button class="Button Button--secondary">Botón secundario</button>
                             <button class="Button Button--secondary"><span class="Icon Icon--print"></span>Botón secundario c/i</button>
@@ -336,7 +348,12 @@
 
                     <hr />
 
-                    <h2 class="u-mb3">Paginación</h2>
+                    <h2 class="u-mt6 u-mb2">Paginación</h2>
+										
+										<p>
+											<a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/guia-para-creacion-formularios-digitales/componentes-del-formulario-7" class="u-outerLink">Guía para la creación de formularios digitales: Botones, enlaces y paginación<span class="u-hideVisually">Enlace externo</span></a>
+										</p>
+									
                     <p>La paginación se usa para la presentación de datos, por ejemplo, una tabla.</p>
 
                     <div class="Pagination--tipo">

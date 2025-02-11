@@ -140,7 +140,7 @@
                                 </li>
                             
                                 <li>
-                                    <span>Hora:</span> <strong>10:30hs</strong>
+                                    <span>Hora:</span> <strong>10:30 h</strong>
                                 </li>
                                 <li>
                                     <span>Lugar:</span> <strong>Torre Ejecutiva Sur, Liniers 1324 piso 4 - Montevideo</strong>
@@ -168,15 +168,15 @@
                                         <div class="Form-options Form-options--tags">
                                             <label for="110923-0930" class="Form-option">
                                                 <input type="radio" id="110923-0930" name="seleccione-turno" >
-                                                <span>Lunes 11 de Setiembre - 09:30 hs.</span>
+                                                <span>Lunes 11 de Setiembre - 09:30 h</span>
                                             </label>
                                             <label for="120923-1030" class="Form-option">
                                                 <input type="radio" id="120923-1030" name="seleccione-turno">
-                                                <span>Martes 12 de Setiembre - 10:30 hs.</span>
+                                                <span>Martes 12 de Setiembre - 10:30 h</span>
                                             </label>
                                             <label for="130923-1100" class="Form-option">
                                                 <input type="radio" id="130923-1100" name="seleccione-turno">
-                                                <span>Miércoles 13 de Setiembre 11:00 hs.</span>
+                                                <span>Miércoles 13 de Setiembre 11:00 h</span>
                                             </label>
                                         </div>
                                         <p class="u-mt2"><a href="#!" id="show-calendar" >Ver calendario completo</a></p>
@@ -270,9 +270,9 @@
                                     </div>
                                     <div class="Form-object-wrap">
                                         <select name="combo-hora" id="combo-hora" class="Form-widget Form-widget--small">
-                                            <option value="1">8:00 hs.</option>
-                                            <option value="2">9:30 hs.</option>
-                                            <option value="3">10:00 hs.</option>
+                                            <option value="1">8:00 h</option>
+                                            <option value="2">9:30 h</option>
+                                            <option value="3">10:00 h</option>
                                         </select>
                                     </div>
                                 </div>

@@ -307,9 +307,10 @@
                                     <span>Cláusula de consentimiento informado:</span>
                                 </legend>
 
-                                <p>"De conformidad con la Ley N° 18.331, de 11 de agosto de 2008, de Protección de Datos Personales y Acción de Habeas Data (LPDP), los datos suministrados por usted quedarán incorporados en una base de datos, la cual será procesada exclusivamente para la siguiente finalidad: **Objetivo del formulario**.</p>
+                                <p>De conformidad con la Ley N° 18.331, de 11 de agosto de 2008, de Protección de Datos Personales y Acción de Habeas Data (LPDP), los datos suministrados por usted quedarán incorporados en una base de datos, la cual será procesada exclusivamente para la siguiente finalidad: **Objetivo del trámite**</p>
+                                <p>El responsable de la base de datos es el **Titular de la base** y la dirección donde podrá ejercer los derechos de acceso, rectificación, actualización, inclusión o supresión, es **Dirección del organismo** , según lo establecido en la LPDP.</p>
+                                <p>En caso de servicios digitales, su cédula de identidad quedará vinculada al trámite que está realizando, de forma de facilitar su consulta y monitoreo y será incorporado a la base de datos “Trazabilidad” gestionada por Agesic.  La dirección donde podrá ejercer los derechos de acceso, rectificación, actualización, inclusión o supresión, es Liniers 1324, Torre Ejecutiva sur, piso 4, Montevideo, según lo establecido en la LPDP.</p>
                                 <p>Los datos personales serán tratados con el grado de protección adecuado, tomándose las medidas de seguridad necesarias para evitar su alteración, pérdida, tratamiento o acceso no autorizado por parte de terceros que lo puedan utilizar para finalidades distintas para las que han sido solicitadas al usuario.</p>
-                                <p>El responsable de la base de datos es **Titular de la base** y la dirección donde podrá ejercer los derechos de acceso, rectificación, actualización, inclusión o supresión, es **Dirección del organismo**, según lo establecido en la LPDP".</p>
 
 
 

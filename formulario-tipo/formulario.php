@@ -315,8 +315,8 @@
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deleniti, possimus doloribus nulla aspernatur perspiciatis amet saepe quis deserunt cum eaque facilis odit quos officiis nihil ipsum dolorem explicabo reiciendis?</p>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="Button" data-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="Button Button--primary u-ml2">Guardar cambios</button>
+                                            <!-- <button type="button" class="Button" data-dismiss="modal">Cerrar</button> -->
+                                            <button type="button" class="Button Button--primary" data-dismiss="modal" >Entendido</button>
                                         </div>
                                     </div>
                                 </div>

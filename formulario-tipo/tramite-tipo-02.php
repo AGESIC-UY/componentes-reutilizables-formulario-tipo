@@ -314,14 +314,14 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h4 class="modal-title" id="modalTitle">Modal title</h4>
+                                                <h4 class="modal-title" id="modalTitle">Título Modal</h4>
                                             </div>
                                             <div class="modal-body">
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deleniti, possimus doloribus nulla aspernatur perspiciatis amet saepe quis deserunt cum eaque facilis odit quos officiis nihil ipsum dolorem explicabo reiciendis?</p>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="Button" data-dismiss="modal">Cerrar</button>
-                                                <button type="button" class="Button Button--primary u-ml2">Guardar cambios</button>
+                                                <!-- <button type="button" class="Button" data-dismiss="modal">Cerrar</button> -->
+                                                <button type="button" class="Button Button--primary" data-dismiss="modal">Entendido</button>
                                             </div>
                                         </div>
                                     </div>

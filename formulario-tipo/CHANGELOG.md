@@ -1,5 +1,12 @@
 # Changelog
 
+
+## [1.3.6] - 2025-02-11
+## Changed
+- Modificación en cláusula de consentimiento informado para trámites
+- Correciones menores en calendario
+- Se elemina encuesta del último paso del trámite tipo
+
 ## [1.3.5] - 2024-12-19
 ## Changed
 - Ajuste de textos y agregan enlaces a la Guía para la creación de formularios digitales

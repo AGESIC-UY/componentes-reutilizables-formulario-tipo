@@ -452,13 +452,17 @@
                                         </tr>
 
                                         <tr>
-                                            <td class="Form-group" data-title="Título Columna 1">
+                                           <td class="Form-group" data-title="Título Columna 1">
+
                                                 <div class="Form-options">
-                                                    <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
-                                                        <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
-                                                        <span class="u-hideVisually">Checkbox</span>
+
+                                                    <label for="radio-table" class="Form-option u-textCenter u-sm-textLeft">
+                                                        <input type="radio" id="radio-table" name="radio-table">
+                                                        <span class="u-hideVisually">Radio</span>
                                                     </label>
+
                                                 </div>
+
                                             </td>
                                             <td data-title="Título Columna 2">Fila 2 Columna 2</td>
                                             <td class="Form-group Form-group--error Form-group--alert" data-title="Título Columna 3">
@@ -474,7 +478,14 @@
                                         </tr>
 
                                         <tr>
-                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1  "><a href="#"><span class="Icon Icon--delete"></span><span class="u-hideVisually ">Eliminar</span></a></td>
+                                           <td class="Form-group" data-title="Título Columna 1">
+                                                <div class="Form-options">
+                                                    <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
+                                                        <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
+                                                        <span class="u-hideVisually">Checkbox</span>
+                                                    </label>
+                                                </div>
+                                            </td>
                                             <td class="Form-group" data-title="Título Columna 2">
 
                                                 <label for="select-table" class="Form-label u-hideVisually">Etiqueta de combo en tabla:</label>
@@ -492,7 +503,14 @@
                                         </tr>
 
                                         <tr>
-                                            <td class="u-textCenter u-md-textLeft" data-title="Título Columna 1"><a href="#"><span class="Icon Icon--edit"></span><span class="u-hideVisually ">Editar</span></a></td>
+                                            <td class="Form-group" data-title="Título Columna 1">
+                                                <div class="Form-options">
+                                                    <label for="opcion_table_check_3" class="Form-option u-textCenter u-sm-textLeft">
+                                                        <input type="checkbox" id="opcion_table_check_3" name="opcion_table_check_3" />
+                                                        <span class="u-hideVisually">Checkbox</span>
+                                                    </label>
+                                                </div>
+                                            </td>
                                             <td data-title="Título Columna 2">Fila 4 Columna 2</td>
                                             <td data-title="Título Columna 3">Fila 4 Columna 3</td>
                                             <td data-title="Título Columna 4">Fila 4 Columna 4</td>
